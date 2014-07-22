@@ -1,0 +1,888 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"main",
+				"MainRoutine"
+			],
+			[
+				"Ma",
+				"MainRoutine"
+			],
+			[
+				"Ti",
+				"TitleUnit"
+			],
+			[
+				"glenable",
+				"glEnableClientState"
+			],
+			[
+				"tex",
+				"texCoord"
+			],
+			[
+				"frame",
+				"_frameSize"
+			],
+			[
+				"textu",
+				"textureImage"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"pAsse",
+				"pAssetManager_"
+			],
+			[
+				"pAss",
+				"pAssetManager"
+			],
+			[
+				"_",
+				"_frameSize"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"clas",
+				"class	class-..-(class)"
+			],
+			[
+				"acceror",
+				"accelerometerSensor"
+			],
+			[
+				"accele",
+				"accelerometerSensor"
+			],
+			[
+				"ASensorEvent",
+				"ASensorEventQueue_setEventRate"
+			],
+			[
+				"accelero",
+				"accelerometerSensor"
+			],
+			[
+				"eglDest",
+				"eglDestroySurface"
+			],
+			[
+				"conte",
+				"context"
+			],
+			[
+				"ANativeWind",
+				"ANativeWindow_setBuffersGeometry"
+			],
+			[
+				"struct",
+				"struct"
+			],
+			[
+				"for",
+				"for	For Loop"
+			],
+			[
+				"engine",
+				"engine_handle_cmd"
+			],
+			[
+				"engine_handle_",
+				"engine_handle_input"
+			],
+			[
+				"androi",
+				"android_app"
+			],
+			[
+				"sensor",
+				"sensorManager"
+			],
+			[
+				"valu",
+				"value2"
+			],
+			[
+				"value",
+				"value1"
+			],
+			[
+				"va",
+				"value2"
+			],
+			[
+				"m_e",
+				"m_editText3"
+			],
+			[
+				"m_editTe",
+				"m_editText2"
+			],
+			[
+				"m_edi",
+				"m_editText1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Android/AndroidManifest.xml",
+			"settings":
+			{
+				"buffer_size": 918,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Android.mk",
+			"settings":
+			{
+				"buffer_size": 757,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 89 files for \"logo\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp:\n   10: : _spr_logo(NULL)\n   12: 	_spr_logo = new Sprite(\"title_logo.png\", 512, 256);\n   23: #define TITLE_LOGO_POS_Y         50\n   25: 	_spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h:\n   19: 	Sprite* 	_spr_logo;\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/png.h:\n  303:  * Also, the PNG logo (in PNG format, of course) is supplied in the\n\n/Users/keita/proj/gitroot/Koitsumo/Android__/jni/Classes/Routine/Title/TitleUnit.cpp:\n   10: : _spr_logo(NULL)\n   12: 	_spr_logo = new Sprite(\"title_logo.png\", 512, 256);\n   23: #define TITLE_LOGO_POS_Y         50\n   25: 	_spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);\n\n/Users/keita/proj/gitroot/Koitsumo/Android__/jni/Classes/Routine/Title/TitleUnit.h:\n   19: 	Sprite* 	_spr_logo;\n\n/Users/keita/proj/gitroot/Koitsumo/Android__/jni/include/png.h:\n  303:  * Also, the PNG logo (in PNG format, of course) is supplied in the\n\n16 matches across 6 files\n",
+			"settings":
+			{
+				"buffer_size": 1123,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"com.example.koitsumo\"\n    android:versionCode=\"1\"\n    android:versionName=\"1.0\" >\n\n    <uses-sdk\n        android:minSdkVersion=\"9\" />\n\n    <application\n        android:allowBackup=\"true\"\n        android:icon=\"@drawable/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:theme=\"@style/AppTheme\" android:debuggable=\"true\">\n        <activity\n            android:name=\"android.app.NativeActivity\"\n            android:label=\"@string/app_name\" >\n            <!-- so name -->\n            <meta-data android:name=\"android.app.lib_name\"\n                    android:value=\"Koitsumo\" />\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n    </application>\n\n</manifest>\n",
+			"file": "Android__/AndroidManifest.xml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 972,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"snippet hea",
+				"Snippet: header"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"projec",
+				"Project: Add Folder"
+			],
+			[
+				"proje",
+				"Project: Add Folder"
+			],
+			[
+				"pack list",
+				"Package Control: List Packages"
+			],
+			[
+				"package control ",
+				"Package Control: List Packages"
+			],
+			[
+				"package con",
+				"Package Control: Install Package"
+			],
+			[
+				"evernote",
+				"Evernote: Search Note"
+			],
+			[
+				"package cont",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"package con insta",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"colorsce",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"Run",
+				"Build: Run"
+			],
+			[
+				"Package ",
+				"Package Control: List Packages"
+			],
+			[
+				"pack inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Page",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #ifndef … #define … #endif"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 219.0,
+		"history":
+		[
+			"view.run_command('example')",
+			"ls",
+			"which",
+			"which ctags",
+			"sublime.log_commands(True)",
+			"tanji",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"clang_format",
+			"clang-format",
+			"test",
+			"clang-format"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/main.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Android.mk",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/pch.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/AndroidManifest.xml",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/bin/AndroidManifest.xml",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/res/values/strings.xml",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/res/menu/main.xml",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/gl.h",
+		"/Users/keita/proj/gitroot/NativeActivity/.classpath",
+		"/Users/keita/proj/gitroot/NativeActivity/jni/main.c",
+		"/Users/keita/proj/gitroot/NativeActivity/jni/Android.mk",
+		"/Users/keita/proj/gitroot/NativeActivity/AndroidManifest.xml",
+		"/Users/keita/proj/gitroot/NativeActivity/jni/Draw.cpp",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/keita/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Android.mk",
+		"/Users/keita/proj/gitroot/NativeActivity/jni/main.cpp",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/Users/keita/proj/gitroot/NativeActivity/jni/Draw.h",
+		"/Users/keita/proj/gitroot/NativeActivity/NativeActivity.sublime-project",
+		"/Users/keita/proj/gitroot/NativeActivity/jni/Application.mk",
+		"/Users/tanjike/Dropbox/preference/Sublime Text 3/Packages/User/plugin/example.py",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/physics_linejoint.nut",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/physics_gearjoint.nut",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/Engine.h",
+		"/Users/tanjike/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/tanjike/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/JavaGlue.cpp",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-iOS/libs/libpng/png.h",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-iOS/libs/libpng/png.c",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-iOS/libs/emo/EmoImage.m",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/libpng/png.h",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/libpng/png.c",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Application.mk",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/main.cpp",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/native_app_glue.c",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Box2D/Android.mk",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/Image.cpp",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/buildjar.xml",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/assets/runtime.nut",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/runtime.nut",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/physics_add_example.nut",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/sqlite/sqlite3.h",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/Image.h",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/src/com/emo_framework/examples/Launcher.java",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/bin/AndroidManifest.xml",
+		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Android.mk",
+		"/Users/tanjike/Dropbox/proj/emo-framework.sublime-project",
+		"/Users/tanjike/Dropbox/proj/adt_eclipse_work/android_work.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"logo",
+			"Draw.",
+			"Draw.cpp",
+			"NativeActivity",
+			"texCoord",
+			"AssetManager",
+			"initDraw",
+			"glBindFrame",
+			"engine->display",
+			"assetManager",
+			"TexCoord",
+			"texcoord",
+			"TexCoord",
+			"texcoord",
+			"TexCoord",
+			"drawWith",
+			"mgr",
+			"pragma",
+			"show",
+			"encode",
+			"code",
+			"GLint",
+			"gluPerspective",
+			"android_native_a",
+			"colorBu",
+			"LENGTH",
+			"DrawBox",
+			"drawBox",
+			"DrawBox",
+			"drawBox",
+			"triangleBuffer",
+			"initCube",
+			"drawCube",
+			"colorBuffer",
+			"\n#",
+			"asset",
+			"DrawBox(",
+			"alt+shift+1",
+			"drawBox",
+			"LENGTH",
+			"drawBox",
+			"DrawBox",
+			"drawBox",
+			"colorBuff",
+			"triangleBuffer",
+			"triangleBufferA",
+			"triangleBuffer",
+			"angle",
+			"ANGLE",
+			"angle",
+			"engine_draw_frame",
+			"drawBox",
+			"ndk",
+			"animating",
+			"colorspace",
+			"png_colorspace",
+			"assetManager",
+			"gear@2x",
+			"A.png",
+			"SQInteger",
+			"emacs",
+			"ctrl+f",
+			"png",
+			"loadPngFromBytes",
+			"PNG_LIBPNG_VER_STRING",
+			"png_set_read_fn",
+			"asset_read",
+			"loadPngFromAsset",
+			"name",
+			"emoDrawableCreateSprite",
+			"cpp",
+			"sprite",
+			"getResourceName",
+			"graphics",
+			"to_dir",
+			"assets",
+			"ANDROID_GRAPHICS_DIR",
+			"graphics/",
+			"loadPngSizeFromAsset",
+			"ball.png",
+			"app_dumy",
+			"engine_draw_frame",
+			"initDraw",
+			"display",
+			"gl_cull_face",
+			"display",
+			"DISPLAY",
+			"Display",
+			"display",
+			"Display",
+			"display",
+			"Display",
+			"display",
+			"emacs",
+			"ctrl+f",
+			"AmotionEvent_getY",
+			"main"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Android/AndroidManifest.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								555,
+								555
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Android/jni/Android.mk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1123,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										129,
+										133
+									],
+									[
+										153,
+										157
+									],
+									[
+										178,
+										182
+									],
+									[
+										221,
+										225
+									],
+									[
+										256,
+										260
+									],
+									[
+										288,
+										292
+									],
+									[
+										416,
+										420
+									],
+									[
+										509,
+										513
+									],
+									[
+										661,
+										665
+									],
+									[
+										685,
+										689
+									],
+									[
+										710,
+										714
+									],
+									[
+										753,
+										757
+									],
+									[
+										788,
+										792
+									],
+									[
+										820,
+										824
+									],
+									[
+										950,
+										954
+									],
+									[
+										1045,
+										1049
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1096,
+								1096
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "Android__/AndroidManifest.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								774,
+								774
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 86.0
+	},
+	"output.find_results":
+	{
+		"height": 86.0
+	},
+	"project": "Koitsumo.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"androidmani",
+				"Android/AndroidManifest.xml"
+			],
+			[
+				"sprite",
+				"Android/jni/Classes/Graphics/2D/Sprite.h"
+			],
+			[
+				"titleuni",
+				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"asset.cpp",
+				"Android/jni/Classes/Asset/Asset.cpp"
+			],
+			[
+				"and",
+				"Android/jni/Android.mk"
+			],
+			[
+				"main.cpp",
+				"Android/jni/main.cpp"
+			],
+			[
+				"asse",
+				"Android/jni/Classes/Asset/Asset.h"
+			],
+			[
+				"an",
+				"Android/jni/Android.mk"
+			],
+			[
+				"main",
+				"Android/jni/Classes/Routine/MainRoutine.h"
+			],
+			[
+				"mainrou",
+				"Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"title",
+				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"spri",
+				"Android/jni/Classes/Graphics/2D/Sprite.h"
+			],
+			[
+				"unit",
+				"Android/jni/Classes/Routine/Unit.h"
+			],
+			[
+				"draw",
+				"jni/Draw.h"
+			],
+			[
+				"libp",
+				"~/proj/gitroot/NDKBook_2nd/ch12/CubeDroidTex/jni/libpng_android.h"
+			],
+			[
+				".mk",
+				"jni/Android.mk"
+			],
+			[
+				"draw.cpp",
+				"jni/Draw.cpp"
+			],
+			[
+				"android",
+				"jni/Android.mk"
+			],
+			[
+				"androi",
+				"jni/Android.mk"
+			],
+			[
+				"android.mk",
+				"NativeActivityTest/jni/Android.mk"
+			],
+			[
+				"androidmanifest",
+				"NativeActivityTest/AndroidManifest.xml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/proj/emo-framework.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
