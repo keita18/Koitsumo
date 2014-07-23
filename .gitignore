@@ -13,6 +13,7 @@
 *.lai
 *.la
 *.a
+!libpng15.a
 *.lib
 
 # Executables
