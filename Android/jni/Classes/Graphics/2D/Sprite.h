@@ -9,16 +9,18 @@
 //とりあえずでここに定義
 struct CGSize
 {
-	int width;
-	int height;
+	float width;
+	float height;
 
-	CGSize() : width(0), height(0) {}
+	CGSize() : width(0.0f), height(0.0f) {}
 };
 
 struct CGPoint
 {
-	int x;
-	int y;
+	float x;
+	float y;
+
+	CGPoint() : x(0.0f), y(0.0f) {}
 };
 
 struct CGRect
@@ -34,6 +36,9 @@ public:
 	~Sprite();
 
 	void drawWithFrame(int f, int x, int y, int w, int h);
+
+	//test
+	void drawBox();
 
 private:
 	void loadImage(const char* imgName);

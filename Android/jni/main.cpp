@@ -13,16 +13,12 @@
 #include <unistd.h> //sleep用
 
 #include <android/sensor.h>
-#include <android/log.h>
 #include <android_native_app_glue.h>
+
+#include "pch.h"
 
 #include "Classes/Routine/MainRoutine.h"
 #include "Classes/Asset/Asset.h"
-
-#define TAG "Koitsumo"
-#define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "Koitsumo", __VA_ARGS__))
-#define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "Koitsumo", __VA_ARGS__))
-#define LOGE(...) ((void)__android_log_print(ANDROID_LOG_ERROR, "Koitsumo", __VA_ARGS__))
 
 /**
  * Our saved state data.
@@ -95,6 +91,24 @@ void prepareFrame(struct engine* engine) {
   glLoadIdentity();
 }
 
+void initDraw(struct engine* engine)
+{
+    glDisable(GL_LIGHTING);
+    glDisable(GL_CULL_FACE);
+    glDisable(GL_DEPTH_BUFFER_BIT);
+    glDisable(GL_DEPTH_TEST);
+    glClearColor(.7f, .7f, .9f, 1.f);
+    glShadeModel(GL_SMOOTH);
+
+    //アスペクト比設定
+    float ratio = (float)engine->width / (float)engine->height;
+    glViewport( 0, 0, (int)engine->width, (int)engine->height);
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(40.0, ratio, 0.1, 100);
+}
+
 
 /**
  * Initialize an EGL context for the current display.
@@ -163,6 +177,8 @@ static int engine_init_display(struct engine* engine) {
     //とりあえずここで初期化処理
     Asset::setAssetManager(engine->assetManager);
 
+    initDraw(engine);
+
     return 0;
 }
 
@@ -177,7 +193,7 @@ static void engine_draw_frame(struct engine* engine) {
     }
 
     //@TODO ココらへんは1回でいいやつもあるとは思うけどとりあえず。
-    prepareFrame(engine);
+    //prepareFrame(engine);
 
     //Proc
     MainRoutine::singleton()->calc();
@@ -336,9 +352,9 @@ void android_main(struct android_app* state) {
                     ASensorEvent event;
                     while (ASensorEventQueue_getEvents(engine.sensorEventQueue,
                             &event, 1) > 0) {
-                        LOGI("accelerometer: x=%f y=%f z=%f",
-                                event.acceleration.x, event.acceleration.y,
-                                event.acceleration.z);
+                        // LOGI("accelerometer: x=%f y=%f z=%f",
+                        //         event.acceleration.x, event.acceleration.y,
+                        //         event.acceleration.z);
                     }
                 }
             }

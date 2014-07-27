@@ -22,3 +22,5 @@
 *.app
 Android/bin
 *.o.d
+Android/libs
+Android/obj

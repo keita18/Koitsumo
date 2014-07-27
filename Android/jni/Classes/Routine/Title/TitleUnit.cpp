@@ -22,5 +22,8 @@ void TitleUnit::draw()
 {
 #define TITLE_LOGO_POS_Y         50
 
-	_spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);
+	// _spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);
+
+	//test描画
+	_spr_logo->drawBox();
 }

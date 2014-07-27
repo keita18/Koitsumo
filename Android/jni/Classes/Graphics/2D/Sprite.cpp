@@ -2,6 +2,7 @@
 //! @author 	Keita Tanji
 //! @breif		
 #include "Sprite.h"
+#include "pch.h"
 #include "../../Asset/Asset.h"
 
 static GLshort sprVtx[] = { 0, 0, 1, 0, 0, 1, 1, 1 };
@@ -32,7 +33,9 @@ void Sprite::loadImage(const char* imgName)
 	GLubyte *textureImage;
 
 	//画像をロード
-	Asset::loadPngImage(imgName, &width, &height, &type, &textureImage);
+	bool loadResult = Asset::loadPngImage(imgName, &width, &height, &type, &textureImage);
+	if(loadResult == false) return;
+
 	_texSize.width = width;
 	_texSize.height = height;
 	if(_frameSize.width < 0) _frameSize.width = _texSize.width;
@@ -46,6 +49,9 @@ void Sprite::loadImage(const char* imgName)
     //※ typeであってる？
     glTexImage2D(GL_TEXTURE_2D, 0, type/*GL_RGBA*/, width, height, 0, type/*GL_RGBA*/, GL_UNSIGNED_BYTE, textureImage);
     glBindTexture(GL_TEXTURE_2D, 0);
+
+	LOGI("#################################¥n");
+    LOGI("loadImage, type=%d, w=%d, h=%d, _tag=%d", type, width, height, _tag);
 }
 
 void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
@@ -66,10 +72,10 @@ void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	glTranslatef(x, y, 0.0f);
+	glTranslatef(x, y, -50.0f);
 	if(w<0) w = _frameSize.width;
 	if(h<0) h = _frameSize.height;
-	glScalef(w, h, 1);
+	// glScalef(w, h, 1);
 
 	if(_tag > 0)
 		glBindTexture(GL_TEXTURE_2D, _tag);
@@ -91,4 +97,67 @@ void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 	glTexCoordPointer(2, GL_FLOAT, 0, texCoord);
 
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+}
+
+void Sprite::drawBox()
+{
+	// 頂点リスト
+#define LENGTH (15)
+	short triangleBuffer[] = {
+	/*        X                Y          Z */
+	-LENGTH / 2,          -LENGTH / 2,          0, 
+	 LENGTH - LENGTH / 2, -LENGTH / 2,          0, 
+	-LENGTH / 2,           LENGTH - LENGTH / 2, 0,
+	 LENGTH - LENGTH / 2,  LENGTH - LENGTH / 2, 0, };
+
+	// 頂点カラーリスト
+	float colorBuffer[] = {
+	/*   R    G    B    A  */
+	   1.0, 0.0, 0.0, 1.0, 
+	   0.0, 1.0, 0.0, 1.0, 
+	   0.0, 0.0, 1.0, 1.0, 
+	   0.5, 0.5, 0.0, 1.0, };
+
+	float texCoord[] = {
+		0.0f, 0.0f, 
+		1.0f, 0.0f,
+		0.0f, 1.0f,
+		1.0f, 1.0f,
+	};
+
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glTranslatef(0.0, 0.0, -50.0);
+	glRotatef(0, 0, 0, 1.0f);
+
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	// 利用するテクスチャは非圧縮とする
+	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+	glBindTexture(GL_TEXTURE_2D, _tag);
+
+	glDisable(GL_LIGHTING);
+	glEnable(GL_TEXTURE_2D);
+	glEnable(GL_BLEND);
+	glEnable(GL_ALPHA_TEST);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); 
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE); 
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glEnableClientState(GL_COLOR_ARRAY);
+	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+	//strideが0だと隙間なく頂点配列が埋まってるという意味
+	glVertexPointer(3, GL_SHORT, 0, triangleBuffer);
+	glColorPointer(4, GL_FLOAT, 0, colorBuffer);
+	glTexCoordPointer(2, GL_FLOAT, 0, texCoord);
+
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	glDisableClientState(GL_VERTEX_ARRAY);
 }
