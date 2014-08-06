@@ -6,12 +6,14 @@
 #include "../../Asset/Asset.h"
 
 static GLshort sprVtx[] = { 0, 0, 1, 0, 0, 1, 1, 1 };
+//static GLshort sprVtx[] = { 0, 1, 1, 1, 0, 0, 1, 0 };
 
 Sprite::Sprite(const char* imgName, int fw, int fh)
 : _tag(0)
 , _frameSize()
 , _texSize()
 , _pitch(0)
+, _count(0)
 {
 	memset(_sprCol, 255, sizeof(GLubyte) * 16);
 
@@ -56,6 +58,12 @@ void Sprite::loadImage(const char* imgName)
 
 void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 {
+	//倍で描画
+	x *= 2;
+	y *= 2;
+	w *= 2;
+	h *= 2;
+
 	CGRect frameRect;
 	if(_tag) {
 		frameRect.origin.x = _frameSize.width * (f % _pitch) / _texSize.width;
@@ -63,19 +71,31 @@ void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 		frameRect.size.width = _frameSize.width / _texSize.width;
 		frameRect.size.height = _frameSize.height / _texSize.height;
 	}
-	//Make TexCoord
 	GLfloat texCoord[8];
-	texCoord[0] = texCoord[4] = frameRect.origin.x + 0.005f;
-	texCoord[1] = texCoord[3] = frameRect.origin.y + 0.005f;
-	texCoord[2] = texCoord[6] = frameRect.origin.x + frameRect.size.width + 0.005f;
-	texCoord[5] = texCoord[7] = frameRect.origin.y + frameRect.size.height + 0.005f;
+	//y座標反転
+	texCoord[0] = texCoord[4] = frameRect.origin.x;
+	texCoord[1] = texCoord[3] = 1.0f - frameRect.origin.y;
+	texCoord[2] = texCoord[6] = frameRect.origin.x + frameRect.size.width;
+	texCoord[5] = texCoord[7] = 1.0f - (frameRect.origin.y + frameRect.size.height);
+	// texCoord[0] = texCoord[4] = frameRect.origin.x + 0.005f;
+	// texCoord[1] = texCoord[3] = frameRect.origin.y + 0.005f;
+	// texCoord[2] = texCoord[6] = frameRect.origin.x + frameRect.size.width + 0.005f;
+	// texCoord[5] = texCoord[7] = frameRect.origin.y + frameRect.size.height + 0.005f;
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	glTranslatef(x, y, -50.0f);
+	glTranslatef(x, y, 0.0f);
 	if(w<0) w = _frameSize.width;
 	if(h<0) h = _frameSize.height;
-	// glScalef(w, h, 1);
+	glScalef(w, h, 1);
+
+	_count++;
+	if(_count > 30)
+	{
+		LOGI("drawWithFrame, f=%d, x=%d, y=%d, w=%d, h=%d, tag=%d", f, x, y, w, h, _tag);
+		LOGI("texcoord, %f, %f, %f, %f, %f, %f, %f, %f", texCoord[0], texCoord[1], texCoord[2], texCoord[3], texCoord[4], texCoord[5], texCoord[6], texCoord[7]);
+		_count = 0;
+	}
 
 	if(_tag > 0)
 		glBindTexture(GL_TEXTURE_2D, _tag);
@@ -102,7 +122,7 @@ void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 void Sprite::drawBox()
 {
 	// 頂点リスト
-#define LENGTH (15)
+#define LENGTH (500)
 	short triangleBuffer[] = {
 	/*        X                Y          Z */
 	-LENGTH / 2,          -LENGTH / 2,          0, 
@@ -128,13 +148,16 @@ void Sprite::drawBox()
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	glTranslatef(0.0, 0.0, -50.0);
-	glRotatef(0, 0, 0, 1.0f);
+	glTranslatef(0.0, 0.0, 0.0);
+
+	//glScalef(2, 2, 1);
+
+	//glRotatef(0, 0, 0, 1.0f);
 
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	// 利用するテクスチャは非圧縮とする
-	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+	// glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
 	glBindTexture(GL_TEXTURE_2D, _tag);
 

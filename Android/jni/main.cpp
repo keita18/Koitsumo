@@ -16,98 +16,68 @@
 #include <android_native_app_glue.h>
 
 #include "pch.h"
+#include "Engine.h"
 
-#include "Classes/Routine/MainRoutine.h"
+#include "Classes/ViewController.h"
 #include "Classes/Asset/Asset.h"
 
-/**
- * Our saved state data.
- */
-struct saved_state {
-    float angle;
-    int32_t x;
-    int32_t y;
-};
-
-/**
- * Shared state for our app.
- */
-struct engine {
-    struct android_app* app;
-
-    ASensorManager* sensorManager;
-    const ASensor* accelerometerSensor;
-    const ASensor* gyroscopeSensor;
-    ASensorEventQueue* sensorEventQueue;
-
-    int animating;
-
-    EGLDisplay display;
-    EGLSurface surface;
-    EGLContext context;
-
-    int32_t width;
-    int32_t height;
-
-    struct saved_state state;
-
-    AAssetManager* assetManager;
-};
 
 #undef PI
 #define PI 3.1415926535897932f
 
-void prepareFrame(struct engine* engine) {
+// void prepareFrame(struct engine* engine) {
 
-  // ViewPortを指定
-  glViewport(0, 0, engine->width, engine->height);
-  // 塗りつぶし色設定
-  glClearColor(.7f, .7f, .9f, 1.f);
-  // カラーバッファ、デプスバッファをクリアー
-  glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+//   // ViewPortを指定
+//   glViewport(0, 0, engine->width, engine->height);
+//   // 塗りつぶし色設定
+//   glClearColor(.7f, .7f, .9f, 1.f);
+//   // カラーバッファ、デプスバッファをクリアー
+//   glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
-  // PROJECTIONに切替
-  glMatrixMode(GL_PROJECTION);
-  glLoadIdentity();
+//   // PROJECTIONに切替
+//   glMatrixMode(GL_PROJECTION);
+//   glLoadIdentity();
 
-  //--
-  // 透視法射影設定
-  gluPerspective(45, (float) engine->width / engine->height, 0.5f, 500);
-  //--
+//   //--
+//   // 透視法射影設定
+//   gluPerspective(45, (float) engine->width / engine->height, 0.5f, 500);
+//   //--
 
-  //平行投影で
-	// glPushMatrix();
+//   //平行投影で
+// 	// glPushMatrix();
 
-	// glScalef(1, -1, 1);
+// 	// glScalef(1, -1, 1);
 
-	// GLint frameBufferWidth = 0, frameBufferHeight = 0;
-	// glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &frameBufferWidth);
-	// glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &frameBufferHeight);
-	// glOrthof(0.0f, frameBufferWidth, 0.0f, frameBufferHeight, 1000.0f, -1000.0f);
-  //--
+// 	// GLint frameBufferWidth = 0, frameBufferHeight = 0;
+// 	// glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &frameBufferWidth);
+// 	// glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &frameBufferHeight);
+// 	// glOrthof(0.0f, frameBufferWidth, 0.0f, frameBufferHeight, 1000.0f, -1000.0f);
+//   //--
 
-  // MODELVIEWに切替
-  glMatrixMode(GL_MODELVIEW);
-  glLoadIdentity();
-}
+//   // MODELVIEWに切替
+//   glMatrixMode(GL_MODELVIEW);
+//   glLoadIdentity();
+// }
 
-void initDraw(struct engine* engine)
-{
-    glDisable(GL_LIGHTING);
-    glDisable(GL_CULL_FACE);
-    glDisable(GL_DEPTH_BUFFER_BIT);
-    glDisable(GL_DEPTH_TEST);
-    glClearColor(.7f, .7f, .9f, 1.f);
-    glShadeModel(GL_SMOOTH);
+// void initDraw(struct engine* engine)
+// {
+//     glDisable(GL_LIGHTING);
+//     glDisable(GL_CULL_FACE);
+//     glDisable(GL_DEPTH_BUFFER_BIT);
+//     glDisable(GL_DEPTH_TEST);
+//     glClearColor(.7f, .7f, .9f, 1.f);
+//     glShadeModel(GL_SMOOTH);
 
-    //アスペクト比設定
-    float ratio = (float)engine->width / (float)engine->height;
-    glViewport( 0, 0, (int)engine->width, (int)engine->height);
+//     //アスペクト比設定
+//     float ratio = (float)engine->width / (float)engine->height;
+//     glViewport( 0, 0, (int)engine->width, (int)engine->height);
 
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    gluPerspective(40.0, ratio, 0.1, 100);
-}
+//     LOGI("initDraw, viewWidth=%d, viewHeight=%d", engine->width, engine->height);
+
+//     glMatrixMode(GL_PROJECTION);
+//     glLoadIdentity();
+//     gluPerspective(40.0, ratio, 0.1, 100);
+// }
 
 
 /**
@@ -177,7 +147,7 @@ static int engine_init_display(struct engine* engine) {
     //とりあえずここで初期化処理
     Asset::setAssetManager(engine->assetManager);
 
-    initDraw(engine);
+    //initDraw(engine);
 
     return 0;
 }
@@ -191,16 +161,10 @@ static void engine_draw_frame(struct engine* engine) {
         // No display.
         return;
     }
+    if (engine->pViewController == NULL) return;
 
-    //@TODO ココらへんは1回でいいやつもあるとは思うけどとりあえず。
-    //prepareFrame(engine);
+    engine->pViewController->drawFrame();
 
-    //Proc
-    MainRoutine::singleton()->calc();
-
-    MainRoutine::singleton()->draw();
-
-    //ダブルバッファ入れ替え
     eglSwapBuffers(engine->display, engine->surface);
 }
 
@@ -300,13 +264,16 @@ void android_main(struct android_app* state) {
     app_dummy();
 
     //デバッグできるようにsleep
-    sleep(10);
+    sleep(2);
 
     memset(&engine, 0, sizeof(engine));
     state->userData = &engine;
     state->onAppCmd = engine_handle_cmd;
     state->onInputEvent = engine_handle_input;
     engine.app = state;
+
+    ViewController viewController(&engine);
+    engine.pViewController = &viewController;
 
     // Prepare to monitor accelerometer
     engine.sensorManager = ASensorManager_getInstance();

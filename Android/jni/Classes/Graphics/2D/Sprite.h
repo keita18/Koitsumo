@@ -50,4 +50,7 @@ private:
 	GLubyte	_sprCol[16];
 
 	//アニメーション関係省略
+
+	//開発ログ用
+	int 	_count;
 };
