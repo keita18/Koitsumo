@@ -4,6 +4,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include"
 		}
 	]
 }

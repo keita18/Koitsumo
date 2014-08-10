@@ -2,6 +2,7 @@
 //! @author 	Keita Tanji
 //! @breif		
 #include "UI_GameMain.h"
+#include "pch.h"
 
 using namespace UserInterface;
 
@@ -16,7 +17,7 @@ UI_GameMain::~UI_GameMain()
 {
 #define COIN_MODEL_HEIGHT	0.1f
 #define COIN_TEX_SIZE 		1.0f
-	unsigned int size = devine * 3 * 4;
+	unsigned int size = divine * 3 * 4;
 	Graphics::Model::VERTEX		vtx[size];
 		for (int i=0; i < divine; i++) {
 		vtx[i * 3 + 0].x = vtx[i * 3 + 2 + divine * 3].x = sinf(i * 2 * PI / divine);
@@ -49,7 +50,7 @@ UI_GameMain::~UI_GameMain()
 		vtx[i * 6 + 2 + divine * 6].u = 0;
 		vtx[i * 6 + 2 + divine * 6].v = 0.1f;
 	}
-	
+
 	for (int i=0;i<size;i++) {
 		vtx[i].r = vtx[i].g = vtx[i].b = vtx[i].a = 0xff;
 	}

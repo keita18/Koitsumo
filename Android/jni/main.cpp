@@ -22,64 +22,6 @@
 #include "Classes/Asset/Asset.h"
 
 
-#undef PI
-#define PI 3.1415926535897932f
-
-// void prepareFrame(struct engine* engine) {
-
-//   // ViewPortを指定
-//   glViewport(0, 0, engine->width, engine->height);
-//   // 塗りつぶし色設定
-//   glClearColor(.7f, .7f, .9f, 1.f);
-//   // カラーバッファ、デプスバッファをクリアー
-//   glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
-
-//   // PROJECTIONに切替
-//   glMatrixMode(GL_PROJECTION);
-//   glLoadIdentity();
-
-//   //--
-//   // 透視法射影設定
-//   gluPerspective(45, (float) engine->width / engine->height, 0.5f, 500);
-//   //--
-
-//   //平行投影で
-// 	// glPushMatrix();
-
-// 	// glScalef(1, -1, 1);
-
-// 	// GLint frameBufferWidth = 0, frameBufferHeight = 0;
-// 	// glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &frameBufferWidth);
-// 	// glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &frameBufferHeight);
-// 	// glOrthof(0.0f, frameBufferWidth, 0.0f, frameBufferHeight, 1000.0f, -1000.0f);
-//   //--
-
-//   // MODELVIEWに切替
-//   glMatrixMode(GL_MODELVIEW);
-//   glLoadIdentity();
-// }
-
-// void initDraw(struct engine* engine)
-// {
-//     glDisable(GL_LIGHTING);
-//     glDisable(GL_CULL_FACE);
-//     glDisable(GL_DEPTH_BUFFER_BIT);
-//     glDisable(GL_DEPTH_TEST);
-//     glClearColor(.7f, .7f, .9f, 1.f);
-//     glShadeModel(GL_SMOOTH);
-
-//     //アスペクト比設定
-//     float ratio = (float)engine->width / (float)engine->height;
-//     glViewport( 0, 0, (int)engine->width, (int)engine->height);
-
-//     LOGI("initDraw, viewWidth=%d, viewHeight=%d", engine->width, engine->height);
-
-//     glMatrixMode(GL_PROJECTION);
-//     glLoadIdentity();
-//     gluPerspective(40.0, ratio, 0.1, 100);
-// }
-
-
 /**
  * Initialize an EGL context for the current display.
  */
@@ -188,19 +130,67 @@ static void engine_term_display(struct engine* engine) {
     engine->surface = EGL_NO_SURFACE;
 }
 
+static int32_t onMotionEvnet(struct android_app* app, AInputEvent* event)
+{
+    struct engine* engine = (struct engine*)app->userData;
+    if(engine->pViewController == NULL) return 0;
+
+    // size_t action = AMotionEvent_getAction(event) & AMOTION_EVENT_ACTION_MASK; //emoのやり方
+    int32_t action = AMotionEvent_getAction(event);
+    // 1点以上押している
+    if(action != AKEY_EVENT_ACTION_UP)
+    {
+        size_t pointCount = AMotionEvent_getPointerCount(event);
+        if(pointCount == 1)
+        {
+            CGPoint pt( AMotionEvent_getX(event, 0), AMotionEvent_getY(event, 0) );
+            if(engine->touched == false)
+            {
+                engine->pViewController->touchesBegan(pt);
+                engine->touched = true;
+            }
+            else 
+            {
+                engine->pViewController->touchesMoved(pt);                
+            }
+        }
+    }
+    // 触ってない
+    else
+    {
+        if(engine->touched == true)
+        {
+            //@TODO:最後のtouchPoint保持？
+            CGPoint pt( AMotionEvent_getX(event, 0), AMotionEvent_getY(event, 0) );
+            //CGPoint pt( 0,0 );
+
+            engine->pViewController->touchesEnded(pt);
+            engine->touched = false;
+        }
+    }
+}
+
 /**
  * Process the next input event.
  */
 static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) {
     struct engine* engine = (struct engine*)app->userData;
-    if (AInputEvent_getType(event) == AINPUT_EVENT_TYPE_MOTION) {
-        //アニメーション有効化   
-        engine->animating = 1;
-        //タッチ位置を取得
-        engine->state.x = AMotionEvent_getX(event, 0);
-        engine->state.y = AMotionEvent_getY(event, 0);
-        return 1;
+    int type = AInputEvent_getType(event);
+    if(type == AINPUT_EVENT_TYPE_MOTION) {
+        return onMotionEvnet(app, event);
     }
+    //--
+    // if (AInputEvent_getType(event) == AINPUT_EVENT_TYPE_MOTION) {
+    //     //アニメーション有効化   
+    //     engine->animating = 1;
+    //     //タッチ位置を取得
+    //     engine->state.x = AMotionEvent_getX(event, 0);
+    //     engine->state.y = AMotionEvent_getY(event, 0);
+    //     return 1;
+    // }
+    //return 0;
+    //--
+
     return 0;
 }
 

@@ -42,6 +42,21 @@ void MainRoutine::draw()
 		_currentUnit->draw();
 	}
 }
+//=============================================================================
+void MainRoutine::touchedBegin(CGPoint tp)
+{
+	if(_currentUnit) _currentUnit->touchedBegin(tp);
+}
+//=============================================================================
+void MainRoutine::touchedMoved(CGPoint tp)
+{
+	if(_currentUnit) _currentUnit->touchedMoved(tp);
+}
+//=============================================================================
+void MainRoutine::touchedEnded(CGPoint tp)
+{
+	if(_currentUnit) _currentUnit->touchedEnded(tp);
+}
 
 //=============================================================================
 Unit* MainRoutine::getCurrentUnit()

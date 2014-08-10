@@ -1,0 +1,927 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+BuildConfig	Android/gen/com/example/koitsumo/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+DEBUG	Android/gen/com/example/koitsumo/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
+com.example.koitsumo	Android/gen/com/example/koitsumo/BuildConfig.java	/^package com.example.koitsumo;$/;"	p
+AppBaseTheme	Android/gen/com/example/koitsumo/R.java	/^        public static final int AppBaseTheme=0x7f040000;$/;"	f	class:R.style
+AppTheme	Android/gen/com/example/koitsumo/R.java	/^        public static final int AppTheme=0x7f040001;$/;"	f	class:R.style
+R	Android/gen/com/example/koitsumo/R.java	/^public final class R {$/;"	c
+app_name	Android/gen/com/example/koitsumo/R.java	/^        public static final int app_name=0x7f030000;$/;"	f	class:R.string
+attr	Android/gen/com/example/koitsumo/R.java	/^    public static final class attr {$/;"	c	class:R
+com.example.koitsumo	Android/gen/com/example/koitsumo/R.java	/^package com.example.koitsumo;$/;"	p
+drawable	Android/gen/com/example/koitsumo/R.java	/^    public static final class drawable {$/;"	c	class:R
+ic_launcher	Android/gen/com/example/koitsumo/R.java	/^        public static final int ic_launcher=0x7f020000;$/;"	f	class:R.drawable
+string	Android/gen/com/example/koitsumo/R.java	/^    public static final class string {$/;"	c	class:R
+style	Android/gen/com/example/koitsumo/R.java	/^    public static final class style {$/;"	c	class:R
+APP_STL	Android/jni/Android.mk	/^APP_STL := stlport_static$/;"	m
+LOCAL_EXPORT_C_INCLUDES	Android/jni/Android.mk	/^LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)\/include$/;"	m
+LOCAL_LDLIBS	Android/jni/Android.mk	/^LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lz$/;"	m
+LOCAL_MODULE	Android/jni/Android.mk	/^LOCAL_MODULE    := koitsumo$/;"	m
+LOCAL_MODULE	Android/jni/Android.mk	/^LOCAL_MODULE := libpng15-prebuilt$/;"	m
+LOCAL_PATH	Android/jni/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SRC_FILES	Android/jni/Android.mk	/^LOCAL_SRC_FILES := lib\/libpng15.a$/;"	m
+LOCAL_SRC_FILES	Android/jni/Android.mk	/^LOCAL_SRC_FILES := main.cpp \\$/;"	m
+LOCAL_STATIC_LIBRARIES	Android/jni/Android.mk	/^LOCAL_STATIC_LIBRARIES := android_native_app_glue$/;"	m
+APP_STL	Android/jni/Application.mk	/^APP_STL := stlport_static$/;"	m
+callbackRead	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ void Asset::callbackRead(png_structp pPng, png_bytep buf, png_size_t size)$/;"	f	class:Asset
+loadPngImage	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ bool Asset::loadPngImage($/;"	f	class:Asset
+offset_	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ int 		Asset::offset_ = 0;;$/;"	m	class:Asset	file:
+pAssetManager_	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ AAssetManager*	Asset::pAssetManager_ = NULL;$/;"	m	class:Asset	file:
+setAssetManager	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ void	Asset::setAssetManager(AAssetManager* pAssetManager)$/;"	f	class:Asset
+Asset	Android/jni/Classes/Asset/Asset.h	/^class Asset$/;"	c
+offset_	Android/jni/Classes/Asset/Asset.h	/^	static int 		offset_;$/;"	m	class:Asset
+pAssetManager_	Android/jni/Classes/Asset/Asset.h	/^	static AAssetManager*	pAssetManager_;$/;"	m	class:Asset
+LENGTH	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^#define LENGTH /;"	d	file:
+Sprite	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^Sprite::Sprite(const char* imgName, int fw, int fh)$/;"	f	class:Sprite
+drawBox	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::drawBox()$/;"	f	class:Sprite
+drawWithFrame	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::drawWithFrame(int f, int x, int y, int w, int h)$/;"	f	class:Sprite
+loadImage	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::loadImage(const char* imgName)$/;"	f	class:Sprite
+sprVtx	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^static GLshort sprVtx[] = { 0, 0, 1, 0, 0, 1, 1, 1 };$/;"	v	file:
+~Sprite	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^Sprite::~Sprite()$/;"	f	class:Sprite
+Sprite	Android/jni/Classes/Graphics/2D/Sprite.h	/^class Sprite$/;"	c
+_count	Android/jni/Classes/Graphics/2D/Sprite.h	/^	int 	_count;$/;"	m	class:Sprite
+_frameSize	Android/jni/Classes/Graphics/2D/Sprite.h	/^	CGSize 	_frameSize;$/;"	m	class:Sprite
+_pitch	Android/jni/Classes/Graphics/2D/Sprite.h	/^	int		_pitch;$/;"	m	class:Sprite
+_sprCol	Android/jni/Classes/Graphics/2D/Sprite.h	/^	GLubyte	_sprCol[16];$/;"	m	class:Sprite
+_tag	Android/jni/Classes/Graphics/2D/Sprite.h	/^	GLuint	_tag;$/;"	m	class:Sprite
+_texSize	Android/jni/Classes/Graphics/2D/Sprite.h	/^	CGSize	_texSize;$/;"	m	class:Sprite
+Draw	Android/jni/Classes/Graphics/3D/model.cpp	/^void Model::Draw()$/;"	f	class:Graphics::Model
+Graphics	Android/jni/Classes/Graphics/3D/model.cpp	/^namespace Graphics {$/;"	n	file:
+Model	Android/jni/Classes/Graphics/3D/model.cpp	/^Model::Model()$/;"	f	class:Graphics::Model
+Model	Android/jni/Classes/Graphics/3D/model.cpp	/^Model::Model(const Model& m)$/;"	f	class:Graphics::Model
+SetTexture	Android/jni/Classes/Graphics/3D/model.cpp	/^void Model::SetTexture(const char* imageName)$/;"	f	class:Graphics::Model
+SetVertexBuffer	Android/jni/Classes/Graphics/3D/model.cpp	/^void Model::SetVertexBuffer(void* buf, unsigned int num)$/;"	f	class:Graphics::Model
+~Model	Android/jni/Classes/Graphics/3D/model.cpp	/^Model::~Model()$/;"	f	class:Graphics::Model
+GetColor	Android/jni/Classes/Graphics/3D/model.h	/^	unsigned int*	GetColor()			{ return _color; }$/;"	f	class:Graphics::Model
+GetPosition	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetPosition() const	{ return _position; }$/;"	f	class:Graphics::Model
+GetRotation	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetRotation() const 	{ return _rotation; }$/;"	f	class:Graphics::Model
+GetScale	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetScale() const		{ return _scale; }$/;"	f	class:Graphics::Model
+GetShift	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetShift() const		{ return _shift; }$/;"	f	class:Graphics::Model
+GetUV	Android/jni/Classes/Graphics/3D/model.h	/^	float*	GetUV()						{ return _uv; }$/;"	f	class:Graphics::Model
+GetVertex	Android/jni/Classes/Graphics/3D/model.h	/^	float*	GetVertex()					{ return _vtx; }$/;"	f	class:Graphics::Model
+GetVertexNumber	Android/jni/Classes/Graphics/3D/model.h	/^	unsigned int GetVertexNumber()		{ return _vtx_num; }$/;"	f	class:Graphics::Model
+Graphics	Android/jni/Classes/Graphics/3D/model.h	/^namespace Graphics {$/;"	n
+Model	Android/jni/Classes/Graphics/3D/model.h	/^class Model$/;"	c	namespace:Graphics
+SetPosition	Android/jni/Classes/Graphics/3D/model.h	/^	void SetPosition(const Math::Vector3& p) 	{ _position = p; }$/;"	f	class:Graphics::Model
+SetRotation	Android/jni/Classes/Graphics/3D/model.h	/^	void SetRotation(const Math::Vector3& p)	{ _rotation = p; }$/;"	f	class:Graphics::Model
+SetScale	Android/jni/Classes/Graphics/3D/model.h	/^	void SetScale(const Math::Vector3& s)		{ _scale = s; }$/;"	f	class:Graphics::Model
+SetSfhit	Android/jni/Classes/Graphics/3D/model.h	/^	void SetSfhit(const Math::Vector3& p)		{ _shift = p; }$/;"	f	class:Graphics::Model
+VERTEX	Android/jni/Classes/Graphics/3D/model.h	/^	} VERTEX;$/;"	t	class:Graphics::Model	typeref:struct:Graphics::Model::__anon1
+_color	Android/jni/Classes/Graphics/3D/model.h	/^	GLuint			*_color;$/;"	m	class:Graphics::Model
+_position	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_position;$/;"	m	class:Graphics::Model
+_rotation	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_rotation;$/;"	m	class:Graphics::Model
+_scale	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_scale;$/;"	m	class:Graphics::Model
+_shift	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_shift;$/;"	m	class:Graphics::Model
+_textag	Android/jni/Classes/Graphics/3D/model.h	/^	GLuint			_textag;$/;"	m	class:Graphics::Model
+_uv	Android/jni/Classes/Graphics/3D/model.h	/^	GLfloat 		*_uv;$/;"	m	class:Graphics::Model
+_vtx	Android/jni/Classes/Graphics/3D/model.h	/^	GLfloat			*_vtx;$/;"	m	class:Graphics::Model
+_vtx_num	Android/jni/Classes/Graphics/3D/model.h	/^	unsigned int 	_vtx_num;$/;"	m	class:Graphics::Model
+a	Android/jni/Classes/Graphics/3D/model.h	/^		GLubyte		r,g,b,a;$/;"	m	struct:Graphics::Model::__anon1
+b	Android/jni/Classes/Graphics/3D/model.h	/^		GLubyte		r,g,b,a;$/;"	m	struct:Graphics::Model::__anon1
+g	Android/jni/Classes/Graphics/3D/model.h	/^		GLubyte		r,g,b,a;$/;"	m	struct:Graphics::Model::__anon1
+r	Android/jni/Classes/Graphics/3D/model.h	/^		GLubyte		r,g,b,a;$/;"	m	struct:Graphics::Model::__anon1
+u	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	u,v;$/;"	m	struct:Graphics::Model::__anon1
+v	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	u,v;$/;"	m	struct:Graphics::Model::__anon1
+x	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	x,y,z;$/;"	m	struct:Graphics::Model::__anon1
+y	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	x,y,z;$/;"	m	struct:Graphics::Model::__anon1
+z	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	x,y,z;$/;"	m	struct:Graphics::Model::__anon1
+CGPoint	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGPoint() : x(0.0f), y(0.0f) {}$/;"	f	struct:CGPoint
+CGPoint	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGPoint(float x_, float y_) : x(x_), y(y_) {}$/;"	f	struct:CGPoint
+CGPoint	Android/jni/Classes/Graphics/GRDefinition.h	/^struct CGPoint$/;"	s
+CGRect	Android/jni/Classes/Graphics/GRDefinition.h	/^struct CGRect$/;"	s
+CGSize	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGSize() : width(0.0f), height(0.0f) {}$/;"	f	struct:CGSize
+CGSize	Android/jni/Classes/Graphics/GRDefinition.h	/^struct CGSize$/;"	s
+PI	Android/jni/Classes/Graphics/GRDefinition.h	/^#define PI /;"	d
+SCREEN_HEIGHT	Android/jni/Classes/Graphics/GRDefinition.h	/^#define SCREEN_HEIGHT /;"	d
+SCREEN_WIDTH	Android/jni/Classes/Graphics/GRDefinition.h	/^#define SCREEN_WIDTH /;"	d
+height	Android/jni/Classes/Graphics/GRDefinition.h	/^	float height;$/;"	m	struct:CGSize
+origin	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGPoint origin;$/;"	m	struct:CGRect
+size	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGSize size;$/;"	m	struct:CGRect
+width	Android/jni/Classes/Graphics/GRDefinition.h	/^	float width;$/;"	m	struct:CGSize
+x	Android/jni/Classes/Graphics/GRDefinition.h	/^	float x;$/;"	m	struct:CGPoint
+y	Android/jni/Classes/Graphics/GRDefinition.h	/^	float y;$/;"	m	struct:CGPoint
+Math	Android/jni/Classes/Math/Functions.cpp	/^namespace Math{$/;"	n	file:
+TO_DEG	Android/jni/Classes/Math/Functions.cpp	/^const float TO_DEG = 180.f \/ 3.1415926535897932384626433832795f;$/;"	m	namespace:Math	file:
+TO_RAD	Android/jni/Classes/Math/Functions.cpp	/^const float TO_RAD = 3.1415926535897932384626433832795f \/ 180.f;$/;"	m	namespace:Math	file:
+abs	Android/jni/Classes/Math/Functions.cpp	/^float abs( float a ){$/;"	f	namespace:Math
+acos	Android/jni/Classes/Math/Functions.cpp	/^float acos( float a ){$/;"	f	namespace:Math
+asin	Android/jni/Classes/Math/Functions.cpp	/^float asin( float a ){$/;"	f	namespace:Math
+atan	Android/jni/Classes/Math/Functions.cpp	/^float atan( float a ){$/;"	f	namespace:Math
+atan2	Android/jni/Classes/Math/Functions.cpp	/^float atan2( float y, float x ){$/;"	f	namespace:Math
+cos	Android/jni/Classes/Math/Functions.cpp	/^float cos( float a ){$/;"	f	namespace:Math
+getRand	Android/jni/Classes/Math/Functions.cpp	/^int getRand( int min, int max )$/;"	f	namespace:Math
+initRand	Android/jni/Classes/Math/Functions.cpp	/^void initRand()$/;"	f	namespace:Math
+isSpecial	Android/jni/Classes/Math/Functions.cpp	/^bool isSpecial( float a ){$/;"	f	namespace:Math
+log10	Android/jni/Classes/Math/Functions.cpp	/^float log10( float a ){$/;"	f	namespace:Math
+log2	Android/jni/Classes/Math/Functions.cpp	/^float log2( float a ){$/;"	f	namespace:Math
+max	Android/jni/Classes/Math/Functions.cpp	/^float max( float a, float b ){$/;"	f	namespace:Math
+min	Android/jni/Classes/Math/Functions.cpp	/^float min( float a, float b ){$/;"	f	namespace:Math
+pow	Android/jni/Classes/Math/Functions.cpp	/^float pow( float a, float b ){$/;"	f	namespace:Math
+sin	Android/jni/Classes/Math/Functions.cpp	/^float sin( float a ){$/;"	f	namespace:Math
+sqrt	Android/jni/Classes/Math/Functions.cpp	/^float sqrt( float a ){$/;"	f	namespace:Math
+tan	Android/jni/Classes/Math/Functions.cpp	/^float tan( float a ){$/;"	f	namespace:Math
+EPSILON	Android/jni/Classes/Math/Functions.h	/^const float EPSILON = 0.00000011920928955078125f; \/\/floatの限界精度(1\/2^23)$/;"	m	namespace:Math
+FLOAT_MAX	Android/jni/Classes/Math/Functions.h	/^const float FLOAT_MAX = 1.7014117331926442990585209174226e+38; \/\/floatの最大値((2^24-1)\/2^23 * 2^126 )$/;"	m	namespace:Math
+Math	Android/jni/Classes/Math/Functions.h	/^namespace Math{$/;"	n
+Math	Android/jni/Classes/Math/Vector2.cpp	/^namespace Math{$/;"	n	file:
+Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2( const Vector2& a ) :$/;"	f	class:Math::Vector2
+Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2( float a ) : x( a ), y( a ){$/;"	f	class:Math::Vector2
+Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2( float aX, float aY ) :$/;"	f	class:Math::Vector2
+Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2(){$/;"	f	class:Math::Vector2
+dot	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::dot( const Vector2& a ) const {$/;"	f	class:Math::Vector2
+length	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::length() const {$/;"	f	class:Math::Vector2
+madd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::madd( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
+max	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::max( const Vector2& a ){$/;"	f	class:Math::Vector2
+min	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::min( const Vector2& a ){$/;"	f	class:Math::Vector2
+msub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::msub( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
+normalize	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::normalize(){$/;"	f	class:Math::Vector2
+operator !=	Android/jni/Classes/Math/Vector2.cpp	/^	bool Vector2::operator!=( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator *	Android/jni/Classes/Math/Vector2.cpp	/^Vector2 Vector2::operator * (float f) const {$/;"	f	class:Math::Vector2
+operator *=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator*=( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator *=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator*=( float a ){$/;"	f	class:Math::Vector2
+operator +	Android/jni/Classes/Math/Vector2.cpp	/^Vector2 Vector2::operator + (const Vector2& a) const {$/;"	f	class:Math::Vector2
+operator +=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator+=( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator +=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator+=( float a ){$/;"	f	class:Math::Vector2
+operator -	Android/jni/Classes/Math/Vector2.cpp	/^Vector2 Vector2::operator - (const Vector2& a) const {$/;"	f	class:Math::Vector2
+operator -=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator-=( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator -=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator-=( float a ){$/;"	f	class:Math::Vector2
+operator =	Android/jni/Classes/Math/Vector2.cpp	/^Vector2& Vector2::operator=( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator =	Android/jni/Classes/Math/Vector2.cpp	/^Vector2& Vector2::operator=( float a ){$/;"	f	class:Math::Vector2
+operator ==	Android/jni/Classes/Math/Vector2.cpp	/^bool Vector2::operator==( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator []	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::operator[]( int i ) const {$/;"	f	class:Math::Vector2
+operator []	Android/jni/Classes/Math/Vector2.cpp	/^float& Vector2::operator[]( int i ){$/;"	f	class:Math::Vector2
+set	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::set( float aX, float aY ){$/;"	f	class:Math::Vector2
+setAdd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setAdd( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
+setAdd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setAdd( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
+setMadd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMadd( const Vector2& a, const Vector2& b, float c ){$/;"	f	class:Math::Vector2
+setMax	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMax( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
+setMin	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMin( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
+setMsub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMsub( const Vector2& a, const Vector2& b, float c ){$/;"	f	class:Math::Vector2
+setMul	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMul( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
+setMul	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMul( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
+setNeg	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setNeg( const Vector2& a ){$/;"	f	class:Math::Vector2
+setSub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setSub( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
+setSub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setSub( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
+squareLength	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::squareLength() const {$/;"	f	class:Math::Vector2
+Math	Android/jni/Classes/Math/Vector2.h	/^namespace Math{$/;"	n
+Vector2	Android/jni/Classes/Math/Vector2.h	/^class Vector2{$/;"	c	namespace:Math
+x	Android/jni/Classes/Math/Vector2.h	/^	float x, y;$/;"	m	class:Math::Vector2
+y	Android/jni/Classes/Math/Vector2.h	/^	float x, y;$/;"	m	class:Math::Vector2
+Math	Android/jni/Classes/Math/Vector3.h	/^namespace Math {$/;"	n
+Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3() : x(0), y(0), z(0) {}$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3(const Vector3& v) : x(v.x), y(v.y), z(v.z) {}$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3(float f) : x(f), y(f), z(f) {}$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^class Vector3$/;"	c	namespace:Math
+init	Android/jni/Classes/Math/Vector3.h	/^	void init()		{ x = y = z = 0; }$/;"	f	class:Math::Vector3
+operator +	Android/jni/Classes/Math/Vector3.h	/^	Vector3 operator + (const Vector3& v) const	{ return Math::Vector3(x + v.x, y + v.y, z + v.z); }$/;"	f	class:Math::Vector3
+operator +=	Android/jni/Classes/Math/Vector3.h	/^	void operator += (const Vector3& v)			{ x += v.x; y += v.y; z += v.z; }$/;"	f	class:Math::Vector3
+operator -	Android/jni/Classes/Math/Vector3.h	/^	Vector3 operator - (const Vector3& v) const { return Math::Vector3(x - v.x, y - v.y, z - v.z); }$/;"	f	class:Math::Vector3
+operator =	Android/jni/Classes/Math/Vector3.h	/^	Vector3& operator = (const Vector3& v)		{ x = v.x; y = v.y; z = v.z; return *this; }$/;"	f	class:Math::Vector3
+operator =	Android/jni/Classes/Math/Vector3.h	/^	Vector3& operator = (float f)				{ x = y = z = f; return *this; }$/;"	f	class:Math::Vector3
+pad	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+x	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+y	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+z	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+MainRoutine	Android/jni/Classes/Routine/MainRoutine.cpp	/^MainRoutine::MainRoutine()$/;"	f	class:MainRoutine
+calc	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::calc()$/;"	f	class:MainRoutine
+draw	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::draw()$/;"	f	class:MainRoutine
+getCurrentUnit	Android/jni/Classes/Routine/MainRoutine.cpp	/^Unit* MainRoutine::getCurrentUnit()$/;"	f	class:MainRoutine
+pInstance	Android/jni/Classes/Routine/MainRoutine.cpp	/^\/*static*\/ MainRoutine* MainRoutine::pInstance = NULL;$/;"	m	class:MainRoutine	file:
+singleton	Android/jni/Classes/Routine/MainRoutine.cpp	/^\/*static*\/ MainRoutine* MainRoutine::singleton()$/;"	f	class:MainRoutine
+touchedBegin	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::touchedBegin(CGPoint tp)$/;"	f	class:MainRoutine
+touchedEnded	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::touchedEnded(CGPoint tp)$/;"	f	class:MainRoutine
+touchedMoved	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::touchedMoved(CGPoint tp)$/;"	f	class:MainRoutine
+~MainRoutine	Android/jni/Classes/Routine/MainRoutine.cpp	/^MainRoutine::~MainRoutine()$/;"	f	class:MainRoutine
+MainRoutine	Android/jni/Classes/Routine/MainRoutine.h	/^class MainRoutine$/;"	c
+_currentUnit	Android/jni/Classes/Routine/MainRoutine.h	/^	Unit* _currentUnit;$/;"	m	class:MainRoutine
+pInstance	Android/jni/Classes/Routine/MainRoutine.h	/^	static MainRoutine* pInstance;$/;"	m	class:MainRoutine
+TITLE_LOGO_POS_Y	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_LOGO_POS_Y /;"	d	file:
+TITLE_MENUBAR_POS_Y	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_MENUBAR_POS_Y /;"	d	file:
+TITLE_MENUINFO_POS_X	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_MENUINFO_POS_X /;"	d	file:
+TITLE_SCORE_POS_X	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_SCORE_POS_X /;"	d	file:
+TITLE_SCORE_POS_Y	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_SCORE_POS_Y /;"	d	file:
+TITLE_TEAMLOGO_POS_Y	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_TEAMLOGO_POS_Y /;"	d	file:
+TitleUnit	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^TitleUnit::TitleUnit()$/;"	f	class:TitleUnit
+calc	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::calc()$/;"	f	class:TitleUnit
+draw	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::draw()$/;"	f	class:TitleUnit
+touchedBegin	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::touchedBegin(CGPoint tp)$/;"	f	class:TitleUnit
+touchedEnded	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::touchedEnded(CGPoint tp)$/;"	f	class:TitleUnit
+touchedMoved	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::touchedMoved(CGPoint tp)$/;"	f	class:TitleUnit
+~TitleUnit	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^TitleUnit::~TitleUnit()$/;"	f	class:TitleUnit
+TitleUnit	Android/jni/Classes/Routine/Title/TitleUnit.h	/^class TitleUnit : public Unit$/;"	c
+_bestScore	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	unsigned int 	_bestScore;$/;"	m	class:TitleUnit
+_coinModel	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Graphics::Model*	_coinModel;$/;"	m	class:TitleUnit
+_spr_bestscore	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_bestscore;$/;"	m	class:TitleUnit
+_spr_logo	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite* 	_spr_logo;$/;"	m	class:TitleUnit
+_spr_menubar	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_menubar;$/;"	m	class:TitleUnit
+_spr_scoreNumber	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_scoreNumber;$/;"	m	class:TitleUnit
+_spr_teamlogo	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_teamlogo;$/;"	m	class:TitleUnit
+COIN_MODEL_HEIGHT	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define COIN_MODEL_HEIGHT	/;"	d	file:
+COIN_TEX_SIZE	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define COIN_TEX_SIZE /;"	d	file:
+UI_GameMain	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^UI_GameMain::UI_GameMain()$/;"	f	class:UI_GameMain
+makeCoinModel	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^\/*static*\/ Graphics::Model* UI_GameMain::makeCoinModel(const char* imageFileName, int divine)$/;"	f	class:UI_GameMain
+~UI_GameMain	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^UI_GameMain::~UI_GameMain()$/;"	f	class:UI_GameMain
+UI_GameMain	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^class UI_GameMain$/;"	c	namespace:UserInterface
+UserInterface	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^namespace UserInterface {$/;"	n
+Unit	Android/jni/Classes/Routine/Unit.cpp	/^Unit::Unit()$/;"	f	class:Unit
+calc	Android/jni/Classes/Routine/Unit.cpp	/^void Unit::calc()$/;"	f	class:Unit
+draw	Android/jni/Classes/Routine/Unit.cpp	/^void Unit::draw()$/;"	f	class:Unit
+~Unit	Android/jni/Classes/Routine/Unit.cpp	/^Unit::~Unit()$/;"	f	class:Unit
+UNIT_NONE	Android/jni/Classes/Routine/Unit.h	/^	UNIT_NONE = 0,$/;"	e	enum:UnitId
+UNIT_TITLE	Android/jni/Classes/Routine/Unit.h	/^	UNIT_TITLE,$/;"	e	enum:UnitId
+Unit	Android/jni/Classes/Routine/Unit.h	/^class Unit$/;"	c
+UnitId	Android/jni/Classes/Routine/Unit.h	/^enum UnitId{$/;"	g
+touchedBegin	Android/jni/Classes/Routine/Unit.h	/^	void touchedBegin(CGPoint tp) {}$/;"	f	class:Unit
+touchedEnded	Android/jni/Classes/Routine/Unit.h	/^	void touchedEnded(CGPoint tp) {}$/;"	f	class:Unit
+touchedMoved	Android/jni/Classes/Routine/Unit.h	/^	void touchedMoved(CGPoint tp) {}$/;"	f	class:Unit
+ViewController	Android/jni/Classes/ViewController.cpp	/^ViewController::ViewController(engine* engine)$/;"	f	class:ViewController
+drawFrame	Android/jni/Classes/ViewController.cpp	/^void ViewController::drawFrame()$/;"	f	class:ViewController
+setFrameBuffer	Android/jni/Classes/ViewController.cpp	/^void ViewController::setFrameBuffer()$/;"	f	class:ViewController
+touchesBegan	Android/jni/Classes/ViewController.cpp	/^void ViewController::touchesBegan(CGPoint tp)$/;"	f	class:ViewController
+touchesEnded	Android/jni/Classes/ViewController.cpp	/^void ViewController::touchesEnded(CGPoint tp)$/;"	f	class:ViewController
+touchesMoved	Android/jni/Classes/ViewController.cpp	/^void ViewController::touchesMoved(CGPoint tp)$/;"	f	class:ViewController
+ViewController	Android/jni/Classes/ViewController.h	/^class ViewController$/;"	c
+count_	Android/jni/Classes/ViewController.h	/^	int count_;$/;"	m	class:ViewController
+engine_	Android/jni/Classes/ViewController.h	/^	engine& engine_;$/;"	m	class:ViewController
+accelerometerSensor	Android/jni/Engine.h	/^    const ASensor* accelerometerSensor;$/;"	m	struct:engine
+angle	Android/jni/Engine.h	/^    float angle;$/;"	m	struct:saved_state
+animating	Android/jni/Engine.h	/^    int animating;$/;"	m	struct:engine
+app	Android/jni/Engine.h	/^    struct android_app* app;$/;"	m	struct:engine	typeref:struct:engine::android_app
+assetManager	Android/jni/Engine.h	/^    AAssetManager* assetManager;$/;"	m	struct:engine
+context	Android/jni/Engine.h	/^    EGLContext context;$/;"	m	struct:engine
+display	Android/jni/Engine.h	/^    EGLDisplay display;$/;"	m	struct:engine
+engine	Android/jni/Engine.h	/^struct engine {$/;"	s
+gyroscopeSensor	Android/jni/Engine.h	/^    const ASensor* gyroscopeSensor;$/;"	m	struct:engine
+height	Android/jni/Engine.h	/^    int32_t height;$/;"	m	struct:engine
+pViewController	Android/jni/Engine.h	/^    ViewController* pViewController;$/;"	m	struct:engine
+saved_state	Android/jni/Engine.h	/^struct saved_state {$/;"	s
+sensorEventQueue	Android/jni/Engine.h	/^    ASensorEventQueue* sensorEventQueue;$/;"	m	struct:engine
+sensorManager	Android/jni/Engine.h	/^    ASensorManager* sensorManager;$/;"	m	struct:engine
+state	Android/jni/Engine.h	/^    struct saved_state state;$/;"	m	struct:engine	typeref:struct:engine::saved_state
+surface	Android/jni/Engine.h	/^    EGLSurface surface;$/;"	m	struct:engine
+touched	Android/jni/Engine.h	/^    bool touched;$/;"	m	struct:engine
+width	Android/jni/Engine.h	/^    int32_t width;$/;"	m	struct:engine
+x	Android/jni/Engine.h	/^    int32_t x;$/;"	m	struct:saved_state
+y	Android/jni/Engine.h	/^    int32_t y;$/;"	m	struct:saved_state
+M	Android/jni/glu.cpp	/^#define M(/;"	d	file:
+M	Android/jni/glu.cpp	/^#undef M$/;"	d	file:
+PI	Android/jni/glu.cpp	/^#define PI /;"	d	file:
+PI	Android/jni/glu.cpp	/^#undef PI$/;"	d	file:
+gluLookAt	Android/jni/glu.cpp	/^void gluLookAt(GLfloat eyex, GLfloat eyey, GLfloat eyez, GLfloat centerx,$/;"	f
+gluPerspective	Android/jni/glu.cpp	/^void gluPerspective(GLfloat fovy, GLfloat aspect, GLfloat zNear, GLfloat zFar) {$/;"	f
+_GLU_H_	Android/jni/include/glu.h	/^#define _GLU_H_$/;"	d
+LOGE	Android/jni/include/pch.h	/^#define LOGE(/;"	d
+LOGI	Android/jni/include/pch.h	/^#define LOGI(/;"	d
+LOGW	Android/jni/include/pch.h	/^#define LOGW(/;"	d
+SAFE_DELETE	Android/jni/include/pch.h	/^#define SAFE_DELETE(/;"	d
+TAG	Android/jni/include/pch.h	/^#define TAG /;"	d
+PNG_AFTER_IDAT	Android/jni/include/png.h	/^#define PNG_AFTER_IDAT /;"	d
+PNG_ALL_FILTERS	Android/jni/include/png.h	/^#define PNG_ALL_FILTERS /;"	d
+PNG_ALL_MNG_FEATURES	Android/jni/include/png.h	/^#define PNG_ALL_MNG_FEATURES /;"	d
+PNG_ALPHA_ASSOCIATED	Android/jni/include/png.h	/^#define PNG_ALPHA_ASSOCIATED /;"	d
+PNG_ALPHA_BROKEN	Android/jni/include/png.h	/^#define PNG_ALPHA_BROKEN /;"	d
+PNG_ALPHA_OPTIMIZED	Android/jni/include/png.h	/^#define PNG_ALPHA_OPTIMIZED /;"	d
+PNG_ALPHA_PNG	Android/jni/include/png.h	/^#define PNG_ALPHA_PNG /;"	d
+PNG_ALPHA_PREMULTIPLIED	Android/jni/include/png.h	/^#define PNG_ALPHA_PREMULTIPLIED /;"	d
+PNG_ALPHA_STANDARD	Android/jni/include/png.h	/^#define PNG_ALPHA_STANDARD /;"	d
+PNG_BACKGROUND_GAMMA_FILE	Android/jni/include/png.h	/^#  define PNG_BACKGROUND_GAMMA_FILE /;"	d
+PNG_BACKGROUND_GAMMA_SCREEN	Android/jni/include/png.h	/^#  define PNG_BACKGROUND_GAMMA_SCREEN /;"	d
+PNG_BACKGROUND_GAMMA_UNIQUE	Android/jni/include/png.h	/^#  define PNG_BACKGROUND_GAMMA_UNIQUE /;"	d
+PNG_BACKGROUND_GAMMA_UNKNOWN	Android/jni/include/png.h	/^#  define PNG_BACKGROUND_GAMMA_UNKNOWN /;"	d
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(int, *png_user_chunk_ptr, (png_structp,$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(png_voidp, *png_malloc_ptr, (png_structp,$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_error_ptr, (png_structp, png_const_charp));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_flush_ptr, (png_structp));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_free_ptr, (png_structp, png_voidp));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_progressive_end_ptr, (png_structp, png_infop));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_progressive_info_ptr, (png_structp, png_infop));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_progressive_row_ptr, (png_structp, png_bytep,$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_read_status_ptr, (png_structp, png_uint_32,$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_rw_ptr, (png_structp, png_bytep, png_size_t));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_unknown_chunk_ptr, (png_structp));$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_user_transform_ptr, (png_structp, png_row_infop,$/;"	t
+PNG_CALLBACK	Android/jni/include/png.h	/^typedef PNG_CALLBACK(void, *png_write_status_ptr, (png_structp, png_uint_32,$/;"	t
+PNG_COLOR_MASK_ALPHA	Android/jni/include/png.h	/^#define PNG_COLOR_MASK_ALPHA /;"	d
+PNG_COLOR_MASK_COLOR	Android/jni/include/png.h	/^#define PNG_COLOR_MASK_COLOR /;"	d
+PNG_COLOR_MASK_PALETTE	Android/jni/include/png.h	/^#define PNG_COLOR_MASK_PALETTE /;"	d
+PNG_COLOR_TYPE_GA	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_GA /;"	d
+PNG_COLOR_TYPE_GRAY	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_GRAY /;"	d
+PNG_COLOR_TYPE_GRAY_ALPHA	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_GRAY_ALPHA /;"	d
+PNG_COLOR_TYPE_PALETTE	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_PALETTE /;"	d
+PNG_COLOR_TYPE_RGB	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_RGB /;"	d
+PNG_COLOR_TYPE_RGBA	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_RGBA /;"	d
+PNG_COLOR_TYPE_RGB_ALPHA	Android/jni/include/png.h	/^#define PNG_COLOR_TYPE_RGB_ALPHA /;"	d
+PNG_COL_FROM_PASS_COL	Android/jni/include/png.h	/^#define PNG_COL_FROM_PASS_COL(/;"	d
+PNG_COL_IN_INTERLACE_PASS	Android/jni/include/png.h	/^#define PNG_COL_IN_INTERLACE_PASS(/;"	d
+PNG_COMPRESSION_TYPE_BASE	Android/jni/include/png.h	/^#define PNG_COMPRESSION_TYPE_BASE /;"	d
+PNG_COMPRESSION_TYPE_DEFAULT	Android/jni/include/png.h	/^#define PNG_COMPRESSION_TYPE_DEFAULT /;"	d
+PNG_CRC_DEFAULT	Android/jni/include/png.h	/^#define PNG_CRC_DEFAULT /;"	d
+PNG_CRC_ERROR_QUIT	Android/jni/include/png.h	/^#define PNG_CRC_ERROR_QUIT /;"	d
+PNG_CRC_NO_CHANGE	Android/jni/include/png.h	/^#define PNG_CRC_NO_CHANGE /;"	d
+PNG_CRC_QUIET_USE	Android/jni/include/png.h	/^#define PNG_CRC_QUIET_USE /;"	d
+PNG_CRC_WARN_DISCARD	Android/jni/include/png.h	/^#define PNG_CRC_WARN_DISCARD /;"	d
+PNG_CRC_WARN_USE	Android/jni/include/png.h	/^#define PNG_CRC_WARN_USE /;"	d
+PNG_DEFAULT_sRGB	Android/jni/include/png.h	/^#define PNG_DEFAULT_sRGB /;"	d
+PNG_DESTROY_WILL_FREE_DATA	Android/jni/include/png.h	/^#define PNG_DESTROY_WILL_FREE_DATA /;"	d
+PNG_EQUATION_ARBITRARY	Android/jni/include/png.h	/^#define PNG_EQUATION_ARBITRARY /;"	d
+PNG_EQUATION_BASE_E	Android/jni/include/png.h	/^#define PNG_EQUATION_BASE_E /;"	d
+PNG_EQUATION_HYPERBOLIC	Android/jni/include/png.h	/^#define PNG_EQUATION_HYPERBOLIC /;"	d
+PNG_EQUATION_LAST	Android/jni/include/png.h	/^#define PNG_EQUATION_LAST /;"	d
+PNG_EQUATION_LINEAR	Android/jni/include/png.h	/^#define PNG_EQUATION_LINEAR /;"	d
+PNG_ERROR_ACTION_ERROR	Android/jni/include/png.h	/^#define PNG_ERROR_ACTION_ERROR /;"	d
+PNG_ERROR_ACTION_NONE	Android/jni/include/png.h	/^#define PNG_ERROR_ACTION_NONE /;"	d
+PNG_ERROR_ACTION_WARN	Android/jni/include/png.h	/^#define PNG_ERROR_ACTION_WARN /;"	d
+PNG_FILLER_AFTER	Android/jni/include/png.h	/^#  define PNG_FILLER_AFTER /;"	d
+PNG_FILLER_BEFORE	Android/jni/include/png.h	/^#  define PNG_FILLER_BEFORE /;"	d
+PNG_FILTER_AVG	Android/jni/include/png.h	/^#define PNG_FILTER_AVG /;"	d
+PNG_FILTER_HEURISTIC_DEFAULT	Android/jni/include/png.h	/^#define PNG_FILTER_HEURISTIC_DEFAULT /;"	d
+PNG_FILTER_HEURISTIC_LAST	Android/jni/include/png.h	/^#define PNG_FILTER_HEURISTIC_LAST /;"	d
+PNG_FILTER_HEURISTIC_UNWEIGHTED	Android/jni/include/png.h	/^#define PNG_FILTER_HEURISTIC_UNWEIGHTED /;"	d
+PNG_FILTER_HEURISTIC_WEIGHTED	Android/jni/include/png.h	/^#define PNG_FILTER_HEURISTIC_WEIGHTED /;"	d
+PNG_FILTER_NONE	Android/jni/include/png.h	/^#define PNG_FILTER_NONE /;"	d
+PNG_FILTER_PAETH	Android/jni/include/png.h	/^#define PNG_FILTER_PAETH /;"	d
+PNG_FILTER_SUB	Android/jni/include/png.h	/^#define PNG_FILTER_SUB /;"	d
+PNG_FILTER_TYPE_BASE	Android/jni/include/png.h	/^#define PNG_FILTER_TYPE_BASE /;"	d
+PNG_FILTER_TYPE_DEFAULT	Android/jni/include/png.h	/^#define PNG_FILTER_TYPE_DEFAULT /;"	d
+PNG_FILTER_UP	Android/jni/include/png.h	/^#define PNG_FILTER_UP /;"	d
+PNG_FILTER_VALUE_AVG	Android/jni/include/png.h	/^#define PNG_FILTER_VALUE_AVG /;"	d
+PNG_FILTER_VALUE_LAST	Android/jni/include/png.h	/^#define PNG_FILTER_VALUE_LAST /;"	d
+PNG_FILTER_VALUE_NONE	Android/jni/include/png.h	/^#define PNG_FILTER_VALUE_NONE /;"	d
+PNG_FILTER_VALUE_PAETH	Android/jni/include/png.h	/^#define PNG_FILTER_VALUE_PAETH /;"	d
+PNG_FILTER_VALUE_SUB	Android/jni/include/png.h	/^#define PNG_FILTER_VALUE_SUB /;"	d
+PNG_FILTER_VALUE_UP	Android/jni/include/png.h	/^#define PNG_FILTER_VALUE_UP /;"	d
+PNG_FLAG_MNG_EMPTY_PLTE	Android/jni/include/png.h	/^#define PNG_FLAG_MNG_EMPTY_PLTE /;"	d
+PNG_FLAG_MNG_FILTER_64	Android/jni/include/png.h	/^#define PNG_FLAG_MNG_FILTER_64 /;"	d
+PNG_FP_1	Android/jni/include/png.h	/^#define PNG_FP_1 /;"	d
+PNG_FP_HALF	Android/jni/include/png.h	/^#define PNG_FP_HALF /;"	d
+PNG_FP_MAX	Android/jni/include/png.h	/^#define PNG_FP_MAX /;"	d
+PNG_FP_MIN	Android/jni/include/png.h	/^#define PNG_FP_MIN /;"	d
+PNG_FREE_ALL	Android/jni/include/png.h	/^#define PNG_FREE_ALL /;"	d
+PNG_FREE_HIST	Android/jni/include/png.h	/^#define PNG_FREE_HIST /;"	d
+PNG_FREE_ICCP	Android/jni/include/png.h	/^#define PNG_FREE_ICCP /;"	d
+PNG_FREE_LIST	Android/jni/include/png.h	/^#define PNG_FREE_LIST /;"	d
+PNG_FREE_MUL	Android/jni/include/png.h	/^#define PNG_FREE_MUL /;"	d
+PNG_FREE_PCAL	Android/jni/include/png.h	/^#define PNG_FREE_PCAL /;"	d
+PNG_FREE_PLTE	Android/jni/include/png.h	/^#define PNG_FREE_PLTE /;"	d
+PNG_FREE_ROWS	Android/jni/include/png.h	/^#define PNG_FREE_ROWS /;"	d
+PNG_FREE_SCAL	Android/jni/include/png.h	/^#define PNG_FREE_SCAL /;"	d
+PNG_FREE_SPLT	Android/jni/include/png.h	/^#define PNG_FREE_SPLT /;"	d
+PNG_FREE_TEXT	Android/jni/include/png.h	/^#define PNG_FREE_TEXT /;"	d
+PNG_FREE_TRNS	Android/jni/include/png.h	/^#define PNG_FREE_TRNS /;"	d
+PNG_FREE_UNKN	Android/jni/include/png.h	/^#define PNG_FREE_UNKN /;"	d
+PNG_GAMMA_LINEAR	Android/jni/include/png.h	/^#define PNG_GAMMA_LINEAR /;"	d
+PNG_GAMMA_MAC_18	Android/jni/include/png.h	/^#define PNG_GAMMA_MAC_18 /;"	d
+PNG_GAMMA_THRESHOLD	Android/jni/include/png.h	/^#define PNG_GAMMA_THRESHOLD /;"	d
+PNG_GAMMA_sRGB	Android/jni/include/png.h	/^#define PNG_GAMMA_sRGB /;"	d
+PNG_H	Android/jni/include/png.h	/^#define PNG_H$/;"	d
+PNG_HANDLE_CHUNK_ALWAYS	Android/jni/include/png.h	/^#define PNG_HANDLE_CHUNK_ALWAYS /;"	d
+PNG_HANDLE_CHUNK_AS_DEFAULT	Android/jni/include/png.h	/^#define PNG_HANDLE_CHUNK_AS_DEFAULT /;"	d
+PNG_HANDLE_CHUNK_IF_SAFE	Android/jni/include/png.h	/^#define PNG_HANDLE_CHUNK_IF_SAFE /;"	d
+PNG_HANDLE_CHUNK_NEVER	Android/jni/include/png.h	/^#define PNG_HANDLE_CHUNK_NEVER /;"	d
+PNG_HAVE_IHDR	Android/jni/include/png.h	/^#define PNG_HAVE_IHDR /;"	d
+PNG_HAVE_PLTE	Android/jni/include/png.h	/^#define PNG_HAVE_PLTE /;"	d
+PNG_HEADER_VERSION_STRING	Android/jni/include/png.h	/^#define PNG_HEADER_VERSION_STRING /;"	d
+PNG_INFO_IDAT	Android/jni/include/png.h	/^#define PNG_INFO_IDAT /;"	d
+PNG_INFO_PLTE	Android/jni/include/png.h	/^#define PNG_INFO_PLTE /;"	d
+PNG_INFO_bKGD	Android/jni/include/png.h	/^#define PNG_INFO_bKGD /;"	d
+PNG_INFO_cHRM	Android/jni/include/png.h	/^#define PNG_INFO_cHRM /;"	d
+PNG_INFO_gAMA	Android/jni/include/png.h	/^#define PNG_INFO_gAMA /;"	d
+PNG_INFO_hIST	Android/jni/include/png.h	/^#define PNG_INFO_hIST /;"	d
+PNG_INFO_iCCP	Android/jni/include/png.h	/^#define PNG_INFO_iCCP /;"	d
+PNG_INFO_oFFs	Android/jni/include/png.h	/^#define PNG_INFO_oFFs /;"	d
+PNG_INFO_pCAL	Android/jni/include/png.h	/^#define PNG_INFO_pCAL /;"	d
+PNG_INFO_pHYs	Android/jni/include/png.h	/^#define PNG_INFO_pHYs /;"	d
+PNG_INFO_sBIT	Android/jni/include/png.h	/^#define PNG_INFO_sBIT /;"	d
+PNG_INFO_sCAL	Android/jni/include/png.h	/^#define PNG_INFO_sCAL /;"	d
+PNG_INFO_sPLT	Android/jni/include/png.h	/^#define PNG_INFO_sPLT /;"	d
+PNG_INFO_sRGB	Android/jni/include/png.h	/^#define PNG_INFO_sRGB /;"	d
+PNG_INFO_tIME	Android/jni/include/png.h	/^#define PNG_INFO_tIME /;"	d
+PNG_INFO_tRNS	Android/jni/include/png.h	/^#define PNG_INFO_tRNS /;"	d
+PNG_INTERLACE_ADAM7	Android/jni/include/png.h	/^#define PNG_INTERLACE_ADAM7 /;"	d
+PNG_INTERLACE_ADAM7_PASSES	Android/jni/include/png.h	/^#define PNG_INTERLACE_ADAM7_PASSES /;"	d
+PNG_INTERLACE_LAST	Android/jni/include/png.h	/^#define PNG_INTERLACE_LAST /;"	d
+PNG_INTERLACE_NONE	Android/jni/include/png.h	/^#define PNG_INTERLACE_NONE /;"	d
+PNG_INTRAPIXEL_DIFFERENCING	Android/jni/include/png.h	/^#define PNG_INTRAPIXEL_DIFFERENCING /;"	d
+PNG_IO_CHUNK_CRC	Android/jni/include/png.h	/^#  define PNG_IO_CHUNK_CRC /;"	d
+PNG_IO_CHUNK_DATA	Android/jni/include/png.h	/^#  define PNG_IO_CHUNK_DATA /;"	d
+PNG_IO_CHUNK_HDR	Android/jni/include/png.h	/^#  define PNG_IO_CHUNK_HDR /;"	d
+PNG_IO_MASK_LOC	Android/jni/include/png.h	/^#  define PNG_IO_MASK_LOC /;"	d
+PNG_IO_MASK_OP	Android/jni/include/png.h	/^#  define PNG_IO_MASK_OP /;"	d
+PNG_IO_NONE	Android/jni/include/png.h	/^#  define PNG_IO_NONE /;"	d
+PNG_IO_READING	Android/jni/include/png.h	/^#  define PNG_IO_READING /;"	d
+PNG_IO_SIGNATURE	Android/jni/include/png.h	/^#  define PNG_IO_SIGNATURE /;"	d
+PNG_IO_WRITING	Android/jni/include/png.h	/^#  define PNG_IO_WRITING /;"	d
+PNG_ITXT_COMPRESSION_NONE	Android/jni/include/png.h	/^#define PNG_ITXT_COMPRESSION_NONE /;"	d
+PNG_ITXT_COMPRESSION_zTXt	Android/jni/include/png.h	/^#define PNG_ITXT_COMPRESSION_zTXt /;"	d
+PNG_KEYWORD_MAX_LENGTH	Android/jni/include/png.h	/^#define PNG_KEYWORD_MAX_LENGTH /;"	d
+PNG_LIBPNG_BUILD_ALPHA	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_ALPHA /;"	d
+PNG_LIBPNG_BUILD_BASE_TYPE	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_BASE_TYPE /;"	d
+PNG_LIBPNG_BUILD_BETA	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_BETA /;"	d
+PNG_LIBPNG_BUILD_PATCH	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_PATCH /;"	d
+PNG_LIBPNG_BUILD_PRIVATE	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_PRIVATE /;"	d
+PNG_LIBPNG_BUILD_RC	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_RC /;"	d
+PNG_LIBPNG_BUILD_RELEASE_STATUS_MASK	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_RELEASE_STATUS_MASK /;"	d
+PNG_LIBPNG_BUILD_SPECIAL	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_SPECIAL /;"	d
+PNG_LIBPNG_BUILD_STABLE	Android/jni/include/png.h	/^#define PNG_LIBPNG_BUILD_STABLE /;"	d
+PNG_LIBPNG_BUILD_TYPE	Android/jni/include/png.h	/^#    define PNG_LIBPNG_BUILD_TYPE /;"	d
+PNG_LIBPNG_BUILD_TYPE	Android/jni/include/png.h	/^#  define PNG_LIBPNG_BUILD_TYPE /;"	d
+PNG_LIBPNG_VER	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER /;"	d
+PNG_LIBPNG_VER_BUILD	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_BUILD /;"	d
+PNG_LIBPNG_VER_DLLNUM	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_DLLNUM /;"	d
+PNG_LIBPNG_VER_MAJOR	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_MAJOR /;"	d
+PNG_LIBPNG_VER_MINOR	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_MINOR /;"	d
+PNG_LIBPNG_VER_RELEASE	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_RELEASE /;"	d
+PNG_LIBPNG_VER_SONUM	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_SONUM /;"	d
+PNG_LIBPNG_VER_STRING	Android/jni/include/png.h	/^#define PNG_LIBPNG_VER_STRING /;"	d
+PNG_MAX_PALETTE_LENGTH	Android/jni/include/png.h	/^#define PNG_MAX_PALETTE_LENGTH /;"	d
+PNG_NO_FILTERS	Android/jni/include/png.h	/^#define PNG_NO_FILTERS /;"	d
+PNG_OFFSET_LAST	Android/jni/include/png.h	/^#define PNG_OFFSET_LAST /;"	d
+PNG_OFFSET_MICROMETER	Android/jni/include/png.h	/^#define PNG_OFFSET_MICROMETER /;"	d
+PNG_OFFSET_PIXEL	Android/jni/include/png.h	/^#define PNG_OFFSET_PIXEL /;"	d
+PNG_PASS_COLS	Android/jni/include/png.h	/^#define PNG_PASS_COLS(/;"	d
+PNG_PASS_COL_OFFSET	Android/jni/include/png.h	/^#define PNG_PASS_COL_OFFSET(/;"	d
+PNG_PASS_COL_SHIFT	Android/jni/include/png.h	/^#define PNG_PASS_COL_SHIFT(/;"	d
+PNG_PASS_MASK	Android/jni/include/png.h	/^#define PNG_PASS_MASK(/;"	d
+PNG_PASS_ROWS	Android/jni/include/png.h	/^#define PNG_PASS_ROWS(/;"	d
+PNG_PASS_ROW_OFFSET	Android/jni/include/png.h	/^#define PNG_PASS_ROW_OFFSET(/;"	d
+PNG_PASS_ROW_SHIFT	Android/jni/include/png.h	/^#define PNG_PASS_ROW_SHIFT(/;"	d
+PNG_PASS_START_COL	Android/jni/include/png.h	/^#define PNG_PASS_START_COL(/;"	d
+PNG_PASS_START_ROW	Android/jni/include/png.h	/^#define PNG_PASS_START_ROW(/;"	d
+PNG_READ_16_TO_8	Android/jni/include/png.h	/^#define PNG_READ_16_TO_8 /;"	d
+PNG_RESOLUTION_LAST	Android/jni/include/png.h	/^#define PNG_RESOLUTION_LAST /;"	d
+PNG_RESOLUTION_METER	Android/jni/include/png.h	/^#define PNG_RESOLUTION_METER /;"	d
+PNG_RESOLUTION_UNKNOWN	Android/jni/include/png.h	/^#define PNG_RESOLUTION_UNKNOWN /;"	d
+PNG_RGB_TO_GRAY_DEFAULT	Android/jni/include/png.h	/^#define PNG_RGB_TO_GRAY_DEFAULT /;"	d
+PNG_ROW_FROM_PASS_ROW	Android/jni/include/png.h	/^#define PNG_ROW_FROM_PASS_ROW(/;"	d
+PNG_ROW_IN_INTERLACE_PASS	Android/jni/include/png.h	/^#define PNG_ROW_IN_INTERLACE_PASS(/;"	d
+PNG_SCALE_LAST	Android/jni/include/png.h	/^#define PNG_SCALE_LAST /;"	d
+PNG_SCALE_METER	Android/jni/include/png.h	/^#define PNG_SCALE_METER /;"	d
+PNG_SCALE_RADIAN	Android/jni/include/png.h	/^#define PNG_SCALE_RADIAN /;"	d
+PNG_SCALE_UNKNOWN	Android/jni/include/png.h	/^#define PNG_SCALE_UNKNOWN /;"	d
+PNG_SET_WILL_FREE_DATA	Android/jni/include/png.h	/^#define PNG_SET_WILL_FREE_DATA /;"	d
+PNG_SIZE_MAX	Android/jni/include/png.h	/^#define PNG_SIZE_MAX /;"	d
+PNG_TEXT_COMPRESSION_LAST	Android/jni/include/png.h	/^#define PNG_TEXT_COMPRESSION_LAST /;"	d
+PNG_TEXT_COMPRESSION_NONE	Android/jni/include/png.h	/^#define PNG_TEXT_COMPRESSION_NONE /;"	d
+PNG_TEXT_COMPRESSION_NONE_WR	Android/jni/include/png.h	/^#define PNG_TEXT_COMPRESSION_NONE_WR /;"	d
+PNG_TEXT_COMPRESSION_zTXt	Android/jni/include/png.h	/^#define PNG_TEXT_COMPRESSION_zTXt /;"	d
+PNG_TEXT_COMPRESSION_zTXt_WR	Android/jni/include/png.h	/^#define PNG_TEXT_COMPRESSION_zTXt_WR /;"	d
+PNG_TRANSFORM_BGR	Android/jni/include/png.h	/^#define PNG_TRANSFORM_BGR /;"	d
+PNG_TRANSFORM_EXPAND	Android/jni/include/png.h	/^#define PNG_TRANSFORM_EXPAND /;"	d
+PNG_TRANSFORM_EXPAND_16	Android/jni/include/png.h	/^#define PNG_TRANSFORM_EXPAND_16 /;"	d
+PNG_TRANSFORM_GRAY_TO_RGB	Android/jni/include/png.h	/^#define PNG_TRANSFORM_GRAY_TO_RGB /;"	d
+PNG_TRANSFORM_IDENTITY	Android/jni/include/png.h	/^#define PNG_TRANSFORM_IDENTITY /;"	d
+PNG_TRANSFORM_INVERT_ALPHA	Android/jni/include/png.h	/^#define PNG_TRANSFORM_INVERT_ALPHA /;"	d
+PNG_TRANSFORM_INVERT_MONO	Android/jni/include/png.h	/^#define PNG_TRANSFORM_INVERT_MONO /;"	d
+PNG_TRANSFORM_PACKING	Android/jni/include/png.h	/^#define PNG_TRANSFORM_PACKING /;"	d
+PNG_TRANSFORM_PACKSWAP	Android/jni/include/png.h	/^#define PNG_TRANSFORM_PACKSWAP /;"	d
+PNG_TRANSFORM_SCALE_16	Android/jni/include/png.h	/^#define PNG_TRANSFORM_SCALE_16 /;"	d
+PNG_TRANSFORM_SHIFT	Android/jni/include/png.h	/^#define PNG_TRANSFORM_SHIFT /;"	d
+PNG_TRANSFORM_STRIP_16	Android/jni/include/png.h	/^#define PNG_TRANSFORM_STRIP_16 /;"	d
+PNG_TRANSFORM_STRIP_ALPHA	Android/jni/include/png.h	/^#define PNG_TRANSFORM_STRIP_ALPHA /;"	d
+PNG_TRANSFORM_STRIP_FILLER	Android/jni/include/png.h	/^#define PNG_TRANSFORM_STRIP_FILLER /;"	d
+PNG_TRANSFORM_STRIP_FILLER_AFTER	Android/jni/include/png.h	/^#define PNG_TRANSFORM_STRIP_FILLER_AFTER /;"	d
+PNG_TRANSFORM_STRIP_FILLER_BEFORE	Android/jni/include/png.h	/^#define PNG_TRANSFORM_STRIP_FILLER_BEFORE /;"	d
+PNG_TRANSFORM_SWAP_ALPHA	Android/jni/include/png.h	/^#define PNG_TRANSFORM_SWAP_ALPHA /;"	d
+PNG_TRANSFORM_SWAP_ENDIAN	Android/jni/include/png.h	/^#define PNG_TRANSFORM_SWAP_ENDIAN /;"	d
+PNG_UINT_31_MAX	Android/jni/include/png.h	/^#define PNG_UINT_31_MAX /;"	d
+PNG_UINT_32_MAX	Android/jni/include/png.h	/^#define PNG_UINT_32_MAX /;"	d
+PNG_USER_WILL_FREE_DATA	Android/jni/include/png.h	/^#define PNG_USER_WILL_FREE_DATA /;"	d
+PNG_sRGB_INTENT_ABSOLUTE	Android/jni/include/png.h	/^#define PNG_sRGB_INTENT_ABSOLUTE /;"	d
+PNG_sRGB_INTENT_LAST	Android/jni/include/png.h	/^#define PNG_sRGB_INTENT_LAST /;"	d
+PNG_sRGB_INTENT_PERCEPTUAL	Android/jni/include/png.h	/^#define PNG_sRGB_INTENT_PERCEPTUAL /;"	d
+PNG_sRGB_INTENT_RELATIVE	Android/jni/include/png.h	/^#define PNG_sRGB_INTENT_RELATIVE /;"	d
+PNG_sRGB_INTENT_SATURATION	Android/jni/include/png.h	/^#define PNG_sRGB_INTENT_SATURATION /;"	d
+alpha	Android/jni/include/png.h	/^   png_byte alpha; \/* for alpha channel files *\/$/;"	m	struct:png_color_8_struct
+alpha	Android/jni/include/png.h	/^   png_uint_16 alpha;$/;"	m	struct:png_sPLT_entry_struct
+bit_depth	Android/jni/include/png.h	/^   png_byte bit_depth;   \/* bit depth of row *\/$/;"	m	struct:png_row_info_struct
+blue	Android/jni/include/png.h	/^   png_byte blue;$/;"	m	struct:png_color_8_struct
+blue	Android/jni/include/png.h	/^   png_byte blue;$/;"	m	struct:png_color_struct
+blue	Android/jni/include/png.h	/^   png_uint_16 blue;$/;"	m	struct:png_color_16_struct
+blue	Android/jni/include/png.h	/^   png_uint_16 blue;$/;"	m	struct:png_sPLT_entry_struct
+channels	Android/jni/include/png.h	/^   png_byte channels;    \/* number of channels (1, 2, 3, or 4) *\/$/;"	m	struct:png_row_info_struct
+color_type	Android/jni/include/png.h	/^   png_byte color_type;  \/* color type of row *\/$/;"	m	struct:png_row_info_struct
+compression	Android/jni/include/png.h	/^   int  compression;       \/* compression value:$/;"	m	struct:png_text_struct
+data	Android/jni/include/png.h	/^    png_byte *data;$/;"	m	struct:png_unknown_chunk_t
+day	Android/jni/include/png.h	/^   png_byte day;     \/* day of month, 1 - 31 *\/$/;"	m	struct:png_time_struct
+depth	Android/jni/include/png.h	/^   png_byte depth;           \/* depth of palette samples *\/$/;"	m	struct:png_sPLT_struct
+entries	Android/jni/include/png.h	/^   png_sPLT_entryp entries;  \/* palette entries *\/$/;"	m	struct:png_sPLT_struct
+frequency	Android/jni/include/png.h	/^   png_uint_16 frequency;$/;"	m	struct:png_sPLT_entry_struct
+gray	Android/jni/include/png.h	/^   png_byte gray;  \/* for use in grayscale files *\/$/;"	m	struct:png_color_8_struct
+gray	Android/jni/include/png.h	/^   png_uint_16 gray;  \/* for use in grayscale files *\/$/;"	m	struct:png_color_16_struct
+green	Android/jni/include/png.h	/^   png_byte green;$/;"	m	struct:png_color_8_struct
+green	Android/jni/include/png.h	/^   png_byte green;$/;"	m	struct:png_color_struct
+green	Android/jni/include/png.h	/^   png_uint_16 green;$/;"	m	struct:png_color_16_struct
+green	Android/jni/include/png.h	/^   png_uint_16 green;$/;"	m	struct:png_sPLT_entry_struct
+hour	Android/jni/include/png.h	/^   png_byte hour;    \/* hour of day, 0 - 23 *\/$/;"	m	struct:png_time_struct
+index	Android/jni/include/png.h	/^   png_byte index;    \/* used for palette files *\/$/;"	m	struct:png_color_16_struct
+itxt_length	Android/jni/include/png.h	/^   png_size_t itxt_length; \/* length of the itxt string *\/$/;"	m	struct:png_text_struct
+key	Android/jni/include/png.h	/^   png_charp key;          \/* keyword, 1-79 character description of "text" *\/$/;"	m	struct:png_text_struct
+lang	Android/jni/include/png.h	/^   png_charp lang;         \/* language code, 0-79 characters$/;"	m	struct:png_text_struct
+lang_key	Android/jni/include/png.h	/^   png_charp lang_key;     \/* keyword translated UTF-8 string, 0 or more$/;"	m	struct:png_text_struct
+location	Android/jni/include/png.h	/^    png_byte location; \/* mode of operation at read time *\/$/;"	m	struct:png_unknown_chunk_t
+minute	Android/jni/include/png.h	/^   png_byte minute;  \/* minute of hour, 0 - 59 *\/$/;"	m	struct:png_time_struct
+month	Android/jni/include/png.h	/^   png_byte month;   \/* month of year, 1 - 12 *\/$/;"	m	struct:png_time_struct
+name	Android/jni/include/png.h	/^    png_byte name[5];$/;"	m	struct:png_unknown_chunk_t
+name	Android/jni/include/png.h	/^   png_charp name;           \/* palette name *\/$/;"	m	struct:png_sPLT_struct
+nentries	Android/jni/include/png.h	/^   png_int_32 nentries;      \/* number of palette entries *\/$/;"	m	struct:png_sPLT_struct
+pixel_depth	Android/jni/include/png.h	/^   png_byte pixel_depth; \/* bits per pixel (depth * channels) *\/$/;"	m	struct:png_row_info_struct
+png_benign_error	Android/jni/include/png.h	/^#    define png_benign_error /;"	d
+png_benign_error	Android/jni/include/png.h	/^#  undef png_benign_error$/;"	d
+png_check_sig	Android/jni/include/png.h	/^#define png_check_sig(/;"	d
+png_chunk_benign_error	Android/jni/include/png.h	/^#    define png_chunk_benign_error /;"	d
+png_chunk_benign_error	Android/jni/include/png.h	/^#  undef png_chunk_benign_error$/;"	d
+png_color	Android/jni/include/png.h	/^} png_color;$/;"	t	typeref:struct:png_color_struct
+png_color_16	Android/jni/include/png.h	/^} png_color_16;$/;"	t	typeref:struct:png_color_16_struct
+png_color_16_struct	Android/jni/include/png.h	/^typedef struct png_color_16_struct$/;"	s
+png_color_16p	Android/jni/include/png.h	/^typedef png_color_16 FAR * png_color_16p;$/;"	t
+png_color_16pp	Android/jni/include/png.h	/^typedef png_color_16 FAR * FAR * png_color_16pp;$/;"	t
+png_color_8	Android/jni/include/png.h	/^} png_color_8;$/;"	t	typeref:struct:png_color_8_struct
+png_color_8_struct	Android/jni/include/png.h	/^typedef struct png_color_8_struct$/;"	s
+png_color_8p	Android/jni/include/png.h	/^typedef png_color_8 FAR * png_color_8p;$/;"	t
+png_color_8pp	Android/jni/include/png.h	/^typedef png_color_8 FAR * FAR * png_color_8pp;$/;"	t
+png_color_struct	Android/jni/include/png.h	/^typedef struct png_color_struct$/;"	s
+png_colorp	Android/jni/include/png.h	/^typedef png_color FAR * png_colorp;$/;"	t
+png_colorpp	Android/jni/include/png.h	/^typedef png_color FAR * FAR * png_colorpp;$/;"	t
+png_composite	Android/jni/include/png.h	/^#  define png_composite(/;"	d
+png_composite_16	Android/jni/include/png.h	/^#  define png_composite_16(/;"	d
+png_const_color_16p	Android/jni/include/png.h	/^typedef PNG_CONST png_color_16 FAR * png_const_color_16p;$/;"	t
+png_const_color_8p	Android/jni/include/png.h	/^typedef PNG_CONST png_color_8 FAR * png_const_color_8p;$/;"	t
+png_const_colorp	Android/jni/include/png.h	/^typedef PNG_CONST png_color FAR * png_const_colorp;$/;"	t
+png_const_infop	Android/jni/include/png.h	/^typedef PNG_CONST png_info FAR * png_const_infop;$/;"	t
+png_const_sPLT_entryp	Android/jni/include/png.h	/^typedef PNG_CONST png_sPLT_entry FAR * png_const_sPLT_entryp;$/;"	t
+png_const_sPLT_tp	Android/jni/include/png.h	/^typedef PNG_CONST png_sPLT_t FAR * png_const_sPLT_tp;$/;"	t
+png_const_structp	Android/jni/include/png.h	/^typedef PNG_CONST png_struct FAR * png_const_structp;$/;"	t
+png_const_textp	Android/jni/include/png.h	/^typedef PNG_CONST png_text FAR * png_const_textp;$/;"	t
+png_const_timep	Android/jni/include/png.h	/^typedef PNG_CONST png_time FAR * png_const_timep;$/;"	t
+png_const_unknown_chunkp	Android/jni/include/png.h	/^typedef PNG_CONST png_unknown_chunk FAR * png_const_unknown_chunkp;$/;"	t
+png_get_int_32	Android/jni/include/png.h	/^#  define png_get_int_32(/;"	d
+png_get_uint_16	Android/jni/include/png.h	/^#  define png_get_uint_16(/;"	d
+png_get_uint_32	Android/jni/include/png.h	/^#  define png_get_uint_32(/;"	d
+png_info	Android/jni/include/png.h	/^typedef struct png_info_def png_info;$/;"	t	typeref:struct:png_info_def
+png_infop	Android/jni/include/png.h	/^typedef png_info FAR * png_infop;$/;"	t
+png_infopp	Android/jni/include/png.h	/^typedef png_info FAR * FAR * png_infopp;$/;"	t
+png_jmpbuf	Android/jni/include/png.h	/^#  define png_jmpbuf(/;"	d
+png_libpng_ver	Android/jni/include/png.h	/^#define png_libpng_ver /;"	d
+png_libpng_version_1_5_12	Android/jni/include/png.h	/^typedef char* png_libpng_version_1_5_12;$/;"	t
+png_row_info	Android/jni/include/png.h	/^} png_row_info;$/;"	t	typeref:struct:png_row_info_struct
+png_row_info_struct	Android/jni/include/png.h	/^typedef struct png_row_info_struct$/;"	s
+png_row_infop	Android/jni/include/png.h	/^typedef png_row_info FAR * png_row_infop;$/;"	t
+png_row_infopp	Android/jni/include/png.h	/^typedef png_row_info FAR * FAR * png_row_infopp;$/;"	t
+png_sPLT_entry	Android/jni/include/png.h	/^} png_sPLT_entry;$/;"	t	typeref:struct:png_sPLT_entry_struct
+png_sPLT_entry_struct	Android/jni/include/png.h	/^typedef struct png_sPLT_entry_struct$/;"	s
+png_sPLT_entryp	Android/jni/include/png.h	/^typedef png_sPLT_entry FAR * png_sPLT_entryp;$/;"	t
+png_sPLT_entrypp	Android/jni/include/png.h	/^typedef png_sPLT_entry FAR * FAR * png_sPLT_entrypp;$/;"	t
+png_sPLT_struct	Android/jni/include/png.h	/^typedef struct png_sPLT_struct$/;"	s
+png_sPLT_t	Android/jni/include/png.h	/^} png_sPLT_t;$/;"	t	typeref:struct:png_sPLT_struct
+png_sPLT_tp	Android/jni/include/png.h	/^typedef png_sPLT_t FAR * png_sPLT_tp;$/;"	t
+png_sPLT_tpp	Android/jni/include/png.h	/^typedef png_sPLT_t FAR * FAR * png_sPLT_tpp;$/;"	t
+png_struct	Android/jni/include/png.h	/^typedef struct png_struct_def png_struct;$/;"	t	typeref:struct:png_struct_def
+png_structp	Android/jni/include/png.h	/^typedef png_struct FAR * png_structp;$/;"	t
+png_structpp	Android/jni/include/png.h	/^typedef png_struct FAR * FAR * png_structpp;$/;"	t
+png_text	Android/jni/include/png.h	/^} png_text;$/;"	t	typeref:struct:png_text_struct
+png_text_struct	Android/jni/include/png.h	/^typedef struct png_text_struct$/;"	s
+png_textp	Android/jni/include/png.h	/^typedef png_text FAR * png_textp;$/;"	t
+png_textpp	Android/jni/include/png.h	/^typedef png_text FAR * FAR * png_textpp;$/;"	t
+png_time	Android/jni/include/png.h	/^} png_time;$/;"	t	typeref:struct:png_time_struct
+png_time_struct	Android/jni/include/png.h	/^typedef struct png_time_struct$/;"	s
+png_timep	Android/jni/include/png.h	/^typedef png_time FAR * png_timep;$/;"	t
+png_timepp	Android/jni/include/png.h	/^typedef png_time FAR * FAR * png_timepp;$/;"	t
+png_unknown_chunk	Android/jni/include/png.h	/^png_unknown_chunk;$/;"	t	typeref:struct:png_unknown_chunk_t
+png_unknown_chunk_t	Android/jni/include/png.h	/^typedef struct png_unknown_chunk_t$/;"	s
+png_unknown_chunkp	Android/jni/include/png.h	/^typedef png_unknown_chunk FAR * png_unknown_chunkp;$/;"	t
+png_unknown_chunkpp	Android/jni/include/png.h	/^typedef png_unknown_chunk FAR * FAR * png_unknown_chunkpp;$/;"	t
+red	Android/jni/include/png.h	/^   png_byte red;   \/* for use in red green blue files *\/$/;"	m	struct:png_color_8_struct
+red	Android/jni/include/png.h	/^   png_byte red;$/;"	m	struct:png_color_struct
+red	Android/jni/include/png.h	/^   png_uint_16 red;   \/* for use in red green blue files *\/$/;"	m	struct:png_color_16_struct
+red	Android/jni/include/png.h	/^   png_uint_16 red;$/;"	m	struct:png_sPLT_entry_struct
+rowbytes	Android/jni/include/png.h	/^   png_size_t rowbytes;  \/* number of bytes in row *\/$/;"	m	struct:png_row_info_struct
+second	Android/jni/include/png.h	/^   png_byte second;  \/* second of minute, 0 - 60 (for leap seconds) *\/$/;"	m	struct:png_time_struct
+size	Android/jni/include/png.h	/^    png_size_t size;$/;"	m	struct:png_unknown_chunk_t
+text	Android/jni/include/png.h	/^   png_charp text;         \/* comment, may be an empty string (ie "")$/;"	m	struct:png_text_struct
+text_length	Android/jni/include/png.h	/^   png_size_t text_length; \/* length of the text string *\/$/;"	m	struct:png_text_struct
+width	Android/jni/include/png.h	/^   png_uint_32 width;    \/* width of row *\/$/;"	m	struct:png_row_info_struct
+year	Android/jni/include/png.h	/^   png_uint_16 year; \/* full year, as in, 1995 *\/$/;"	m	struct:png_time_struct
+FAR	Android/jni/include/pngconf.h	/^#        define FAR /;"	d
+FAR	Android/jni/include/pngconf.h	/^#  define FAR$/;"	d
+FARDATA	Android/jni/include/pngconf.h	/^#    define FARDATA /;"	d
+FARDATA	Android/jni/include/pngconf.h	/^#  define FARDATA$/;"	d
+LDATA	Android/jni/include/pngconf.h	/^#    define LDATA /;"	d
+PNGAPI	Android/jni/include/pngconf.h	/^#      define PNGAPI /;"	d
+PNGAPI	Android/jni/include/pngconf.h	/^#  define PNGAPI /;"	d
+PNGARG	Android/jni/include/pngconf.h	/^#      define PNGARG(/;"	d
+PNGARG	Android/jni/include/pngconf.h	/^#    define PNGARG(/;"	d
+PNGCAPI	Android/jni/include/pngconf.h	/^#      define PNGCAPI /;"	d
+PNGCAPI	Android/jni/include/pngconf.h	/^#    define PNGCAPI /;"	d
+PNGCAPI	Android/jni/include/pngconf.h	/^#  define PNGCAPI$/;"	d
+PNGCBAPI	Android/jni/include/pngconf.h	/^#  define PNGCBAPI /;"	d
+PNGCONF_H	Android/jni/include/pngconf.h	/^#define PNGCONF_H$/;"	d
+PNG_ALLOCATED	Android/jni/include/pngconf.h	/^#        define PNG_ALLOCATED /;"	d
+PNG_ALLOCATED	Android/jni/include/pngconf.h	/^#      define PNG_ALLOCATED /;"	d
+PNG_ALLOCATED	Android/jni/include/pngconf.h	/^#  define PNG_ALLOCATED /;"	d
+PNG_CALLBACK	Android/jni/include/pngconf.h	/^#  define PNG_CALLBACK(/;"	d
+PNG_CONST	Android/jni/include/pngconf.h	/^#    define PNG_CONST /;"	d
+PNG_DEPRECATED	Android/jni/include/pngconf.h	/^#      define PNG_DEPRECATED /;"	d
+PNG_DEPRECATED	Android/jni/include/pngconf.h	/^#  define PNG_DEPRECATED /;"	d
+PNG_DLL_EXPORT	Android/jni/include/pngconf.h	/^#    define PNG_DLL_EXPORT /;"	d
+PNG_EMPTY	Android/jni/include/pngconf.h	/^#define PNG_EMPTY /;"	d
+PNG_EXPORT	Android/jni/include/pngconf.h	/^#define PNG_EXPORT(/;"	d
+PNG_EXPORTA	Android/jni/include/pngconf.h	/^#  define PNG_EXPORTA(/;"	d
+PNG_EXPORT_TYPE	Android/jni/include/pngconf.h	/^#      define PNG_EXPORT_TYPE(/;"	d
+PNG_EXPORT_TYPE	Android/jni/include/pngconf.h	/^#  define PNG_EXPORT_TYPE(/;"	d
+PNG_FIXED_EXPORT	Android/jni/include/pngconf.h	/^#     define PNG_FIXED_EXPORT(/;"	d
+PNG_FP_EXPORT	Android/jni/include/pngconf.h	/^#     define PNG_FP_EXPORT(/;"	d
+PNG_FUNCTION	Android/jni/include/pngconf.h	/^#  define PNG_FUNCTION(/;"	d
+PNG_IMPEXP	Android/jni/include/pngconf.h	/^#    define PNG_IMPEXP /;"	d
+PNG_IMPEXP	Android/jni/include/pngconf.h	/^#    define PNG_IMPEXP$/;"	d
+PNG_MAX_MALLOC_64K	Android/jni/include/pngconf.h	/^#    define PNG_MAX_MALLOC_64K /;"	d
+PNG_NORETURN	Android/jni/include/pngconf.h	/^#      define PNG_NORETURN /;"	d
+PNG_NORETURN	Android/jni/include/pngconf.h	/^#  define PNG_NORETURN /;"	d
+PNG_PEDANTIC_WARNINGS_SUPPORTED	Android/jni/include/pngconf.h	/^#    define PNG_PEDANTIC_WARNINGS_SUPPORTED$/;"	d
+PNG_PRIVATE	Android/jni/include/pngconf.h	/^#        define PNG_PRIVATE /;"	d
+PNG_PRIVATE	Android/jni/include/pngconf.h	/^#      define PNG_PRIVATE /;"	d
+PNG_PRIVATE	Android/jni/include/pngconf.h	/^#  define PNG_PRIVATE /;"	d
+PNG_REMOVED	Android/jni/include/pngconf.h	/^#  define PNG_REMOVED(/;"	d
+PNG_USE_READ_MACROS	Android/jni/include/pngconf.h	/^#    define PNG_USE_READ_MACROS$/;"	d
+PNG_USE_READ_MACROS	Android/jni/include/pngconf.h	/^#  define PNG_USE_READ_MACROS$/;"	d
+PNG_USE_RESULT	Android/jni/include/pngconf.h	/^#      define PNG_USE_RESULT /;"	d
+PNG_USE_RESULT	Android/jni/include/pngconf.h	/^#  define PNG_USE_RESULT /;"	d
+USE_FAR_KEYWORD	Android/jni/include/pngconf.h	/^#      define USE_FAR_KEYWORD$/;"	d
+USE_FAR_KEYWORD	Android/jni/include/pngconf.h	/^#    define USE_FAR_KEYWORD$/;"	d
+png_FILE_p	Android/jni/include/pngconf.h	/^typedef FILE            * png_FILE_p;$/;"	t
+png_alloc_size_t	Android/jni/include/pngconf.h	/^       typedef DWORD         png_alloc_size_t;$/;"	t
+png_alloc_size_t	Android/jni/include/pngconf.h	/^       typedef png_size_t    png_alloc_size_t;$/;"	t
+png_alloc_size_t	Android/jni/include/pngconf.h	/^     typedef unsigned long    png_alloc_size_t;$/;"	t
+png_alloc_size_t	Android/jni/include/pngconf.h	/^   typedef unsigned long png_alloc_size_t;$/;"	t
+png_byte	Android/jni/include/pngconf.h	/^typedef unsigned char png_byte;$/;"	t
+png_bytep	Android/jni/include/pngconf.h	/^typedef png_byte                  FAR * png_bytep;$/;"	t
+png_bytepp	Android/jni/include/pngconf.h	/^typedef png_byte        FAR * FAR * png_bytepp;$/;"	t
+png_charp	Android/jni/include/pngconf.h	/^typedef char                      FAR * png_charp;$/;"	t
+png_charpp	Android/jni/include/pngconf.h	/^typedef char            FAR * FAR * png_charpp;$/;"	t
+png_charppp	Android/jni/include/pngconf.h	/^typedef char            FAR * FAR * FAR * png_charppp;$/;"	t
+png_const_bytep	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_byte        FAR * png_const_bytep;$/;"	t
+png_const_charp	Android/jni/include/pngconf.h	/^typedef PNG_CONST char            FAR * png_const_charp;$/;"	t
+png_const_charpp	Android/jni/include/pngconf.h	/^typedef PNG_CONST char  FAR * FAR * png_const_charpp;$/;"	t
+png_const_doublep	Android/jni/include/pngconf.h	/^typedef PNG_CONST double FAR * png_const_doublep;$/;"	t
+png_const_fixed_point_p	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_fixed_point FAR * png_const_fixed_point_p;$/;"	t
+png_const_int_16p	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_int_16      FAR * png_const_int_16p;$/;"	t
+png_const_int_32p	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_int_32      FAR * png_const_int_32p;$/;"	t
+png_const_size_tp	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_size_t      FAR * png_const_size_tp;$/;"	t
+png_const_uint_16p	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_uint_16     FAR * png_const_uint_16p;$/;"	t
+png_const_uint_32p	Android/jni/include/pngconf.h	/^typedef PNG_CONST png_uint_32     FAR * png_const_uint_32p;$/;"	t
+png_const_voidp	Android/jni/include/pngconf.h	/^typedef PNG_CONST void            FAR * png_const_voidp;$/;"	t
+png_doublep	Android/jni/include/pngconf.h	/^typedef double           FAR * png_doublep;$/;"	t
+png_doublepp	Android/jni/include/pngconf.h	/^typedef double          FAR * FAR * png_doublepp;$/;"	t
+png_fixed_point	Android/jni/include/pngconf.h	/^typedef png_int_32 png_fixed_point;$/;"	t
+png_fixed_point_p	Android/jni/include/pngconf.h	/^typedef png_fixed_point           FAR * png_fixed_point_p;$/;"	t
+png_fixed_point_pp	Android/jni/include/pngconf.h	/^typedef png_fixed_point FAR * FAR * png_fixed_point_pp;$/;"	t
+png_int_16	Android/jni/include/pngconf.h	/^typedef short png_int_16;$/;"	t
+png_int_16p	Android/jni/include/pngconf.h	/^typedef png_int_16                FAR * png_int_16p;$/;"	t
+png_int_16pp	Android/jni/include/pngconf.h	/^typedef png_int_16      FAR * FAR * png_int_16pp;$/;"	t
+png_int_32	Android/jni/include/pngconf.h	/^typedef int png_int_32;$/;"	t
+png_int_32p	Android/jni/include/pngconf.h	/^typedef png_int_32                FAR * png_int_32p;$/;"	t
+png_int_32pp	Android/jni/include/pngconf.h	/^typedef png_int_32      FAR * FAR * png_int_32pp;$/;"	t
+png_size_t	Android/jni/include/pngconf.h	/^typedef size_t png_size_t;$/;"	t
+png_size_t	Android/jni/include/pngconf.h	/^typedef unsigned int png_size_t;$/;"	t
+png_size_tp	Android/jni/include/pngconf.h	/^typedef png_size_t                FAR * png_size_tp;$/;"	t
+png_sizeof	Android/jni/include/pngconf.h	/^#define png_sizeof(/;"	d
+png_uint_16	Android/jni/include/pngconf.h	/^typedef unsigned short png_uint_16;$/;"	t
+png_uint_16p	Android/jni/include/pngconf.h	/^typedef png_uint_16               FAR * png_uint_16p;$/;"	t
+png_uint_16pp	Android/jni/include/pngconf.h	/^typedef png_uint_16     FAR * FAR * png_uint_16pp;$/;"	t
+png_uint_32	Android/jni/include/pngconf.h	/^typedef unsigned int png_uint_32;$/;"	t
+png_uint_32p	Android/jni/include/pngconf.h	/^typedef png_uint_32               FAR * png_uint_32p;$/;"	t
+png_uint_32pp	Android/jni/include/pngconf.h	/^typedef png_uint_32     FAR * FAR * png_uint_32pp;$/;"	t
+png_voidp	Android/jni/include/pngconf.h	/^typedef void                      FAR * png_voidp;$/;"	t
+PNGINFO_H	Android/jni/include/pnginfo.h	/^#define PNGINFO_H$/;"	d
+background	Android/jni/include/pnginfo.h	/^   png_color_16 background;$/;"	m	struct:png_info_def
+bit_depth	Android/jni/include/pnginfo.h	/^   png_byte bit_depth;      \/* 1, 2, 4, 8, or 16 bits\/channel (from IHDR) *\/$/;"	m	struct:png_info_def
+channels	Android/jni/include/pnginfo.h	/^   png_byte channels;       \/* number of data channels per pixel (1, 2, 3, 4) *\/$/;"	m	struct:png_info_def
+color_type	Android/jni/include/pnginfo.h	/^   png_byte color_type;     \/* see PNG_COLOR_TYPE_ below (from IHDR) *\/$/;"	m	struct:png_info_def
+compression_type	Android/jni/include/pnginfo.h	/^   png_byte compression_type; \/* must be PNG_COMPRESSION_TYPE_BASE (IHDR) *\/$/;"	m	struct:png_info_def
+filter_type	Android/jni/include/pnginfo.h	/^   png_byte filter_type;    \/* must be PNG_FILTER_TYPE_BASE (from IHDR) *\/$/;"	m	struct:png_info_def
+free_me	Android/jni/include/pnginfo.h	/^   png_uint_32 free_me;     \/* flags items libpng is responsible for freeing *\/$/;"	m	struct:png_info_def
+gamma	Android/jni/include/pnginfo.h	/^   png_fixed_point gamma;$/;"	m	struct:png_info_def
+height	Android/jni/include/pnginfo.h	/^   png_uint_32 height; \/* height of image in pixels (from IHDR) *\/$/;"	m	struct:png_info_def
+hist	Android/jni/include/pnginfo.h	/^   png_uint_16p hist;$/;"	m	struct:png_info_def
+iccp_compression	Android/jni/include/pnginfo.h	/^   png_byte iccp_compression; \/* Always zero *\/$/;"	m	struct:png_info_def
+iccp_name	Android/jni/include/pnginfo.h	/^   png_charp iccp_name;     \/* profile name *\/$/;"	m	struct:png_info_def
+iccp_profile	Android/jni/include/pnginfo.h	/^   png_bytep iccp_profile;  \/* International Color Consortium profile data *\/$/;"	m	struct:png_info_def
+iccp_proflen	Android/jni/include/pnginfo.h	/^   png_uint_32 iccp_proflen;  \/* ICC profile data length *\/$/;"	m	struct:png_info_def
+interlace_type	Android/jni/include/pnginfo.h	/^   png_byte interlace_type; \/* One of PNG_INTERLACE_NONE, PNG_INTERLACE_ADAM7 *\/$/;"	m	struct:png_info_def
+max_text	Android/jni/include/pnginfo.h	/^   int max_text; \/* current size of text array *\/$/;"	m	struct:png_info_def
+mod_time	Android/jni/include/pnginfo.h	/^   png_time mod_time;$/;"	m	struct:png_info_def
+num_palette	Android/jni/include/pnginfo.h	/^   png_uint_16 num_palette; \/* number of color entries in "palette" (PLTE) *\/$/;"	m	struct:png_info_def
+num_text	Android/jni/include/pnginfo.h	/^   int num_text; \/* number of comments read or comments to write *\/$/;"	m	struct:png_info_def
+num_trans	Android/jni/include/pnginfo.h	/^   png_uint_16 num_trans;   \/* number of transparent palette color (tRNS) *\/$/;"	m	struct:png_info_def
+offset_unit_type	Android/jni/include/pnginfo.h	/^   png_byte offset_unit_type; \/* offset units type *\/$/;"	m	struct:png_info_def
+palette	Android/jni/include/pnginfo.h	/^   png_colorp palette;      \/* array of color values (valid & PNG_INFO_PLTE) *\/$/;"	m	struct:png_info_def
+pcal_X0	Android/jni/include/pnginfo.h	/^   png_int_32 pcal_X0;      \/* minimum value *\/$/;"	m	struct:png_info_def
+pcal_X1	Android/jni/include/pnginfo.h	/^   png_int_32 pcal_X1;      \/* maximum value *\/$/;"	m	struct:png_info_def
+pcal_nparams	Android/jni/include/pnginfo.h	/^   png_byte pcal_nparams;   \/* number of parameters given in pcal_params *\/$/;"	m	struct:png_info_def
+pcal_params	Android/jni/include/pnginfo.h	/^   png_charpp pcal_params;  \/* ASCII strings containing parameter values *\/$/;"	m	struct:png_info_def
+pcal_purpose	Android/jni/include/pnginfo.h	/^   png_charp pcal_purpose;  \/* pCAL chunk description string *\/$/;"	m	struct:png_info_def
+pcal_type	Android/jni/include/pnginfo.h	/^   png_byte pcal_type;      \/* equation type (see PNG_EQUATION_ below) *\/$/;"	m	struct:png_info_def
+pcal_units	Android/jni/include/pnginfo.h	/^   png_charp pcal_units;    \/* Latin-1 string giving physical units *\/$/;"	m	struct:png_info_def
+phys_unit_type	Android/jni/include/pnginfo.h	/^   png_byte phys_unit_type; \/* resolution type (see PNG_RESOLUTION_ below) *\/$/;"	m	struct:png_info_def
+pixel_depth	Android/jni/include/pnginfo.h	/^   png_byte pixel_depth;    \/* number of bits per pixel *\/$/;"	m	struct:png_info_def
+png_info_def	Android/jni/include/pnginfo.h	/^struct png_info_def$/;"	s
+row_pointers	Android/jni/include/pnginfo.h	/^   png_bytepp row_pointers;        \/* the image bits *\/$/;"	m	struct:png_info_def
+rowbytes	Android/jni/include/pnginfo.h	/^   png_size_t rowbytes; \/* bytes needed to hold an untransformed row *\/$/;"	m	struct:png_info_def
+scal_s_height	Android/jni/include/pnginfo.h	/^   png_charp scal_s_height;    \/* string containing width *\/$/;"	m	struct:png_info_def
+scal_s_width	Android/jni/include/pnginfo.h	/^   png_charp scal_s_width;     \/* string containing height *\/$/;"	m	struct:png_info_def
+scal_unit	Android/jni/include/pnginfo.h	/^   png_byte scal_unit;         \/* unit of physical scale *\/$/;"	m	struct:png_info_def
+sig_bit	Android/jni/include/pnginfo.h	/^   png_color_8 sig_bit; \/* significant bits in color channels *\/$/;"	m	struct:png_info_def
+signature	Android/jni/include/pnginfo.h	/^   png_byte signature[8];   \/* magic bytes read by libpng from start of file *\/$/;"	m	struct:png_info_def
+spare_byte	Android/jni/include/pnginfo.h	/^   png_byte spare_byte;     \/* to align the data, and for future use *\/$/;"	m	struct:png_info_def
+splt_palettes	Android/jni/include/pnginfo.h	/^   png_sPLT_tp splt_palettes;$/;"	m	struct:png_info_def
+splt_palettes_num	Android/jni/include/pnginfo.h	/^   png_uint_32 splt_palettes_num;$/;"	m	struct:png_info_def
+srgb_intent	Android/jni/include/pnginfo.h	/^   png_byte srgb_intent; \/* sRGB rendering intent [0, 1, 2, or 3] *\/$/;"	m	struct:png_info_def
+text	Android/jni/include/pnginfo.h	/^   png_textp text; \/* array of comments read or comments to write *\/$/;"	m	struct:png_info_def
+trans_alpha	Android/jni/include/pnginfo.h	/^   png_bytep trans_alpha;    \/* alpha values for paletted image *\/$/;"	m	struct:png_info_def
+trans_color	Android/jni/include/pnginfo.h	/^   png_color_16 trans_color; \/* transparent color for non-palette image *\/$/;"	m	struct:png_info_def
+unknown_chunks	Android/jni/include/pnginfo.h	/^   png_unknown_chunkp unknown_chunks;$/;"	m	struct:png_info_def
+unknown_chunks_num	Android/jni/include/pnginfo.h	/^   int unknown_chunks_num;$/;"	m	struct:png_info_def
+valid	Android/jni/include/pnginfo.h	/^   png_uint_32 valid;  \/* valid chunk data (see PNG_INFO_ below) *\/$/;"	m	struct:png_info_def
+width	Android/jni/include/pnginfo.h	/^   png_uint_32 width;  \/* width of image in pixels (from IHDR) *\/$/;"	m	struct:png_info_def
+x_blue	Android/jni/include/pnginfo.h	/^   png_fixed_point x_blue;$/;"	m	struct:png_info_def
+x_green	Android/jni/include/pnginfo.h	/^   png_fixed_point x_green;$/;"	m	struct:png_info_def
+x_offset	Android/jni/include/pnginfo.h	/^   png_int_32 x_offset; \/* x offset on page *\/$/;"	m	struct:png_info_def
+x_pixels_per_unit	Android/jni/include/pnginfo.h	/^   png_uint_32 x_pixels_per_unit; \/* horizontal pixel density *\/$/;"	m	struct:png_info_def
+x_red	Android/jni/include/pnginfo.h	/^   png_fixed_point x_red;$/;"	m	struct:png_info_def
+x_white	Android/jni/include/pnginfo.h	/^   png_fixed_point x_white;$/;"	m	struct:png_info_def
+y_blue	Android/jni/include/pnginfo.h	/^   png_fixed_point y_blue;$/;"	m	struct:png_info_def
+y_green	Android/jni/include/pnginfo.h	/^   png_fixed_point y_green;$/;"	m	struct:png_info_def
+y_offset	Android/jni/include/pnginfo.h	/^   png_int_32 y_offset; \/* y offset on page *\/$/;"	m	struct:png_info_def
+y_pixels_per_unit	Android/jni/include/pnginfo.h	/^   png_uint_32 y_pixels_per_unit; \/* vertical pixel density *\/$/;"	m	struct:png_info_def
+y_red	Android/jni/include/pnginfo.h	/^   png_fixed_point y_red;$/;"	m	struct:png_info_def
+y_white	Android/jni/include/pnginfo.h	/^   png_fixed_point y_white;$/;"	m	struct:png_info_def
+PNGLCONF_H	Android/jni/include/pnglibconf.h	/^#define PNGLCONF_H$/;"	d
+PNG_16BIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_16BIT_SUPPORTED /;"	d
+PNG_ALIGN_MEMORY_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_ALIGN_MEMORY_SUPPORTED /;"	d
+PNG_API_RULE	Android/jni/include/pnglibconf.h	/^#define PNG_API_RULE /;"	d
+PNG_BENIGN_ERRORS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_BENIGN_ERRORS_SUPPORTED /;"	d
+PNG_BUILD_GRAYSCALE_PALETTE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_BUILD_GRAYSCALE_PALETTE_SUPPORTED /;"	d
+PNG_CALLOC_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_CALLOC_SUPPORTED$/;"	d
+PNG_CHECK_FOR_INVALID_INDEX_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_CHECK_FOR_INVALID_INDEX_SUPPORTED /;"	d
+PNG_CHECK_cHRM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_CHECK_cHRM_SUPPORTED /;"	d
+PNG_CONSOLE_IO_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_CONSOLE_IO_SUPPORTED /;"	d
+PNG_CONVERT_tIME_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_CONVERT_tIME_SUPPORTED /;"	d
+PNG_COST_SHIFT	Android/jni/include/pnglibconf.h	/^#define PNG_COST_SHIFT /;"	d
+PNG_DEFAULT_READ_MACROS	Android/jni/include/pnglibconf.h	/^#define PNG_DEFAULT_READ_MACROS /;"	d
+PNG_EASY_ACCESS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_EASY_ACCESS_SUPPORTED /;"	d
+PNG_ERROR_TEXT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_ERROR_TEXT_SUPPORTED /;"	d
+PNG_FIXED_POINT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_FIXED_POINT_SUPPORTED /;"	d
+PNG_FLOATING_ARITHMETIC_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_FLOATING_ARITHMETIC_SUPPORTED /;"	d
+PNG_FLOATING_POINT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_FLOATING_POINT_SUPPORTED /;"	d
+PNG_GAMMA_THRESHOLD_FIXED	Android/jni/include/pnglibconf.h	/^#define PNG_GAMMA_THRESHOLD_FIXED /;"	d
+PNG_HANDLE_AS_UNKNOWN_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_HANDLE_AS_UNKNOWN_SUPPORTED /;"	d
+PNG_INCH_CONVERSIONS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_INCH_CONVERSIONS_SUPPORTED /;"	d
+PNG_INFO_IMAGE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_INFO_IMAGE_SUPPORTED /;"	d
+PNG_IO_STATE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_IO_STATE_SUPPORTED /;"	d
+PNG_MAX_GAMMA_8	Android/jni/include/pnglibconf.h	/^#define PNG_MAX_GAMMA_8 /;"	d
+PNG_MNG_FEATURES_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_MNG_FEATURES_SUPPORTED /;"	d
+PNG_POINTER_INDEXING_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_POINTER_INDEXING_SUPPORTED /;"	d
+PNG_PROGRESSIVE_READ_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_PROGRESSIVE_READ_SUPPORTED /;"	d
+PNG_QUANTIZE_BLUE_BITS	Android/jni/include/pnglibconf.h	/^#define PNG_QUANTIZE_BLUE_BITS /;"	d
+PNG_QUANTIZE_GREEN_BITS	Android/jni/include/pnglibconf.h	/^#define PNG_QUANTIZE_GREEN_BITS /;"	d
+PNG_QUANTIZE_RED_BITS	Android/jni/include/pnglibconf.h	/^#define PNG_QUANTIZE_RED_BITS /;"	d
+PNG_READ_16BIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_16BIT_SUPPORTED /;"	d
+PNG_READ_ALPHA_MODE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_ALPHA_MODE_SUPPORTED /;"	d
+PNG_READ_ANCILLARY_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_ANCILLARY_CHUNKS_SUPPORTED /;"	d
+PNG_READ_BACKGROUND_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_BACKGROUND_SUPPORTED /;"	d
+PNG_READ_BGR_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_BGR_SUPPORTED /;"	d
+PNG_READ_CHECK_FOR_INVALID_INDEX_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_CHECK_FOR_INVALID_INDEX_SUPPORTED /;"	d
+PNG_READ_COMPOSITE_NODIV_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_COMPOSITE_NODIV_SUPPORTED /;"	d
+PNG_READ_COMPRESSED_TEXT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_COMPRESSED_TEXT_SUPPORTED /;"	d
+PNG_READ_EXPAND_16_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_EXPAND_16_SUPPORTED /;"	d
+PNG_READ_EXPAND_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_EXPAND_SUPPORTED /;"	d
+PNG_READ_FILLER_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_FILLER_SUPPORTED /;"	d
+PNG_READ_GAMMA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_GAMMA_SUPPORTED /;"	d
+PNG_READ_GRAY_TO_RGB_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_GRAY_TO_RGB_SUPPORTED /;"	d
+PNG_READ_INTERLACING_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_INTERLACING_SUPPORTED /;"	d
+PNG_READ_INT_FUNCTIONS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_INT_FUNCTIONS_SUPPORTED /;"	d
+PNG_READ_INVERT_ALPHA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_INVERT_ALPHA_SUPPORTED /;"	d
+PNG_READ_INVERT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_INVERT_SUPPORTED /;"	d
+PNG_READ_OPT_PLTE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_OPT_PLTE_SUPPORTED /;"	d
+PNG_READ_PACKSWAP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_PACKSWAP_SUPPORTED /;"	d
+PNG_READ_PACK_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_PACK_SUPPORTED /;"	d
+PNG_READ_QUANTIZE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_QUANTIZE_SUPPORTED /;"	d
+PNG_READ_RGB_TO_GRAY_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_RGB_TO_GRAY_SUPPORTED /;"	d
+PNG_READ_SCALE_16_TO_8_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_SCALE_16_TO_8_SUPPORTED /;"	d
+PNG_READ_SHIFT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_SHIFT_SUPPORTED /;"	d
+PNG_READ_STRIP_16_TO_8_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_STRIP_16_TO_8_SUPPORTED /;"	d
+PNG_READ_STRIP_ALPHA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_STRIP_ALPHA_SUPPORTED /;"	d
+PNG_READ_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_SUPPORTED /;"	d
+PNG_READ_SWAP_ALPHA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_SWAP_ALPHA_SUPPORTED /;"	d
+PNG_READ_SWAP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_SWAP_SUPPORTED /;"	d
+PNG_READ_TEXT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_TEXT_SUPPORTED /;"	d
+PNG_READ_TRANSFORMS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_TRANSFORMS_SUPPORTED /;"	d
+PNG_READ_UNKNOWN_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_UNKNOWN_CHUNKS_SUPPORTED /;"	d
+PNG_READ_USER_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_USER_CHUNKS_SUPPORTED /;"	d
+PNG_READ_USER_TRANSFORM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_USER_TRANSFORM_SUPPORTED /;"	d
+PNG_READ_bKGD_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_bKGD_SUPPORTED /;"	d
+PNG_READ_cHRM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_cHRM_SUPPORTED /;"	d
+PNG_READ_gAMA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_gAMA_SUPPORTED /;"	d
+PNG_READ_hIST_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_hIST_SUPPORTED /;"	d
+PNG_READ_iCCP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_iCCP_SUPPORTED /;"	d
+PNG_READ_iTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_iTXt_SUPPORTED /;"	d
+PNG_READ_oFFs_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_oFFs_SUPPORTED /;"	d
+PNG_READ_pCAL_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_pCAL_SUPPORTED /;"	d
+PNG_READ_pHYs_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_pHYs_SUPPORTED /;"	d
+PNG_READ_sBIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_sBIT_SUPPORTED /;"	d
+PNG_READ_sCAL_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_sCAL_SUPPORTED /;"	d
+PNG_READ_sPLT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_sPLT_SUPPORTED /;"	d
+PNG_READ_sRGB_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_sRGB_SUPPORTED /;"	d
+PNG_READ_tEXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_tEXt_SUPPORTED /;"	d
+PNG_READ_tIME_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_tIME_SUPPORTED /;"	d
+PNG_READ_tRNS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_tRNS_SUPPORTED /;"	d
+PNG_READ_zTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_READ_zTXt_SUPPORTED /;"	d
+PNG_SAVE_INT_32_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_SAVE_INT_32_SUPPORTED /;"	d
+PNG_SEQUENTIAL_READ_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_SEQUENTIAL_READ_SUPPORTED /;"	d
+PNG_SETJMP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_SETJMP_SUPPORTED /;"	d
+PNG_SET_CHUNK_CACHE_LIMIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_SET_CHUNK_CACHE_LIMIT_SUPPORTED /;"	d
+PNG_SET_CHUNK_MALLOC_LIMIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_SET_CHUNK_MALLOC_LIMIT_SUPPORTED /;"	d
+PNG_SET_USER_LIMITS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_SET_USER_LIMITS_SUPPORTED /;"	d
+PNG_STDIO_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_STDIO_SUPPORTED /;"	d
+PNG_TEXT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_TEXT_SUPPORTED /;"	d
+PNG_TIME_RFC1123_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_TIME_RFC1123_SUPPORTED /;"	d
+PNG_UNKNOWN_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_UNKNOWN_CHUNKS_SUPPORTED /;"	d
+PNG_USER_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_USER_CHUNKS_SUPPORTED /;"	d
+PNG_USER_LIMITS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_USER_LIMITS_SUPPORTED /;"	d
+PNG_USER_MEM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_USER_MEM_SUPPORTED /;"	d
+PNG_USER_TRANSFORM_INFO_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_USER_TRANSFORM_INFO_SUPPORTED /;"	d
+PNG_USER_TRANSFORM_PTR_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_USER_TRANSFORM_PTR_SUPPORTED /;"	d
+PNG_WARNINGS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WARNINGS_SUPPORTED /;"	d
+PNG_WEIGHT_SHIFT	Android/jni/include/pnglibconf.h	/^#define PNG_WEIGHT_SHIFT /;"	d
+PNG_WRITE_16BIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_16BIT_SUPPORTED /;"	d
+PNG_WRITE_ANCILLARY_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_ANCILLARY_CHUNKS_SUPPORTED /;"	d
+PNG_WRITE_BGR_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_BGR_SUPPORTED /;"	d
+PNG_WRITE_CHECK_FOR_INVALID_INDEX_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_CHECK_FOR_INVALID_INDEX_SUPPORTED /;"	d
+PNG_WRITE_COMPRESSED_TEXT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_COMPRESSED_TEXT_SUPPORTED /;"	d
+PNG_WRITE_CUSTOMIZE_ZTXT_COMPRESSION_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_CUSTOMIZE_ZTXT_COMPRESSION_SUPPORTED /;"	d
+PNG_WRITE_FILLER_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_FILLER_SUPPORTED /;"	d
+PNG_WRITE_FILTER_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_FILTER_SUPPORTED /;"	d
+PNG_WRITE_FLUSH_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_FLUSH_SUPPORTED /;"	d
+PNG_WRITE_INTERLACING_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_INTERLACING_SUPPORTED /;"	d
+PNG_WRITE_INT_FUNCTIONS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_INT_FUNCTIONS_SUPPORTED /;"	d
+PNG_WRITE_INVERT_ALPHA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_INVERT_ALPHA_SUPPORTED /;"	d
+PNG_WRITE_INVERT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_INVERT_SUPPORTED /;"	d
+PNG_WRITE_OPTIMIZE_CMF_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_OPTIMIZE_CMF_SUPPORTED /;"	d
+PNG_WRITE_PACKSWAP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_PACKSWAP_SUPPORTED /;"	d
+PNG_WRITE_PACK_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_PACK_SUPPORTED /;"	d
+PNG_WRITE_SHIFT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_SHIFT_SUPPORTED /;"	d
+PNG_WRITE_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_SUPPORTED /;"	d
+PNG_WRITE_SWAP_ALPHA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_SWAP_ALPHA_SUPPORTED /;"	d
+PNG_WRITE_SWAP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_SWAP_SUPPORTED /;"	d
+PNG_WRITE_TEXT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_TEXT_SUPPORTED /;"	d
+PNG_WRITE_TRANSFORMS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_TRANSFORMS_SUPPORTED /;"	d
+PNG_WRITE_UNKNOWN_CHUNKS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_UNKNOWN_CHUNKS_SUPPORTED /;"	d
+PNG_WRITE_USER_TRANSFORM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_USER_TRANSFORM_SUPPORTED /;"	d
+PNG_WRITE_WEIGHTED_FILTER_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_WEIGHTED_FILTER_SUPPORTED /;"	d
+PNG_WRITE_bKGD_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_bKGD_SUPPORTED /;"	d
+PNG_WRITE_cHRM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_cHRM_SUPPORTED /;"	d
+PNG_WRITE_gAMA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_gAMA_SUPPORTED /;"	d
+PNG_WRITE_hIST_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_hIST_SUPPORTED /;"	d
+PNG_WRITE_iCCP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_iCCP_SUPPORTED /;"	d
+PNG_WRITE_iTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_iTXt_SUPPORTED /;"	d
+PNG_WRITE_oFFs_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_oFFs_SUPPORTED /;"	d
+PNG_WRITE_pCAL_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_pCAL_SUPPORTED /;"	d
+PNG_WRITE_pHYs_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_pHYs_SUPPORTED /;"	d
+PNG_WRITE_sBIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_sBIT_SUPPORTED /;"	d
+PNG_WRITE_sCAL_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_sCAL_SUPPORTED /;"	d
+PNG_WRITE_sPLT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_sPLT_SUPPORTED /;"	d
+PNG_WRITE_sRGB_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_sRGB_SUPPORTED /;"	d
+PNG_WRITE_tEXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_tEXt_SUPPORTED /;"	d
+PNG_WRITE_tIME_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_tIME_SUPPORTED /;"	d
+PNG_WRITE_tRNS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_tRNS_SUPPORTED /;"	d
+PNG_WRITE_zTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_WRITE_zTXt_SUPPORTED /;"	d
+PNG_ZBUF_SIZE	Android/jni/include/pnglibconf.h	/^#define PNG_ZBUF_SIZE /;"	d
+PNG_bKGD_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_bKGD_SUPPORTED /;"	d
+PNG_cHRM_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_cHRM_SUPPORTED /;"	d
+PNG_gAMA_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_gAMA_SUPPORTED /;"	d
+PNG_hIST_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_hIST_SUPPORTED /;"	d
+PNG_iCCP_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_iCCP_SUPPORTED /;"	d
+PNG_iTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_iTXt_SUPPORTED /;"	d
+PNG_oFFs_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_oFFs_SUPPORTED /;"	d
+PNG_pCAL_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_pCAL_SUPPORTED /;"	d
+PNG_pHYs_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_pHYs_SUPPORTED /;"	d
+PNG_sBIT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_sBIT_SUPPORTED /;"	d
+PNG_sCAL_PRECISION	Android/jni/include/pnglibconf.h	/^#define PNG_sCAL_PRECISION /;"	d
+PNG_sCAL_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_sCAL_SUPPORTED /;"	d
+PNG_sPLT_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_sPLT_SUPPORTED /;"	d
+PNG_sRGB_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_sRGB_SUPPORTED /;"	d
+PNG_tEXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_tEXt_SUPPORTED /;"	d
+PNG_tIME_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_tIME_SUPPORTED /;"	d
+PNG_tRNS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_tRNS_SUPPORTED /;"	d
+PNG_zTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_zTXt_SUPPORTED /;"	d
+android_main	Android/jni/main.cpp	/^void android_main(struct android_app* state) {$/;"	f
+engine_draw_frame	Android/jni/main.cpp	/^static void engine_draw_frame(struct engine* engine) {$/;"	f	file:
+engine_handle_cmd	Android/jni/main.cpp	/^static void engine_handle_cmd(struct android_app* app, int32_t cmd) {$/;"	f	file:
+engine_handle_input	Android/jni/main.cpp	/^static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) {$/;"	f	file:
+engine_init_display	Android/jni/main.cpp	/^static int engine_init_display(struct engine* engine) {$/;"	f	file:
+engine_term_display	Android/jni/main.cpp	/^static void engine_term_display(struct engine* engine) {$/;"	f	file:
+onMotionEvnet	Android/jni/main.cpp	/^static int32_t onMotionEvnet(struct android_app* app, AInputEvent* event)$/;"	f	file:
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

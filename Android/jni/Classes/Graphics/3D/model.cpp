@@ -3,6 +3,8 @@
 //! @breif		
 #include "model.h"
 #include <string.h>		//memcpy
+#include "pch.h"
+#include "../../Asset/Asset.h"
 
 namespace Graphics {
 
@@ -46,7 +48,23 @@ Model::~Model()
 //=============================================================================
 void Model::SetTexture(const char* imageName)
 {
+	//texture生成
+	unsigned int width = 0;
+	unsigned int height = 0;
+	GLint type = 0;
+	GLubyte *textureImage;
 
+	//画像をロード
+	bool loadResult = Asset::loadPngImage(imageName, &width, &height, &type, &textureImage);
+	if(loadResult == false) return;
+
+	glEnable( GL_TEXTURE_2D );
+    glGenTextures(1, &_textag);
+    glBindTexture(GL_TEXTURE_2D, _textag);
+    glTexImage2D(GL_TEXTURE_2D, 0, type/*GL_RGBA*/, width, height, 0, type/*GL_RGBA*/, GL_UNSIGNED_BYTE, textureImage);
+    glBindTexture(GL_TEXTURE_2D, 0);
+
+    LOGI("Model::SetTexture, type=%d, w=%d, h=%d, _tag=%d", type, width, height, _textag);
 }
 //=============================================================================
 void Model::Draw()

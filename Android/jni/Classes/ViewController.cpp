@@ -61,3 +61,23 @@ void ViewController::drawFrame()
 
 	//@TODO sleep処理(waitForFrame)
 }
+
+//=============================================================================
+void ViewController::touchesBegan(CGPoint tp)
+{
+    MainRoutine::singleton()->touchedBegin(tp);
+
+    LOGI("touchBegan, x=%3.3f, y=%3.3f", tp.x, tp.y);
+}
+//=============================================================================
+void ViewController::touchesMoved(CGPoint tp)
+{
+    MainRoutine::singleton()->touchedMoved(tp);
+    LOGI("touchMoved, x=%3.3f, y=%3.3f", tp.x, tp.y);
+}
+//=============================================================================
+void ViewController::touchesEnded(CGPoint tp)
+{
+    MainRoutine::singleton()->touchedEnded(tp);
+    LOGI("touchEnded, x=%3.3f, y=%3.3f", tp.x, tp.y);
+}

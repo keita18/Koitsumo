@@ -5,29 +5,7 @@
 
 #include <EGL/egl.h>
 #include <GLES/gl.h>
-
-//とりあえずでここに定義
-struct CGSize
-{
-	float width;
-	float height;
-
-	CGSize() : width(0.0f), height(0.0f) {}
-};
-
-struct CGPoint
-{
-	float x;
-	float y;
-
-	CGPoint() : x(0.0f), y(0.0f) {}
-};
-
-struct CGRect
-{
-	CGSize size;
-	CGPoint origin;
-};
+#include "../GRDefinition.h"
 
 class Sprite
 {

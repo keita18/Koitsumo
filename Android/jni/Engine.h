@@ -37,6 +37,8 @@ struct engine {
 
     int animating;
 
+    bool touched;
+
     EGLDisplay display;
     EGLSurface surface;
     EGLContext context;

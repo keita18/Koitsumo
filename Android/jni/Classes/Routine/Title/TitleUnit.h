@@ -16,6 +16,10 @@ public:
 	virtual void calc();
 	virtual void draw();	
 
+	void touchedBegin(CGPoint tp);
+	void touchedMoved(CGPoint tp);
+	void touchedEnded(CGPoint tp);
+
 private:
 	Graphics::Model*	_coinModel;
 

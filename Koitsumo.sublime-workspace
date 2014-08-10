@@ -4,6 +4,114 @@
 		"selected_items":
 		[
 			[
+				"pri",
+				"printf	printf …"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"AMoti",
+				"AMotionEvent_getY"
+			],
+			[
+				"AMotion",
+				"AMotionEvent_getX"
+			],
+			[
+				"poi",
+				"pointCount"
+			],
+			[
+				"UI",
+				"UI_GameMain"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"_s",
+				"_shift"
+			],
+			[
+				"_vt",
+				"_vtx"
+			],
+			[
+				"_v",
+				"_vtx"
+			],
+			[
+				"_vtx",
+				"_vtx_num"
+			],
+			[
+				"un",
+				"unsigned"
+			],
+			[
+				"clas",
+				"class	class-..-(class)"
+			],
+			[
+				"TITLE",
+				"TITLE_SCORE_POS_Y"
+			],
+			[
+				"TITLE_SCORE",
+				"TITLE_SCORE_POS_Y"
+			],
+			[
+				"_spr",
+				"_spr_scoreNumber"
+			],
+			[
+				"TIT",
+				"TITLE_SCORE_POS_Y"
+			],
+			[
+				"_sp",
+				"_spr_scoreNumber"
+			],
+			[
+				"TITLE_SO",
+				"TITLE_SCORE_POS_X"
+			],
+			[
+				"bes",
+				"_spr_bestscore"
+			],
+			[
+				"draw",
+				"drawWithFrame"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"en",
+				"engine_"
+			],
+			[
+				"cou",
+				"count_"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ViewO",
+				"ViewController"
+			],
+			[
+				"glClear",
+				"glClearColor"
+			],
+			[
 				"main",
 				"MainRoutine"
 			],
@@ -32,10 +140,6 @@
 				"textureImage"
 			],
 			[
-				"inc",
-				"include"
-			],
-			[
 				"pAsse",
 				"pAssetManager_"
 			],
@@ -50,10 +154,6 @@
 			[
 				"he",
 				"height"
-			],
-			[
-				"clas",
-				"class	class-..-(class)"
 			],
 			[
 				"acceror",
@@ -136,49 +236,89 @@
 	"buffers":
 	[
 		{
-			"file": "Android/AndroidManifest.xml",
+			"contents": "startup time: 0.323935\nlaunching: /Applications/Sublime Text.app/Contents/MacOS/plugin_host\nreloading plugin Default.block\nreloading plugin Default.comment\nreloading plugin Default.copy_path\nreloading plugin Default.delete_word\nreloading plugin Default.detect_indentation\nreloading plugin Default.duplicate_line\nreloading plugin Default.echo\nreloading plugin Default.exec\nreloading plugin Default.fold\nreloading plugin Default.font\nreloading plugin Default.goto_line\nreloading plugin Default.history_list\nreloading plugin Default.indentation\nreloading plugin Default.kill_ring\nreloading plugin Default.mark\nreloading plugin Default.new_templates\nreloading plugin Default.open_file_settings\nreloading plugin Default.open_in_browser\nreloading plugin Default.pane\nreloading plugin Default.paragraph\nreloading plugin Default.paste_from_history\nreloading plugin Default.save_on_focus_lost\nreloading plugin Default.scroll\nreloading plugin Default.set_unsaved_view_name\nreloading plugin Default.side_bar\nreloading plugin Default.sort\nreloading plugin Default.swap_line\nreloading plugin Default.switch_file\nreloading plugin Default.symbol\nreloading plugin Default.transform\nreloading plugin Default.transpose\nreloading plugin Default.trim_trailing_white_space\nreloading plugin CSS.css_completions\nreloading plugin Diff.diff\nreloading plugin HTML.encode_html_entities\nreloading plugin HTML.html_completions\nreloading plugin CTags.ctags\nreloading plugin CTags.ctagsplugin\nreloading plugin CTags.test_ctags\nreloading plugin CTags.test_ctagsplugin\nreloading plugin EasyMotion.easy_motion\nreloading plugin Evernote.sublime_evernote\nloaded 887 snippets\nreloading plugin File Navigator.File Navigator\nreloading plugin FindKeyConflicts.find_key_conflicts\nreloading plugin Origami.origami\nreloading plugin Package Control.Package Control\nreloading plugin SideBarEnhancements.Edit\nreloading plugin SideBarEnhancements.SideBar\nreloading plugin SideBarEnhancements.SideBarDefaultDisable\nreloading plugin SideBarEnhancements.StatusBarFileSize\nreloading plugin SideBarEnhancements.StatusBarModifiedTime\nreloading plugin SimpleClone.simple_clone\nreloading plugin SublimeGDB.resultparser\nreloading plugin SublimeGDB.sublimegdb\nreloading plugin Sublimerge Pro.Sublimerge\nreloading plugin Codecs33.Codecs33\nreloading plugin completion.jsonrpc\nreloading plugin completion.plugin\nreloading plugin ConvertToUTF8.ConvertToUTF8\nreloading plugin IMESupport.imesupportplugin\nTraceback (most recent call last):\n  File \"/Applications/Sublime Text.app/Contents/MacOS/sublime_plugin.py\", line 73, in reload_plugin\n    m = importlib.import_module(modulename)\n  File \"X/importlib/__init__.py\", line 88, in import_module\n  File \"<frozen importlib._bootstrap>\", line 1577, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1558, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1525, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 586, in _check_name_wrapper\n  File \"<frozen importlib._bootstrap>\", line 1023, in load_module\n  File \"<frozen importlib._bootstrap>\", line 1004, in load_module\n  File \"<frozen importlib._bootstrap>\", line 562, in module_for_loader_wrapper\n  File \"<frozen importlib._bootstrap>\", line 869, in _load_module\n  File \"<frozen importlib._bootstrap>\", line 313, in _call_with_frames_removed\n  File \"/Users/keita/Library/Application Support/Sublime Text 3/Packages/IMESupport/imesupportplugin.py\", line 12, in <module>\n    from ctypes import windll, byref\nImportError: cannot import name windll\nreloading plugin Perforce.Perforce\nreloading plugin plugin.example\nreloading plugin Prefixr.Prefixr\nreloading plugin Prefixr.Test\nreloading plugin SublimeClang.errormarkers\nreloading plugin SublimeClang.staticanalyzer\nreloading plugin SublimeClang.sublimeclang\nTraceback (most recent call last):\n  File \"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/sublimeclang.py\", line 24, in <module>\n    import sublimes\nImportError: No module named 'sublimes'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Applications/Sublime Text.app/Contents/MacOS/sublime_plugin.py\", line 73, in reload_plugin\n    m = importlib.import_module(modulename)\n  File \"X/importlib/__init__.py\", line 88, in import_module\n  File \"<frozen importlib._bootstrap>\", line 1577, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1558, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1525, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 586, in _check_name_wrapper\n  File \"<frozen importlib._bootstrap>\", line 1023, in load_module\n  File \"<frozen importlib._bootstrap>\", line 1004, in load_module\n  File \"<frozen importlib._bootstrap>\", line 562, in module_for_loader_wrapper\n  File \"<frozen importlib._bootstrap>\", line 869, in _load_module\n  File \"<frozen importlib._bootstrap>\", line 313, in _call_with_frames_removed\n  File \"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/sublimeclang.py\", line 27, in <module>\n    sublime.error_message(\"\"\"\\\nNameError: name 'sublime' is not defined\nreloading plugin SublimeLinter.commands\nreloading plugin SublimeLinter.sublimelinter\nreloading plugin SublimeLinter-contrib-clang.linter\nSublimeLinter: clang linter loaded \nreloading plugin Terminal.Terminal\nreloading plugin User.clang-format-sublime\nplugins loaded\nSublimeLinter: debug mode: off \nPackage Control: Skipping automatic upgrade, last run at 2014-08-09 20:15:14, next run at 2014-08-09 21:15:14 or after\n",
 			"settings":
 			{
-				"buffer_size": 918,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Android/jni/Android.mk",
-			"settings":
-			{
-				"buffer_size": 757,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 89 files for \"logo\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp:\n   10: : _spr_logo(NULL)\n   12: 	_spr_logo = new Sprite(\"title_logo.png\", 512, 256);\n   23: #define TITLE_LOGO_POS_Y         50\n   25: 	_spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h:\n   19: 	Sprite* 	_spr_logo;\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/png.h:\n  303:  * Also, the PNG logo (in PNG format, of course) is supplied in the\n\n/Users/keita/proj/gitroot/Koitsumo/Android__/jni/Classes/Routine/Title/TitleUnit.cpp:\n   10: : _spr_logo(NULL)\n   12: 	_spr_logo = new Sprite(\"title_logo.png\", 512, 256);\n   23: #define TITLE_LOGO_POS_Y         50\n   25: 	_spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);\n\n/Users/keita/proj/gitroot/Koitsumo/Android__/jni/Classes/Routine/Title/TitleUnit.h:\n   19: 	Sprite* 	_spr_logo;\n\n/Users/keita/proj/gitroot/Koitsumo/Android__/jni/include/png.h:\n  303:  * Also, the PNG logo (in PNG format, of course) is supplied in the\n\n16 matches across 6 files\n",
-			"settings":
-			{
-				"buffer_size": 1123,
+				"buffer_size": 5572,
 				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"com.example.koitsumo\"\n    android:versionCode=\"1\"\n    android:versionName=\"1.0\" >\n\n    <uses-sdk\n        android:minSdkVersion=\"9\" />\n\n    <application\n        android:allowBackup=\"true\"\n        android:icon=\"@drawable/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:theme=\"@style/AppTheme\" android:debuggable=\"true\">\n        <activity\n            android:name=\"android.app.NativeActivity\"\n            android:label=\"@string/app_name\" >\n            <!-- so name -->\n            <meta-data android:name=\"android.app.lib_name\"\n                    android:value=\"Koitsumo\" />\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n    </application>\n\n</manifest>\n",
-			"file": "Android__/AndroidManifest.xml",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 972,
-				"line_ending": "Unix"
+				"name": "startup time: 0.323935"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 227.0,
+		"height": 379.0,
 		"selected_items":
 		[
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"package cont",
+				"Package Control: List Packages"
+			],
+			[
+				"package con",
+				"Package Control: Enable Package"
+			],
+			[
+				"sublimeclang",
+				"Preferences: SublimeClang Settings – Default"
+			],
+			[
+				"sublimeclan",
+				"Preferences: SublimeClang Settings – User"
+			],
+			[
+				"sublimecla",
+				"Preferences: SublimeClang Settings – Default"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"ctag",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"projec",
+				"Project: Add Folder"
+			],
+			[
+				"origami right",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"origami",
+				"Origami: Clone File to Pane on the Right"
+			],
+			[
+				"findkey",
+				"FindKeyConflicts: Overlap Conflicts"
+			],
+			[
+				"findkeyconf",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
 			[
 				"snippet hea",
 				"Snippet: header"
@@ -190,10 +330,6 @@
 			[
 				"project",
 				"Project: Save As"
-			],
-			[
-				"projec",
-				"Project: Add Folder"
 			],
 			[
 				"proje",
@@ -208,16 +344,8 @@
 				"Package Control: List Packages"
 			],
 			[
-				"package con",
-				"Package Control: Install Package"
-			],
-			[
 				"evernote",
 				"Evernote: Search Note"
-			],
-			[
-				"package cont",
-				"Package Control: Remove Package"
 			],
 			[
 				"package control",
@@ -252,15 +380,7 @@
 				"Package Control: Enable Package"
 			],
 			[
-				"package insta",
-				"Package Control: Install Package"
-			],
-			[
 				"package ins",
-				"Package Control: Install Package"
-			],
-			[
-				"package",
 				"Package Control: Install Package"
 			],
 			[
@@ -280,9 +400,10 @@
 	},
 	"console":
 	{
-		"height": 219.0,
+		"height": 505.0,
 		"history":
 		[
+			"sublime.log_commands(True)",
 			"view.run_command('example')",
 			"ls",
 			"which",
@@ -308,20 +429,62 @@
 	},
 	"file_history":
 	[
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/main.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Android.mk",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/pch.h",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/SublimeClang.sublime-settings",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.h",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/ViewController.cpp",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/CTags.sublime-settings",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Engine.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/input.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/ViewController.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/main.cpp",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/sched.h",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/SublimeClang.sublime-settings",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/sys/system_properties.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/grp.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/getopt.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/msm_adsp.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/malloc.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/pathconf.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/ppdev.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/platform_device.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/videodev.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/vga.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/netfilter_ipv4/ip_nat.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/inttypes.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/3D/model.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector3.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector3.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/3D/model.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Android.mk",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Application.mk",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Functions.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Functions.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/pch.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/glu.cpp",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/AndroidManifest.xml",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs-debug/android_native_app_glue/android_native_app_glue.o.d",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/app_process",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.cpp",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-19/arch-arm/usr/include/GLES/gl.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/glu.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Koitsumo.sublime-project",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/project.properties",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs-debug/koitsumo/Classes/Routine/Title/TitleUnit.o.d",
+		"/Users/keita/proj/gitroot/Koitsumo/Android__/AndroidManifest.xml",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/bin/AndroidManifest.xml",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/res/values/strings.xml",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/res/menu/main.xml",
@@ -386,6 +549,67 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"completion",
+			"sublimeclang",
+			"丹治慶太",
+			"丹治",
+			"sublimeclang",
+			"else",
+			"loadImage",
+			"touchesEnded",
+			"animating",
+			"AInputEvent_getType",
+			"main",
+			"CGPoint",
+			"pViewController",
+			"viewCon",
+			"PI",
+			"view",
+			"_tag",
+			"pch.h",
+			"gl.h>",
+			"pch.h",
+			"逆",
+			"glScale",
+			"500",
+			"1",
+			"_sprCol",
+			"prepareF",
+			"initDraw",
+			"sleep",
+			"pViewController",
+			"drawFrame",
+			"engine",
+			"engine.state",
+			"engine",
+			"assetMana",
+			"engine",
+			"engine_init",
+			"initDraw",
+			"preparefra",
+			"gluPers",
+			"glLookAt",
+			"MainROu",
+			"w",
+			"CG",
+			"texCoord",
+			"TexCoord",
+			"texCoord",
+			"TexCoord",
+			"texCoord",
+			"accelerometer:",
+			"static",
+			"	::",
+			"Sprite",
+			"DrawBox",
+			"loadImage",
+			"initDrow",
+			"prepareFrame",
+			"void",
+			"prepareFrame",
+			"------------------------",
+			"LOG",
+			"animating",
 			"logo",
 			"Draw.",
 			"Draw.cpp",
@@ -452,37 +676,7 @@
 			"loadPngFromBytes",
 			"PNG_LIBPNG_VER_STRING",
 			"png_set_read_fn",
-			"asset_read",
-			"loadPngFromAsset",
-			"name",
-			"emoDrawableCreateSprite",
-			"cpp",
-			"sprite",
-			"getResourceName",
-			"graphics",
-			"to_dir",
-			"assets",
-			"ANDROID_GRAPHICS_DIR",
-			"graphics/",
-			"loadPngSizeFromAsset",
-			"ball.png",
-			"app_dumy",
-			"engine_draw_frame",
-			"initDraw",
-			"display",
-			"gl_cull_face",
-			"display",
-			"DISPLAY",
-			"Display",
-			"display",
-			"Display",
-			"display",
-			"Display",
-			"display",
-			"emacs",
-			"ctrl+f",
-			"AmotionEvent_getY",
-			"main"
+			"asset_read"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -500,210 +694,37 @@
 	"groups":
 	[
 		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "Android/AndroidManifest.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 918,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								555,
-								555
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Android/jni/Android.mk",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 757,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								274,
-								274
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1123,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										129,
-										133
-									],
-									[
-										153,
-										157
-									],
-									[
-										178,
-										182
-									],
-									[
-										221,
-										225
-									],
-									[
-										256,
-										260
-									],
-									[
-										288,
-										292
-									],
-									[
-										416,
-										420
-									],
-									[
-										509,
-										513
-									],
-									[
-										661,
-										665
-									],
-									[
-										685,
-										689
-									],
-									[
-										710,
-										714
-									],
-									[
-										753,
-										757
-									],
-									[
-										788,
-										792
-									],
-									[
-										820,
-										824
-									],
-									[
-										950,
-										954
-									],
-									[
-										1045,
-										1049
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								1096,
-								1096
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
 			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 3,
-					"file": "Android__/AndroidManifest.xml",
+					"buffer": 0,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 972,
+						"buffer_size": 5572,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								774,
-								774
+								4430,
+								4430
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
+							"auto_name": "startup time: 0.323935",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1208.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -726,18 +747,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -767,28 +781,188 @@
 		"selected_items":
 		[
 			[
-				"androidmani",
-				"Android/AndroidManifest.xml"
+				"sprit",
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
 			],
 			[
 				"sprite",
-				"Android/jni/Classes/Graphics/2D/Sprite.h"
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
 			],
 			[
-				"titleuni",
+				"main",
+				"Koitsumo/Android/jni/main.cpp"
+			],
+			[
+				"view",
+				"Koitsumo/Android/jni/Classes/ViewController.cpp"
+			],
+			[
+				"grd",
+				"Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h"
+			],
+			[
+				"main.cpp",
+				"Koitsumo/Android/jni/main.cpp"
+			],
+			[
+				"input",
+				"include/android/input.h"
+			],
+			[
+				"maincpp",
+				"Android/jni/main.cpp"
+			],
+			[
+				"tit",
+				"Android/jni/Classes/Routine/Title/TitleUnit.h"
+			],
+			[
+				"unit",
+				"Android/jni/Classes/Routine/Unit.h"
+			],
+			[
+				"ma",
+				"Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"gr",
+				"Android/jni/Classes/Graphics/GRDefinition.h"
+			],
+			[
+				"",
+				"Android/jni/main.cpp"
+			],
+			[
+				"titi",
 				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
 			],
 			[
-				"asset.cpp",
-				"Android/jni/Classes/Asset/Asset.cpp"
+				"spri",
+				"Android/jni/Classes/Graphics/2D/Sprite.cpp"
+			],
+			[
+				"model",
+				"Android/jni/Classes/Graphics/3D/model.cpp"
+			],
+			[
+				"title",
+				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"ui",
+				"Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
+			],
+			[
+				"pc",
+				"Android/jni/include/pch.h"
+			],
+			[
+				"ui_game",
+				"Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
 			],
 			[
 				"and",
 				"Android/jni/Android.mk"
 			],
 			[
-				"main.cpp",
+				"fun",
+				"Android/jni/Classes/Math/Functions.h"
+			],
+			[
+				"ver",
+				"Android/jni/Classes/Math/Vector2.cpp"
+			],
+			[
+				"mode",
+				"Android/jni/Classes/Graphics/3D/model.h"
+			],
+			[
+				"androi",
+				"Android/jni/Android.mk"
+			],
+			[
+				"mo",
+				"Android/jni/Classes/Graphics/3D/model.h"
+			],
+			[
+				"pch",
+				"Android/jni/include/pch.h"
+			],
+			[
+				"titile",
+				"Android/jni/Classes/Routine/Title/TitleUnit.h"
+			],
+			[
+				"s",
+				"Android/jni/Classes/Graphics/2D/Sprite.cpp"
+			],
+			[
+				"viewco",
+				"Android/jni/Classes/ViewController.cpp"
+			],
+			[
+				"mainrout",
+				"Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"titleu",
+				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"mainc",
 				"Android/jni/main.cpp"
+			],
+			[
+				"vie",
+				"Android/jni/Classes/ViewController.cpp"
+			],
+			[
+				"main.c",
+				"Android/jni/main.cpp"
+			],
+			[
+				"viewcon",
+				"Android/jni/Classes/ViewController.cpp"
+			],
+			[
+				"engine",
+				"Android/jni/Engine.h"
+			],
+			[
+				"asset",
+				"Android/jni/Classes/Asset/Asset.h"
+			],
+			[
+				"mai",
+				"Android/jni/main.cpp"
+			],
+			[
+				"main.p",
+				"Android/jni/main.cpp"
+			],
+			[
+				"t",
+				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"titleuni",
+				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"mainrou",
+				"Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"spr",
+				"Android/jni/Classes/Graphics/2D/Sprite.h"
+			],
+			[
+				"androidmani",
+				"Android/AndroidManifest.xml"
+			],
+			[
+				"asset.cpp",
+				"Android/jni/Classes/Asset/Asset.cpp"
 			],
 			[
 				"asse",
@@ -797,26 +971,6 @@
 			[
 				"an",
 				"Android/jni/Android.mk"
-			],
-			[
-				"main",
-				"Android/jni/Classes/Routine/MainRoutine.h"
-			],
-			[
-				"mainrou",
-				"Android/jni/Classes/Routine/MainRoutine.cpp"
-			],
-			[
-				"title",
-				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
-			],
-			[
-				"spri",
-				"Android/jni/Classes/Graphics/2D/Sprite.h"
-			],
-			[
-				"unit",
-				"Android/jni/Classes/Routine/Unit.h"
 			],
 			[
 				"draw",
@@ -839,10 +993,6 @@
 				"jni/Android.mk"
 			],
 			[
-				"androi",
-				"jni/Android.mk"
-			],
-			[
 				"android.mk",
 				"NativeActivityTest/jni/Android.mk"
 			],
@@ -860,7 +1010,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/proj/emo-framework.sublime-project"
+				"~/home_mba.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -879,7 +1029,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":

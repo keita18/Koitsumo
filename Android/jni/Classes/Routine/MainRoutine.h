@@ -16,6 +16,10 @@ public:
 	void calc();
 	void draw();
 
+	void touchedBegin(CGPoint tp);
+	void touchedMoved(CGPoint tp);
+	void touchedEnded(CGPoint tp);
+
 	Unit* getCurrentUnit();
 
 private:

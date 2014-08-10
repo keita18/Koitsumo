@@ -23,6 +23,10 @@ TitleUnit::TitleUnit()
 	_spr_menubar = new Sprite("TitleMenu.png", 320, 128);
 
 	_coinModel = UserInterface::UI_GameMain::makeCoinModel("10.png", 64);
+	_coinModel->SetScale(Math::Vector3(32.f, 32.f, 32.f));
+	_coinModel->SetPosition(Math::Vector3(160.f, 218.f, 0));
+
+	// _bestScore
 }
 //=============================================================================
 TitleUnit::~TitleUnit()
@@ -32,6 +36,8 @@ TitleUnit::~TitleUnit()
 	SAFE_DELETE(_spr_scoreNumber);
 	SAFE_DELETE(_spr_teamlogo);
 	SAFE_DELETE(_spr_menubar);
+
+	SAFE_DELETE(_coinModel);
 }
 //=============================================================================
 void TitleUnit::calc()
@@ -52,12 +58,30 @@ void TitleUnit::draw()
 	_spr_scoreNumber->drawWithFrame(0, TITLE_SCORE_POS_X+66, TITLE_SCORE_POS_Y, 16, 16);
 	for (int i=0; i<7; i++) {
 		_spr_scoreNumber->drawWithFrame( 
-			(_bestScore/((int)pow(10, 6-i)))%10, TITLE_SCORE_POS_X+80+i*12, TITLE_SCORE_POS_Y, 16, 16);
+			(_bestScore/((int)pow(10.0f, 6.0f-(float)i)))%10, TITLE_SCORE_POS_X+80+i*12, TITLE_SCORE_POS_Y, 16, 16);
 	}
 
 	_spr_logo->drawWithFrame(0, 0, TITLE_LOGO_POS_Y, 320, 160);
 	_spr_teamlogo->drawWithFrame(0, 240, TITLE_TEAMLOGO_POS_Y, 64, 32);
 
+	_coinModel->Draw();
+
 	//test描画
 	// _spr_logo->drawBox();
+}
+
+//=============================================================================
+void TitleUnit::touchedBegin(CGPoint tp)
+{
+
+}
+//=============================================================================
+void TitleUnit::touchedMoved(CGPoint tp)
+{
+
+}
+//=============================================================================
+void TitleUnit::touchedEnded(CGPoint tp)
+{
+
 }
