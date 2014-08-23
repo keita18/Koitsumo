@@ -12,6 +12,7 @@ class MainRoutine
 {
 public:
 	static MainRoutine* singleton();
+	void init();
 
 	void calc();
 	void draw();

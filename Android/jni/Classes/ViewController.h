@@ -11,6 +11,8 @@ class ViewController
 {
 public:
 	ViewController(engine* engine);
+	void init();
+	
 	void setFrameBuffer();
 	void drawFrame();
 

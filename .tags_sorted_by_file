@@ -14,7 +14,6 @@ drawable	Android/gen/com/example/koitsumo/R.java	/^    public static final class
 ic_launcher	Android/gen/com/example/koitsumo/R.java	/^        public static final int ic_launcher=0x7f020000;$/;"	f	class:R.drawable
 string	Android/gen/com/example/koitsumo/R.java	/^    public static final class string {$/;"	c	class:R
 style	Android/gen/com/example/koitsumo/R.java	/^    public static final class style {$/;"	c	class:R
-APP_STL	Android/jni/Android.mk	/^APP_STL := stlport_static$/;"	m
 LOCAL_EXPORT_C_INCLUDES	Android/jni/Android.mk	/^LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)\/include$/;"	m
 LOCAL_LDLIBS	Android/jni/Android.mk	/^LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lz$/;"	m
 LOCAL_MODULE	Android/jni/Android.mk	/^LOCAL_MODULE    := koitsumo$/;"	m

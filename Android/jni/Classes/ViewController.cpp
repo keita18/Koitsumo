@@ -11,6 +11,12 @@ ViewController::ViewController(engine* engine)
 , count_(0)
 {}
 
+void ViewController::init()
+{
+	count_ = 0;
+	MainRoutine::singleton()->init();
+}
+
 void ViewController::setFrameBuffer()
 {
 	//@TDOO 他の処理も？

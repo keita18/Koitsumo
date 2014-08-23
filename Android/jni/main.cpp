@@ -28,6 +28,9 @@
 static int engine_init_display(struct engine* engine) {
     // initialize OpenGL ES and EGL
 
+    LOGI("engine_init_display");
+
+
     EGLint w, h, dummy, format;
     EGLint numConfigs;
     EGLConfig config;
@@ -89,6 +92,12 @@ static int engine_init_display(struct engine* engine) {
     //とりあえずここで初期化処理
     Asset::setAssetManager(engine->assetManager);
 
+    //デバッガ接続状態によってはここが二度くるので明示的に初期化
+    if(engine->pViewController)
+    {
+        engine->pViewController->init();
+    }
+
     //initDraw(engine);
 
     return 0;
@@ -99,6 +108,8 @@ static int engine_init_display(struct engine* engine) {
  */
 //毎フレームの描画処理
 static void engine_draw_frame(struct engine* engine) {
+    LOGI("engine_draw_frame");
+
     if (engine->display == NULL) {
         // No display.
         return;
@@ -198,6 +209,8 @@ static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) 
  * Process the next main command.
  */
 static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
+    LOGI("engine_handle_cmd");
+
     struct engine* engine = (struct engine*)app->userData;
     switch (cmd) {
         case APP_CMD_SAVE_STATE:
@@ -254,7 +267,7 @@ void android_main(struct android_app* state) {
     app_dummy();
 
     //デバッグできるようにsleep
-    sleep(2);
+    LOGI("pin0");
 
     memset(&engine, 0, sizeof(engine));
     state->userData = &engine;

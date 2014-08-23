@@ -9,5 +9,14 @@
 			"follow_symlinks": true,
 			"path": "/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include"
 		}
-	]
+	],
+	"settings": {
+	    "sublimeclang_options": [
+	        "-I/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/**",
+	        "-I/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/*",
+	        "-I/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include",
+	        "-I/Users/keita/proj/gitroot/Koitsumo/Android/*",
+	        "-I/Users/keita/proj/gitroot/Koitsumo/Android/**",
+	    ]		
+	}
 }

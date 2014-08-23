@@ -4,7 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-APP_STL	Android/jni/Android.mk	/^APP_STL := stlport_static$/;"	m
 APP_STL	Android/jni/Application.mk	/^APP_STL := stlport_static$/;"	m
 AppBaseTheme	Android/gen/com/example/koitsumo/R.java	/^        public static final int AppBaseTheme=0x7f040000;$/;"	f	class:R.style
 AppTheme	Android/gen/com/example/koitsumo/R.java	/^        public static final int AppTheme=0x7f040001;$/;"	f	class:R.style
