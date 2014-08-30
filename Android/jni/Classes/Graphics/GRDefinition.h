@@ -3,9 +3,20 @@
 //! @breif		
 #pragma once
 
-#define SCREEN_WIDTH 320
-#define SCREEN_HEIGHT 480
+#ifndef GRDEFINITION_H
+#define GRDEFINITION_H
+
+#define BASE_SCREEN_WIDTH 320
+#define BASE_SCREEN_HEIGHT 480
 #define PI 3.14159265f
+
+class Screen
+{
+public:
+	static int RATIO;
+	static int WIDTH;
+	static int HEIGHT;
+};
 
 struct CGSize
 {
@@ -29,3 +40,5 @@ struct CGRect
 	CGSize size;
 	CGPoint origin;
 };
+
+#endif

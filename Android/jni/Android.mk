@@ -17,7 +17,9 @@ LOCAL_SRC_FILES := main.cpp \
 	glu.cpp \
 	Classes/ViewController.cpp \
 	Classes/Asset/Asset.cpp \
+	Classes/Graphics/GRDefinition.cpp \
 	Classes/Graphics/2D/Sprite.cpp \
+	Classes/Graphics/2D/Draw.cpp \
 	Classes/Graphics/3D/model.cpp \
 	Classes/Math/Functions.cpp \
 	Classes/Math/Vector2.cpp \

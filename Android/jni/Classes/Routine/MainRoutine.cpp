@@ -40,6 +40,10 @@ void MainRoutine::calc()
 	if(_currentUnit == NULL) {
 		_currentUnit = new TitleUnit();
 	}
+
+	if(_currentUnit) {
+		_currentUnit->calc();
+	}
 }
 
 //=============================================================================

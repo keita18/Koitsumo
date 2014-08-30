@@ -9,6 +9,7 @@
 #include <GLES/gl.h>
 #include "glu.h"
 #include <math.h>
+#include <algorithm>
 
 #include <unistd.h> //sleep用
 
@@ -96,6 +97,16 @@ static int engine_init_display(struct engine* engine) {
     if(engine->pViewController)
     {
         engine->pViewController->init();
+        engine->animating = true;
+
+        //旧バージョンからの拡大率
+        int wr = w / BASE_SCREEN_WIDTH;
+        int hr = h / BASE_SCREEN_HEIGHT;
+        Screen::RATIO = std::min(wr, hr);
+        Screen::WIDTH = BASE_SCREEN_WIDTH * Screen::RATIO;
+        Screen::HEIGHT = BASE_SCREEN_HEIGHT * Screen::RATIO;
+
+        LOGI("SR=%d", Screen::RATIO);
     }
 
     //initDraw(engine);
@@ -266,8 +277,9 @@ void android_main(struct android_app* state) {
     // glueが削除されないように
     app_dummy();
 
-    //デバッグできるようにsleep
     LOGI("pin0");
+    //デバッガ接続でやるとsleepいれないと動作停止してしまう。このスレッドだけ止まってる感じ。
+    sleep(3);
 
     memset(&engine, 0, sizeof(engine));
     state->userData = &engine;
@@ -336,6 +348,8 @@ void android_main(struct android_app* state) {
             }
         }
 
+        // LOGI("pin1");
+
         if (engine.animating) {
             // Done with events; draw next animation frame.
             engine.state.angle += .01f;
@@ -343,6 +357,7 @@ void android_main(struct android_app* state) {
                 engine.state.angle = 0;
             }
 
+            // LOGI("pin2");
             // Drawing is throttled to the screen update rate, so there
             // is no need to do timing here.
             engine_draw_frame(&engine);

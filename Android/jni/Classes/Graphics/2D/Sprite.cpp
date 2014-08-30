@@ -58,11 +58,11 @@ void Sprite::loadImage(const char* imgName)
 
 void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 {
-	//倍で描画
-	x *= 2;
-	y *= 2;
-	w *= 2;
-	h *= 2;
+	//baseからのスケール適用
+	x *= Screen::RATIO;
+	y *= Screen::RATIO;
+	w *= Screen::RATIO;
+	h *= Screen::RATIO;
 
 	CGRect frameRect;
 	if(_tag) {
@@ -92,8 +92,8 @@ void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 	_count++;
 	if(_count > 30)
 	{
-		LOGI("drawWithFrame, f=%d, x=%d, y=%d, w=%d, h=%d, tag=%d", f, x, y, w, h, _tag);
-		LOGI("texcoord, %f, %f, %f, %f, %f, %f, %f, %f", texCoord[0], texCoord[1], texCoord[2], texCoord[3], texCoord[4], texCoord[5], texCoord[6], texCoord[7]);
+		// LOGI("drawWithFrame, f=%d, x=%d, y=%d, w=%d, h=%d, tag=%d", f, x, y, w, h, _tag);
+		// LOGI("texcoord, %f, %f, %f, %f, %f, %f, %f, %f", texCoord[0], texCoord[1], texCoord[2], texCoord[3], texCoord[4], texCoord[5], texCoord[6], texCoord[7]);
 		_count = 0;
 	}
 
@@ -119,6 +119,16 @@ void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }
 
+//=============================================================================
+void Sprite::setColor(GLubyte r, GLubyte g, GLubyte b, GLubyte a)
+{
+	_sprCol[0] = _sprCol[4] = _sprCol[8] =  _sprCol[12] = r;
+	_sprCol[1] = _sprCol[5] = _sprCol[9] =  _sprCol[13] = g;
+	_sprCol[2] = _sprCol[6] = _sprCol[10] = _sprCol[14] = b;
+	_sprCol[3] = _sprCol[7] = _sprCol[11] = _sprCol[15] = a;
+}
+
+//=============================================================================
 void Sprite::drawBox()
 {
 	// 頂点リスト

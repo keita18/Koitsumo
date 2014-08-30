@@ -62,7 +62,8 @@ void ViewController::drawFrame()
 
 	//presentFramebuffer?
 
-	glMatrixMode(GL_PROJECTION);
+	//Eclipseがエラーだってゆってくるので型指定
+	glMatrixMode((unsigned int)GL_PROJECTION);
 	glPopMatrix();
 
 	//@TODO sleep処理(waitForFrame)

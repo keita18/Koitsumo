@@ -3,8 +3,9 @@
 //! @breif		
 #include "UI_GameMain.h"
 #include "pch.h"
-
+#include "Classes/Graphics/2D/Draw.h"
 using namespace UserInterface;
+
 
 //=============================================================================
 UI_GameMain::UI_GameMain()
@@ -59,4 +60,81 @@ UI_GameMain::~UI_GameMain()
 	output->SetVertexBuffer(vtx, size);
 	output->SetTexture(imageFileName);
     return output;
+}
+
+// ---------------------------------
+// UI_GameMain::BackGround
+// ---------------------------------
+//=============================================================================
+#define UI_GAMEMAIN_BACKGROUND_SCALEBASE	15.0f
+UI_GameMain::BackGround::BackGround()
+: _sprite0(NULL)
+, _sprite1(NULL)
+, _orientation(ORIENTATION_PORTRAIT_UP)
+, _pos(Math::Vector2(0,0))
+, _sclframe(0)
+, _scl(UI_GAMEMAIN_BACKGROUND_SCALEBASE)
+{
+	_sprite0 = new Sprite("point.png", 32, 32);
+	_sprite1 = new Sprite("point.png", 32, 32);
+
+	_sprite0->setColor(255, 255, 255, 80);
+	_sprite1->setColor(193, 236, 245, 255);
+}
+//=============================================================================
+/*virtual*/ UI_GameMain::BackGround::~BackGround()
+{
+	SAFE_DELETE(_sprite0);
+	SAFE_DELETE(_sprite1);
+}
+//=============================================================================
+void UI_GameMain::BackGround::calc()
+{
+#define UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS	0.01f
+#define UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS	5.0f
+	
+	//使ってなさそう
+	_pos += Math::Vector2(-1, -0.5f);
+	if (_pos.x < -64) _pos.x += 64;
+	if (_pos.y < -64) _pos.y += 64;
+	_sclframe += UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS;
+	if(_sclframe > PI * 2) _sclframe -= PI * 2;
+	_scl = UI_GAMEMAIN_BACKGROUND_SCALEBASE + UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS * sinf(_sclframe);
+
+	LOGI("BackGround::pos.x = %3.3f, pos.y = %3.3f", _pos.x, _pos.y );
+}
+//=============================================================================
+void UI_GameMain::BackGround::draw()
+{
+	int width, height, dotWidthMax, dotHeightMax;
+	switch(_orientation) {
+		case ORIENTATION_PORTRAIT_UP:
+		case ORIENTATION_PORTRAIT_DOWN:
+			width  = Screen::WIDTH;
+			height = Screen::HEIGHT;
+			dotWidthMax = BASE_SCREEN_WIDTH;
+			dotHeightMax = BASE_SCREEN_HEIGHT;
+			break;
+		case ORIENTATION_LANDSCAPE_LEFT:
+		case ORIENTATION_LANDSCAPE_RIGHT:
+			width  = Screen::HEIGHT;
+			height = Screen::WIDTH;
+			dotWidthMax = BASE_SCREEN_HEIGHT;
+			dotHeightMax = BASE_SCREEN_WIDTH;
+			break;
+	}
+	Draw::singleton()->setColor(255, 255, 255, 255);
+	Draw::singleton()->setColorWithSide(DrawColorSideLeftBottom, 45, 158, 216, 255);
+	Draw::singleton()->setColorWithSide(DrawColorSideRightBottom, 45, 158, 216, 255);
+	Draw::singleton()->drawBox(0, 0, width, height);
+
+	//dotをまばらに描く
+	int ycount = 0;
+	for(int y=(int)_pos.y; y < dotHeightMax + 30; y+=32){
+		int xcount = ycount%2;
+		for(int x = (int)_pos.x; x < dotWidthMax + 30; x+=32){
+			_sprite0->drawWithFrame(0, x, y, 20, 20);
+			xcount++;
+		}
+	}
 }

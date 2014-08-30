@@ -15,6 +15,7 @@ public:
 
 	void drawWithFrame(int f, int x, int y, int w, int h);
 
+	void setColor(GLubyte r, GLubyte g, GLubyte b, GLubyte a);
 	//test
 	void drawBox();
 

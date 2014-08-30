@@ -15,6 +15,34 @@ namespace UserInterface {
 class UI_GameMain
 {
 public:
+	class BackGround
+	{
+	public:
+		enum ORIENTATION
+		{
+			ORIENTATION_PORTRAIT_UP = 0,
+			ORIENTATION_PORTRAIT_DOWN,
+			ORIENTATION_LANDSCAPE_LEFT,
+			ORIENTATION_LANDSCAPE_RIGHT
+		};
+	public:
+		BackGround();
+		virtual ~BackGround();
+
+		void calc();
+		void draw();
+
+		void setOrientaion(int o)	{ _orientation = 0; }
+	private:
+		Sprite*		_sprite0;
+		Sprite*		_sprite1;
+		Math::Vector2 	_pos;
+		int 		_orientation;
+		float 		_scl;
+		float 		_sclframe;
+	};
+
+public:
 	UI_GameMain();
 	~UI_GameMain();
 

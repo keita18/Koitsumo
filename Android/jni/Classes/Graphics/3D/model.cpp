@@ -71,10 +71,17 @@ void Model::Draw()
 {
 	if (!_vtx) return;
 
+	Math::Vector3 pos = _position;
+	Math::Vector3 scale = _scale;
+	pos *= Screen::RATIO;
+	scale *= Screen::RATIO;
+
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	glTranslatef(_position.x + _shift.x, _position.y + _shift.y, _position.z + _shift.z);
-	glScalef(_scale.x, _scale.y, _scale.z);
+	// glTranslatef(_position.x + _shift.x, _position.y + _shift.y, _position.z + _shift.z);
+	// glScalef(_scale.x, _scale.y, _scale.z);
+	glTranslatef(pos.x + _shift.x, pos.y + _shift.y, pos.z + _shift.z);
+	glScalef(scale.x, scale.y, scale.z);
 	glRotatef(_rotation.z, 	  0, 	0, 	1.0f);
 	glRotatef(_rotation.y,	  0, 	1.0f,	0);
 	glRotatef(_rotation.x, 1.0f, 	0,	0);
@@ -118,7 +125,7 @@ void Model::SetVertexBuffer(void* buf, unsigned int num)
 		_vtx[i * 3 + 1] = vertex[i].y;
 		_vtx[i * 3 + 2] = vertex[i].z;
 		_uv[i * 2 + 0] = vertex[i].u;
-		_uv[i * 2 + 1] = vertex[i].v;
+		_uv[i * 2 + 1] = 1.0f - vertex[i].v;	//反転forAndroid
 		_color[i] = (vertex[i].a << 24) | (vertex[i].r << 16) | (vertex[i].g << 8) | vertex[i].b;
 	}	
 }

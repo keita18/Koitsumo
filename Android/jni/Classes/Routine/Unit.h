@@ -8,6 +8,8 @@
 enum UnitId{
 	UNIT_NONE = 0,
 	UNIT_TITLE,
+	UNIT_PUZZLE,
+	UNIT_PUZZLE_NO_TIMELIMIT
 };
 
 class Unit
@@ -22,4 +24,12 @@ public:
 	void touchedBegin(CGPoint tp) {}
 	void touchedMoved(CGPoint tp) {}
 	void touchedEnded(CGPoint tp) {}
+
+	void SetEnd(bool val) { _end = val; }
+	bool GetEnd() const { return _end; }
+	void SetNextID(int nextID) { _nextID = nextID; }
+	int GetNextID() const { return _nextID; }
+private:
+	bool 	_end;
+	int 	_nextID;
 };
