@@ -73,8 +73,8 @@ void Model::Draw()
 
 	Math::Vector3 pos = _position;
 	Math::Vector3 scale = _scale;
-	pos *= Screen::RATIO;
-	scale *= Screen::RATIO;
+	// pos *= Screen::RATIO;
+	// scale *= Screen::RATIO;
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();

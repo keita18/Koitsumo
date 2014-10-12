@@ -59,10 +59,10 @@ void Sprite::loadImage(const char* imgName)
 void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 {
 	//baseからのスケール適用
-	x *= Screen::RATIO;
-	y *= Screen::RATIO;
-	w *= Screen::RATIO;
-	h *= Screen::RATIO;
+	//x *= Screen::RATIO;
+	//y *= Screen::RATIO;
+	// w *= Screen::RATIO;
+	// h *= Screen::RATIO;
 
 	CGRect frameRect;
 	if(_tag) {

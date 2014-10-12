@@ -18,9 +18,9 @@ public:
 	virtual void calc();
 	virtual void draw();	
 
-	void touchedBegin(CGPoint tp);
-	void touchedMoved(CGPoint tp);
-	void touchedEnded(CGPoint tp);
+	virtual void touchedBegin(CGPoint tp);
+	virtual void touchedMoved(CGPoint tp);
+	virtual void touchedEnded(CGPoint tp);
 
 private:
 	UserInterface::UI_GameMain::BackGround	_bg;

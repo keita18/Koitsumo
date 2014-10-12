@@ -28,7 +28,7 @@ void ViewController::setFrameBuffer()
 	if(count_ > 30)
 	{
 		count_ = 0;
-		LOGI("setFrameBuffer, width=%d, height=%d", engine_.width, engine_.height);
+		//LOGI("setFrameBuffer, width=%d, height=%d", engine_.width, engine_.height);
 	}
 }
 

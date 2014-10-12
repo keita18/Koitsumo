@@ -92,48 +92,52 @@ void UI_GameMain::BackGround::calc()
 {
 #define UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS	0.01f
 #define UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS	5.0f
-	
+	static const int DOT_MOVE_INTERVAL = 64 * Screen::RATIO;
 	//使ってなさそう
 	_pos += Math::Vector2(-1, -0.5f);
-	if (_pos.x < -64) _pos.x += 64;
-	if (_pos.y < -64) _pos.y += 64;
+	if (_pos.x < -DOT_MOVE_INTERVAL) _pos.x += DOT_MOVE_INTERVAL;
+	if (_pos.y < -DOT_MOVE_INTERVAL) _pos.y += DOT_MOVE_INTERVAL;
 	_sclframe += UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS;
 	if(_sclframe > PI * 2) _sclframe -= PI * 2;
 	_scl = UI_GAMEMAIN_BACKGROUND_SCALEBASE + UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS * sinf(_sclframe);
 
-	LOGI("BackGround::pos.x = %3.3f, pos.y = %3.3f", _pos.x, _pos.y );
+	//LOGI("BackGround::pos.x = %3.3f, pos.y = %3.3f", _pos.x, _pos.y );
 }
 //=============================================================================
 void UI_GameMain::BackGround::draw()
 {
-	int width, height, dotWidthMax, dotHeightMax;
+	int width, height;
 	switch(_orientation) {
 		case ORIENTATION_PORTRAIT_UP:
 		case ORIENTATION_PORTRAIT_DOWN:
 			width  = Screen::WIDTH;
 			height = Screen::HEIGHT;
-			dotWidthMax = BASE_SCREEN_WIDTH;
-			dotHeightMax = BASE_SCREEN_HEIGHT;
 			break;
 		case ORIENTATION_LANDSCAPE_LEFT:
 		case ORIENTATION_LANDSCAPE_RIGHT:
 			width  = Screen::HEIGHT;
 			height = Screen::WIDTH;
-			dotWidthMax = BASE_SCREEN_HEIGHT;
-			dotHeightMax = BASE_SCREEN_WIDTH;
 			break;
 	}
+
 	Draw::singleton()->setColor(255, 255, 255, 255);
 	Draw::singleton()->setColorWithSide(DrawColorSideLeftBottom, 45, 158, 216, 255);
 	Draw::singleton()->setColorWithSide(DrawColorSideRightBottom, 45, 158, 216, 255);
 	Draw::singleton()->drawBox(0, 0, width, height);
 
+	//解像度吸収定数定義
+	static const int DOT_HEIGHT_MAX = height + 30 * Screen::RATIO;
+	static const int DOT_HEIGHT_INTERVAL = 32 * Screen::RATIO;
+	static const int DOT_WIDTH_MAX = width + 30 * Screen::RATIO;
+	static const int DOT_WIDTH_INTERVAL = 32 * Screen::RATIO;
+	static const int DOT_SIZE_X = 20 * Screen::RATIO;
+	static const int DOT_SIZE_Y = 20 * Screen::RATIO;
 	//dotをまばらに描く
 	int ycount = 0;
-	for(int y=(int)_pos.y; y < dotHeightMax + 30; y+=32){
+	for(int y=(int)_pos.y; y < DOT_HEIGHT_MAX; y+=DOT_HEIGHT_INTERVAL){
 		int xcount = ycount%2;
-		for(int x = (int)_pos.x; x < dotWidthMax + 30; x+=32){
-			_sprite0->drawWithFrame(0, x, y, 20, 20);
+		for(int x = (int)_pos.x; x < DOT_WIDTH_MAX; x+=DOT_WIDTH_INTERVAL){
+			_sprite0->drawWithFrame(0, x, y, DOT_SIZE_X, DOT_SIZE_Y);
 			xcount++;
 		}
 	}

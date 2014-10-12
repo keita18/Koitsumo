@@ -119,7 +119,7 @@ static int engine_init_display(struct engine* engine) {
  */
 //毎フレームの描画処理
 static void engine_draw_frame(struct engine* engine) {
-    LOGI("engine_draw_frame");
+    //LOGI("engine_draw_frame");
 
     if (engine->display == NULL) {
         // No display.
@@ -220,7 +220,7 @@ static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) 
  * Process the next main command.
  */
 static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
-    LOGI("engine_handle_cmd");
+    //LOGI("engine_handle_cmd");
 
     struct engine* engine = (struct engine*)app->userData;
     switch (cmd) {

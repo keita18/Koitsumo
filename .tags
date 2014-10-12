@@ -8,6 +8,10 @@ APP_STL	Android/jni/Application.mk	/^APP_STL := stlport_static$/;"	m
 AppBaseTheme	Android/gen/com/example/koitsumo/R.java	/^        public static final int AppBaseTheme=0x7f040000;$/;"	f	class:R.style
 AppTheme	Android/gen/com/example/koitsumo/R.java	/^        public static final int AppTheme=0x7f040001;$/;"	f	class:R.style
 Asset	Android/jni/Classes/Asset/Asset.h	/^class Asset$/;"	c
+BASE_SCREEN_HEIGHT	Android/jni/Classes/Graphics/GRDefinition.h	/^#define BASE_SCREEN_HEIGHT /;"	d
+BASE_SCREEN_WIDTH	Android/jni/Classes/Graphics/GRDefinition.h	/^#define BASE_SCREEN_WIDTH /;"	d
+BackGround	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^UI_GameMain::BackGround::BackGround()$/;"	f	class:UI_GameMain::BackGround
+BackGround	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^	class BackGround$/;"	c	class:UserInterface::UI_GameMain
 BuildConfig	Android/gen/com/example/koitsumo/BuildConfig.java	/^public final class BuildConfig {$/;"	c
 CGPoint	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGPoint() : x(0.0f), y(0.0f) {}$/;"	f	struct:CGPoint
 CGPoint	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGPoint(float x_, float y_) : x(x_), y(y_) {}$/;"	f	struct:CGPoint
@@ -18,14 +22,24 @@ CGSize	Android/jni/Classes/Graphics/GRDefinition.h	/^struct CGSize$/;"	s
 COIN_MODEL_HEIGHT	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define COIN_MODEL_HEIGHT	/;"	d	file:
 COIN_TEX_SIZE	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define COIN_TEX_SIZE /;"	d	file:
 DEBUG	Android/gen/com/example/koitsumo/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
+Draw	Android/jni/Classes/Graphics/2D/Draw.h	/^	Draw(){}$/;"	f	class:Draw
+Draw	Android/jni/Classes/Graphics/2D/Draw.h	/^class Draw$/;"	c
 Draw	Android/jni/Classes/Graphics/3D/model.cpp	/^void Model::Draw()$/;"	f	class:Graphics::Model
+DrawColorSide	Android/jni/Classes/Graphics/2D/Draw.h	/^enum DrawColorSide {$/;"	g
+DrawColorSideLeftBottom	Android/jni/Classes/Graphics/2D/Draw.h	/^	DrawColorSideLeftBottom,$/;"	e	enum:DrawColorSide
+DrawColorSideLeftTop	Android/jni/Classes/Graphics/2D/Draw.h	/^	DrawColorSideLeftTop = 0,$/;"	e	enum:DrawColorSide
+DrawColorSideRightBottom	Android/jni/Classes/Graphics/2D/Draw.h	/^	DrawColorSideRightBottom$/;"	e	enum:DrawColorSide
+DrawColorSideRightTop	Android/jni/Classes/Graphics/2D/Draw.h	/^	DrawColorSideRightTop,$/;"	e	enum:DrawColorSide
 EPSILON	Android/jni/Classes/Math/Functions.h	/^const float EPSILON = 0.00000011920928955078125f; \/\/floatの限界精度(1\/2^23)$/;"	m	namespace:Math
 FAR	Android/jni/include/pngconf.h	/^#        define FAR /;"	d
 FAR	Android/jni/include/pngconf.h	/^#  define FAR$/;"	d
 FARDATA	Android/jni/include/pngconf.h	/^#    define FARDATA /;"	d
 FARDATA	Android/jni/include/pngconf.h	/^#  define FARDATA$/;"	d
 FLOAT_MAX	Android/jni/Classes/Math/Functions.h	/^const float FLOAT_MAX = 1.7014117331926442990585209174226e+38; \/\/floatの最大値((2^24-1)\/2^23 * 2^126 )$/;"	m	namespace:Math
+GRDEFINITION_H	Android/jni/Classes/Graphics/GRDefinition.h	/^#define GRDEFINITION_H$/;"	d
 GetColor	Android/jni/Classes/Graphics/3D/model.h	/^	unsigned int*	GetColor()			{ return _color; }$/;"	f	class:Graphics::Model
+GetEnd	Android/jni/Classes/Routine/Unit.h	/^	bool GetEnd() const { return _end; }$/;"	f	class:Unit
+GetNextID	Android/jni/Classes/Routine/Unit.h	/^	int GetNextID() const { return _nextID; }$/;"	f	class:Unit
 GetPosition	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetPosition() const	{ return _position; }$/;"	f	class:Graphics::Model
 GetRotation	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetRotation() const 	{ return _rotation; }$/;"	f	class:Graphics::Model
 GetScale	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 GetScale() const		{ return _scale; }$/;"	f	class:Graphics::Model
@@ -35,6 +49,8 @@ GetVertex	Android/jni/Classes/Graphics/3D/model.h	/^	float*	GetVertex()					{ re
 GetVertexNumber	Android/jni/Classes/Graphics/3D/model.h	/^	unsigned int GetVertexNumber()		{ return _vtx_num; }$/;"	f	class:Graphics::Model
 Graphics	Android/jni/Classes/Graphics/3D/model.cpp	/^namespace Graphics {$/;"	n	file:
 Graphics	Android/jni/Classes/Graphics/3D/model.h	/^namespace Graphics {$/;"	n
+HEIGHT	Android/jni/Classes/Graphics/GRDefinition.cpp	/^\/*static*\/ int Screen::HEIGHT = BASE_SCREEN_HEIGHT * Screen::RATIO;$/;"	m	class:Screen	file:
+HEIGHT	Android/jni/Classes/Graphics/GRDefinition.h	/^	static int HEIGHT;$/;"	m	class:Screen
 LDATA	Android/jni/include/pngconf.h	/^#    define LDATA /;"	d
 LENGTH	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^#define LENGTH /;"	d	file:
 LOCAL_EXPORT_C_INCLUDES	Android/jni/Android.mk	/^LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)\/include$/;"	m
@@ -56,10 +72,16 @@ Math	Android/jni/Classes/Math/Functions.cpp	/^namespace Math{$/;"	n	file:
 Math	Android/jni/Classes/Math/Functions.h	/^namespace Math{$/;"	n
 Math	Android/jni/Classes/Math/Vector2.cpp	/^namespace Math{$/;"	n	file:
 Math	Android/jni/Classes/Math/Vector2.h	/^namespace Math{$/;"	n
+Math	Android/jni/Classes/Math/Vector3.cpp	/^namespace Math {$/;"	n	file:
 Math	Android/jni/Classes/Math/Vector3.h	/^namespace Math {$/;"	n
 Model	Android/jni/Classes/Graphics/3D/model.cpp	/^Model::Model()$/;"	f	class:Graphics::Model
 Model	Android/jni/Classes/Graphics/3D/model.cpp	/^Model::Model(const Model& m)$/;"	f	class:Graphics::Model
 Model	Android/jni/Classes/Graphics/3D/model.h	/^class Model$/;"	c	namespace:Graphics
+ORIENTATION	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		enum ORIENTATION$/;"	g	class:UserInterface::UI_GameMain::BackGround
+ORIENTATION_LANDSCAPE_LEFT	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^			ORIENTATION_LANDSCAPE_LEFT,$/;"	e	enum:UserInterface::UI_GameMain::BackGround::ORIENTATION
+ORIENTATION_LANDSCAPE_RIGHT	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^			ORIENTATION_LANDSCAPE_RIGHT$/;"	e	enum:UserInterface::UI_GameMain::BackGround::ORIENTATION
+ORIENTATION_PORTRAIT_DOWN	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^			ORIENTATION_PORTRAIT_DOWN,$/;"	e	enum:UserInterface::UI_GameMain::BackGround::ORIENTATION
+ORIENTATION_PORTRAIT_UP	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^			ORIENTATION_PORTRAIT_UP = 0,$/;"	e	enum:UserInterface::UI_GameMain::BackGround::ORIENTATION
 PI	Android/jni/Classes/Graphics/GRDefinition.h	/^#define PI /;"	d
 PI	Android/jni/glu.cpp	/^#define PI /;"	d	file:
 PI	Android/jni/glu.cpp	/^#undef PI$/;"	d	file:
@@ -479,9 +501,12 @@ PNG_tIME_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_tIME_SUPPORTED
 PNG_tRNS_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_tRNS_SUPPORTED /;"	d
 PNG_zTXt_SUPPORTED	Android/jni/include/pnglibconf.h	/^#define PNG_zTXt_SUPPORTED /;"	d
 R	Android/gen/com/example/koitsumo/R.java	/^public final class R {$/;"	c
+RATIO	Android/jni/Classes/Graphics/GRDefinition.cpp	/^\/*static*\/ int Screen::RATIO = 1;$/;"	m	class:Screen	file:
+RATIO	Android/jni/Classes/Graphics/GRDefinition.h	/^	static int RATIO;$/;"	m	class:Screen
 SAFE_DELETE	Android/jni/include/pch.h	/^#define SAFE_DELETE(/;"	d
-SCREEN_HEIGHT	Android/jni/Classes/Graphics/GRDefinition.h	/^#define SCREEN_HEIGHT /;"	d
-SCREEN_WIDTH	Android/jni/Classes/Graphics/GRDefinition.h	/^#define SCREEN_WIDTH /;"	d
+Screen	Android/jni/Classes/Graphics/GRDefinition.h	/^class Screen$/;"	c
+SetEnd	Android/jni/Classes/Routine/Unit.h	/^	void SetEnd(bool val) { _end = val; }$/;"	f	class:Unit
+SetNextID	Android/jni/Classes/Routine/Unit.h	/^	void SetNextID(int nextID) { _nextID = nextID; }$/;"	f	class:Unit
 SetPosition	Android/jni/Classes/Graphics/3D/model.h	/^	void SetPosition(const Math::Vector3& p) 	{ _position = p; }$/;"	f	class:Graphics::Model
 SetRotation	Android/jni/Classes/Graphics/3D/model.h	/^	void SetRotation(const Math::Vector3& p)	{ _rotation = p; }$/;"	f	class:Graphics::Model
 SetScale	Android/jni/Classes/Graphics/3D/model.h	/^	void SetScale(const Math::Vector3& s)		{ _scale = s; }$/;"	f	class:Graphics::Model
@@ -491,6 +516,7 @@ SetVertexBuffer	Android/jni/Classes/Graphics/3D/model.cpp	/^void Model::SetVerte
 Sprite	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^Sprite::Sprite(const char* imgName, int fw, int fh)$/;"	f	class:Sprite
 Sprite	Android/jni/Classes/Graphics/2D/Sprite.h	/^class Sprite$/;"	c
 TAG	Android/jni/include/pch.h	/^#define TAG /;"	d
+TITLE_COIN_COUNTER	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_COIN_COUNTER	/;"	d	file:
 TITLE_LOGO_POS_Y	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_LOGO_POS_Y /;"	d	file:
 TITLE_MENUBAR_POS_Y	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_MENUBAR_POS_Y /;"	d	file:
 TITLE_MENUINFO_POS_X	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^#define TITLE_MENUINFO_POS_X /;"	d	file:
@@ -501,9 +527,14 @@ TO_DEG	Android/jni/Classes/Math/Functions.cpp	/^const float TO_DEG = 180.f \/ 3.
 TO_RAD	Android/jni/Classes/Math/Functions.cpp	/^const float TO_RAD = 3.1415926535897932384626433832795f \/ 180.f;$/;"	m	namespace:Math	file:
 TitleUnit	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^TitleUnit::TitleUnit()$/;"	f	class:TitleUnit
 TitleUnit	Android/jni/Classes/Routine/Title/TitleUnit.h	/^class TitleUnit : public Unit$/;"	c
+UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS	/;"	d	file:
+UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS	/;"	d	file:
+UI_GAMEMAIN_BACKGROUND_SCALEBASE	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^#define UI_GAMEMAIN_BACKGROUND_SCALEBASE	/;"	d	file:
 UI_GameMain	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^UI_GameMain::UI_GameMain()$/;"	f	class:UI_GameMain
 UI_GameMain	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^class UI_GameMain$/;"	c	namespace:UserInterface
 UNIT_NONE	Android/jni/Classes/Routine/Unit.h	/^	UNIT_NONE = 0,$/;"	e	enum:UnitId
+UNIT_PUZZLE	Android/jni/Classes/Routine/Unit.h	/^	UNIT_PUZZLE,$/;"	e	enum:UnitId
+UNIT_PUZZLE_NO_TIMELIMIT	Android/jni/Classes/Routine/Unit.h	/^	UNIT_PUZZLE_NO_TIMELIMIT$/;"	e	enum:UnitId
 UNIT_TITLE	Android/jni/Classes/Routine/Unit.h	/^	UNIT_TITLE,$/;"	e	enum:UnitId
 USE_FAR_KEYWORD	Android/jni/include/pngconf.h	/^#      define USE_FAR_KEYWORD$/;"	d
 USE_FAR_KEYWORD	Android/jni/include/pngconf.h	/^#    define USE_FAR_KEYWORD$/;"	d
@@ -517,24 +548,38 @@ Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2( float a ) : x( 
 Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2( float aX, float aY ) :$/;"	f	class:Math::Vector2
 Vector2	Android/jni/Classes/Math/Vector2.cpp	/^Vector2::Vector2(){$/;"	f	class:Math::Vector2
 Vector2	Android/jni/Classes/Math/Vector2.h	/^class Vector2{$/;"	c	namespace:Math
-Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3() : x(0), y(0), z(0) {}$/;"	f	class:Math::Vector3
-Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3(const Vector3& v) : x(v.x), y(v.y), z(v.z) {}$/;"	f	class:Math::Vector3
-Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}$/;"	f	class:Math::Vector3
-Vector3	Android/jni/Classes/Math/Vector3.h	/^	Vector3(float f) : x(f), y(f), z(f) {}$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^    Vector3( const Vector3& a ) : x( a.x ), y( a.y ), z( a.z ){$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^    Vector3( float ax, float ay, float az ) : x(ax), y(ay), z(az){$/;"	f	class:Math::Vector3
+Vector3	Android/jni/Classes/Math/Vector3.h	/^    Vector3(){$/;"	f	class:Math::Vector3
 Vector3	Android/jni/Classes/Math/Vector3.h	/^class Vector3$/;"	c	namespace:Math
 ViewController	Android/jni/Classes/ViewController.cpp	/^ViewController::ViewController(engine* engine)$/;"	f	class:ViewController
 ViewController	Android/jni/Classes/ViewController.h	/^class ViewController$/;"	c
+WIDTH	Android/jni/Classes/Graphics/GRDefinition.cpp	/^\/*static*\/ int Screen::WIDTH = BASE_SCREEN_WIDTH * Screen::RATIO;$/;"	m	class:Screen	file:
+WIDTH	Android/jni/Classes/Graphics/GRDefinition.h	/^	static int WIDTH;$/;"	m	class:Screen
 _GLU_H_	Android/jni/include/glu.h	/^#define _GLU_H_$/;"	d
 _bestScore	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	unsigned int 	_bestScore;$/;"	m	class:TitleUnit
+_bg	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	UserInterface::UI_GameMain::BackGround	_bg;$/;"	m	class:TitleUnit
+_coinCounter	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	int 		_coinCounter;	\/\/!<コインを触っていない時間$/;"	m	class:TitleUnit
 _coinModel	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Graphics::Model*	_coinModel;$/;"	m	class:TitleUnit
+_coinMoveEnd	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Math::Vector3 	_coinMoveEnd;	\/\/!<コインを離した地点$/;"	m	class:TitleUnit
+_coinMoveStart	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Math::Vector3 	_coinMoveStart;	\/\/!<コインを動かした地点$/;"	m	class:TitleUnit
+_coinSpeed	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	float 		_coinSpeed;			\/\/!<コインの移動スピード$/;"	m	class:TitleUnit
+_coinTouchTimer	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	int 		_coinTouchTimer;	\/\/!<コインを触っている時間（速度計算用）$/;"	m	class:TitleUnit
+_coinTouched	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	bool 		_coinTouched;	\/\/!<コイン操作中か$/;"	m	class:TitleUnit
 _color	Android/jni/Classes/Graphics/3D/model.h	/^	GLuint			*_color;$/;"	m	class:Graphics::Model
 _count	Android/jni/Classes/Graphics/2D/Sprite.h	/^	int 	_count;$/;"	m	class:Sprite
 _currentUnit	Android/jni/Classes/Routine/MainRoutine.h	/^	Unit* _currentUnit;$/;"	m	class:MainRoutine
+_end	Android/jni/Classes/Routine/Unit.h	/^	bool 	_end;$/;"	m	class:Unit
 _frameSize	Android/jni/Classes/Graphics/2D/Sprite.h	/^	CGSize 	_frameSize;$/;"	m	class:Sprite
+_nextID	Android/jni/Classes/Routine/Unit.h	/^	int 	_nextID;$/;"	m	class:Unit
+_orientation	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		int 		_orientation;$/;"	m	class:UserInterface::UI_GameMain::BackGround
 _pitch	Android/jni/Classes/Graphics/2D/Sprite.h	/^	int		_pitch;$/;"	m	class:Sprite
+_pos	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		Math::Vector2 	_pos;$/;"	m	class:UserInterface::UI_GameMain::BackGround
 _position	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_position;$/;"	m	class:Graphics::Model
 _rotation	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_rotation;$/;"	m	class:Graphics::Model
 _scale	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_scale;$/;"	m	class:Graphics::Model
+_scl	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		float 		_scl;$/;"	m	class:UserInterface::UI_GameMain::BackGround
+_sclframe	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		float 		_sclframe;$/;"	m	class:UserInterface::UI_GameMain::BackGround
 _shift	Android/jni/Classes/Graphics/3D/model.h	/^	Math::Vector3 	_shift;$/;"	m	class:Graphics::Model
 _sprCol	Android/jni/Classes/Graphics/2D/Sprite.h	/^	GLubyte	_sprCol[16];$/;"	m	class:Sprite
 _spr_bestscore	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_bestscore;$/;"	m	class:TitleUnit
@@ -542,6 +587,8 @@ _spr_logo	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite* 	_spr_logo;$/
 _spr_menubar	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_menubar;$/;"	m	class:TitleUnit
 _spr_scoreNumber	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_scoreNumber;$/;"	m	class:TitleUnit
 _spr_teamlogo	Android/jni/Classes/Routine/Title/TitleUnit.h	/^	Sprite*		_spr_teamlogo;$/;"	m	class:TitleUnit
+_sprite0	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		Sprite*		_sprite0;$/;"	m	class:UserInterface::UI_GameMain::BackGround
+_sprite1	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		Sprite*		_sprite1;$/;"	m	class:UserInterface::UI_GameMain::BackGround
 _tag	Android/jni/Classes/Graphics/2D/Sprite.h	/^	GLuint	_tag;$/;"	m	class:Sprite
 _texSize	Android/jni/Classes/Graphics/2D/Sprite.h	/^	CGSize	_texSize;$/;"	m	class:Sprite
 _textag	Android/jni/Classes/Graphics/3D/model.h	/^	GLuint			_textag;$/;"	m	class:Graphics::Model
@@ -574,6 +621,7 @@ blue	Android/jni/include/png.h	/^   png_uint_16 blue;$/;"	m	struct:png_color_16_
 blue	Android/jni/include/png.h	/^   png_uint_16 blue;$/;"	m	struct:png_sPLT_entry_struct
 calc	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::calc()$/;"	f	class:MainRoutine
 calc	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::calc()$/;"	f	class:TitleUnit
+calc	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^void UI_GameMain::BackGround::calc()$/;"	f	class:UI_GameMain::BackGround
 calc	Android/jni/Classes/Routine/Unit.cpp	/^void Unit::calc()$/;"	f	class:Unit
 callbackRead	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ void Asset::callbackRead(png_structp pPng, png_bytep buf, png_size_t size)$/;"	f	class:Asset
 channels	Android/jni/include/png.h	/^   png_byte channels;    \/* number of channels (1, 2, 3, or 4) *\/$/;"	m	struct:png_row_info_struct
@@ -592,11 +640,16 @@ day	Android/jni/include/png.h	/^   png_byte day;     \/* day of month, 1 - 31 *\
 depth	Android/jni/include/png.h	/^   png_byte depth;           \/* depth of palette samples *\/$/;"	m	struct:png_sPLT_struct
 display	Android/jni/Engine.h	/^    EGLDisplay display;$/;"	m	struct:engine
 dot	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::dot( const Vector2& a ) const {$/;"	f	class:Math::Vector2
+dot	Android/jni/Classes/Math/Vector3.cpp	/^float Vector3::dot( const Vector3& a ) const{$/;"	f	class:Math::Vector3
 draw	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::draw()$/;"	f	class:MainRoutine
 draw	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::draw()$/;"	f	class:TitleUnit
+draw	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^void UI_GameMain::BackGround::draw()$/;"	f	class:UI_GameMain::BackGround
 draw	Android/jni/Classes/Routine/Unit.cpp	/^void Unit::draw()$/;"	f	class:Unit
+drawBox	Android/jni/Classes/Graphics/2D/Draw.cpp	/^void Draw::drawBox(int x, int y, int w, int h)$/;"	f	class:Draw
 drawBox	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::drawBox()$/;"	f	class:Sprite
+drawCol	Android/jni/Classes/Graphics/2D/Draw.cpp	/^static GLubyte drawCol[] = { 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255 };$/;"	v	file:
 drawFrame	Android/jni/Classes/ViewController.cpp	/^void ViewController::drawFrame()$/;"	f	class:ViewController
+drawVtx	Android/jni/Classes/Graphics/2D/Draw.cpp	/^static GLshort drawVtx[] = { 0, 0, 1, 0, 0, 1, 1, 1 };$/;"	v	file:
 drawWithFrame	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::drawWithFrame(int f, int x, int y, int w, int h)$/;"	f	class:Sprite
 drawable	Android/gen/com/example/koitsumo/R.java	/^    public static final class drawable {$/;"	c	class:R
 engine	Android/jni/Engine.h	/^struct engine {$/;"	s
@@ -634,15 +687,20 @@ iccp_name	Android/jni/include/pnginfo.h	/^   png_charp iccp_name;     \/* profil
 iccp_profile	Android/jni/include/pnginfo.h	/^   png_bytep iccp_profile;  \/* International Color Consortium profile data *\/$/;"	m	struct:png_info_def
 iccp_proflen	Android/jni/include/pnginfo.h	/^   png_uint_32 iccp_proflen;  \/* ICC profile data length *\/$/;"	m	struct:png_info_def
 index	Android/jni/include/png.h	/^   png_byte index;    \/* used for palette files *\/$/;"	m	struct:png_color_16_struct
-init	Android/jni/Classes/Math/Vector3.h	/^	void init()		{ x = y = z = 0; }$/;"	f	class:Math::Vector3
+init	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::init()$/;"	f	class:MainRoutine
+init	Android/jni/Classes/ViewController.cpp	/^void ViewController::init()$/;"	f	class:ViewController
 initRand	Android/jni/Classes/Math/Functions.cpp	/^void initRand()$/;"	f	namespace:Math
+instance_	Android/jni/Classes/Graphics/2D/Draw.cpp	/^\/*static*\/ Draw*	Draw::instance_ = NULL;$/;"	m	class:Draw	file:
+instance_	Android/jni/Classes/Graphics/2D/Draw.h	/^	static Draw*	instance_;$/;"	m	class:Draw
 interlace_type	Android/jni/include/pnginfo.h	/^   png_byte interlace_type; \/* One of PNG_INTERLACE_NONE, PNG_INTERLACE_ADAM7 *\/$/;"	m	struct:png_info_def
 isSpecial	Android/jni/Classes/Math/Functions.cpp	/^bool isSpecial( float a ){$/;"	f	namespace:Math
+isZero	Android/jni/Classes/Math/Vector3.h	/^    bool isZero() const{$/;"	f	class:Math::Vector3
 itxt_length	Android/jni/include/png.h	/^   png_size_t itxt_length; \/* length of the itxt string *\/$/;"	m	struct:png_text_struct
 key	Android/jni/include/png.h	/^   png_charp key;          \/* keyword, 1-79 character description of "text" *\/$/;"	m	struct:png_text_struct
 lang	Android/jni/include/png.h	/^   png_charp lang;         \/* language code, 0-79 characters$/;"	m	struct:png_text_struct
 lang_key	Android/jni/include/png.h	/^   png_charp lang_key;     \/* keyword translated UTF-8 string, 0 or more$/;"	m	struct:png_text_struct
 length	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::length() const {$/;"	f	class:Math::Vector2
+length	Android/jni/Classes/Math/Vector3.h	/^    float length() const{$/;"	f	class:Math::Vector3
 loadImage	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::loadImage(const char* imgName)$/;"	f	class:Sprite
 loadPngImage	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ bool Asset::loadPngImage($/;"	f	class:Asset
 location	Android/jni/include/png.h	/^    png_byte location; \/* mode of operation at read time *\/$/;"	m	struct:png_unknown_chunk_t
@@ -663,6 +721,7 @@ name	Android/jni/include/png.h	/^    png_byte name[5];$/;"	m	struct:png_unknown_
 name	Android/jni/include/png.h	/^   png_charp name;           \/* palette name *\/$/;"	m	struct:png_sPLT_struct
 nentries	Android/jni/include/png.h	/^   png_int_32 nentries;      \/* number of palette entries *\/$/;"	m	struct:png_sPLT_struct
 normalize	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::normalize(){$/;"	f	class:Math::Vector2
+normalize	Android/jni/Classes/Math/Vector3.cpp	/^void Vector3::normalize(){$/;"	f	class:Math::Vector3
 num_palette	Android/jni/include/pnginfo.h	/^   png_uint_16 num_palette; \/* number of color entries in "palette" (PLTE) *\/$/;"	m	struct:png_info_def
 num_text	Android/jni/include/pnginfo.h	/^   int num_text; \/* number of comments read or comments to write *\/$/;"	m	struct:png_info_def
 num_trans	Android/jni/include/pnginfo.h	/^   png_uint_16 num_trans;   \/* number of transparent palette color (tRNS) *\/$/;"	m	struct:png_info_def
@@ -671,23 +730,26 @@ offset_	Android/jni/Classes/Asset/Asset.h	/^	static int 		offset_;$/;"	m	class:A
 offset_unit_type	Android/jni/include/pnginfo.h	/^   png_byte offset_unit_type; \/* offset units type *\/$/;"	m	struct:png_info_def
 onMotionEvnet	Android/jni/main.cpp	/^static int32_t onMotionEvnet(struct android_app* app, AInputEvent* event)$/;"	f	file:
 operator !=	Android/jni/Classes/Math/Vector2.cpp	/^	bool Vector2::operator!=( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator !=	Android/jni/Classes/Math/Vector3.h	/^    bool operator!=(const Vector3& a){$/;"	f	class:Math::Vector3
 operator *	Android/jni/Classes/Math/Vector2.cpp	/^Vector2 Vector2::operator * (float f) const {$/;"	f	class:Math::Vector2
 operator *=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator*=( const Vector2& a ){$/;"	f	class:Math::Vector2
 operator *=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator*=( float a ){$/;"	f	class:Math::Vector2
+operator *=	Android/jni/Classes/Math/Vector3.h	/^    void operator*=( const float r ){$/;"	f	class:Math::Vector3
 operator +	Android/jni/Classes/Math/Vector2.cpp	/^Vector2 Vector2::operator + (const Vector2& a) const {$/;"	f	class:Math::Vector2
-operator +	Android/jni/Classes/Math/Vector3.h	/^	Vector3 operator + (const Vector3& v) const	{ return Math::Vector3(x + v.x, y + v.y, z + v.z); }$/;"	f	class:Math::Vector3
+operator +	Android/jni/Classes/Math/Vector3.cpp	/^Vector3 Vector3::operator +(const Vector3& a) const{$/;"	f	class:Math::Vector3
 operator +=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator+=( const Vector2& a ){$/;"	f	class:Math::Vector2
 operator +=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator+=( float a ){$/;"	f	class:Math::Vector2
-operator +=	Android/jni/Classes/Math/Vector3.h	/^	void operator += (const Vector3& v)			{ x += v.x; y += v.y; z += v.z; }$/;"	f	class:Math::Vector3
+operator +=	Android/jni/Classes/Math/Vector3.h	/^    void operator+=( const Vector3& in ){$/;"	f	class:Math::Vector3
 operator -	Android/jni/Classes/Math/Vector2.cpp	/^Vector2 Vector2::operator - (const Vector2& a) const {$/;"	f	class:Math::Vector2
-operator -	Android/jni/Classes/Math/Vector3.h	/^	Vector3 operator - (const Vector3& v) const { return Math::Vector3(x - v.x, y - v.y, z - v.z); }$/;"	f	class:Math::Vector3
+operator -	Android/jni/Classes/Math/Vector3.cpp	/^Vector3 Vector3::operator -(const Vector3& a) const{$/;"	f	class:Math::Vector3
 operator -=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator-=( const Vector2& a ){$/;"	f	class:Math::Vector2
 operator -=	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::operator-=( float a ){$/;"	f	class:Math::Vector2
+operator -=	Android/jni/Classes/Math/Vector3.h	/^    void operator-=( const Vector3& in ){$/;"	f	class:Math::Vector3
 operator =	Android/jni/Classes/Math/Vector2.cpp	/^Vector2& Vector2::operator=( const Vector2& a ){$/;"	f	class:Math::Vector2
 operator =	Android/jni/Classes/Math/Vector2.cpp	/^Vector2& Vector2::operator=( float a ){$/;"	f	class:Math::Vector2
-operator =	Android/jni/Classes/Math/Vector3.h	/^	Vector3& operator = (const Vector3& v)		{ x = v.x; y = v.y; z = v.z; return *this; }$/;"	f	class:Math::Vector3
-operator =	Android/jni/Classes/Math/Vector3.h	/^	Vector3& operator = (float f)				{ x = y = z = f; return *this; }$/;"	f	class:Math::Vector3
+operator =	Android/jni/Classes/Math/Vector3.h	/^    void operator=( const Vector3& in ){$/;"	f	class:Math::Vector3
 operator ==	Android/jni/Classes/Math/Vector2.cpp	/^bool Vector2::operator==( const Vector2& a ){$/;"	f	class:Math::Vector2
+operator ==	Android/jni/Classes/Math/Vector3.h	/^    bool operator==(const Vector3& a){$/;"	f	class:Math::Vector3
 operator []	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::operator[]( int i ) const {$/;"	f	class:Math::Vector2
 operator []	Android/jni/Classes/Math/Vector2.cpp	/^float& Vector2::operator[]( int i ){$/;"	f	class:Math::Vector2
 origin	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGPoint origin;$/;"	m	struct:CGRect
@@ -696,7 +758,6 @@ pAssetManager_	Android/jni/Classes/Asset/Asset.h	/^	static AAssetManager*	pAsset
 pInstance	Android/jni/Classes/Routine/MainRoutine.cpp	/^\/*static*\/ MainRoutine* MainRoutine::pInstance = NULL;$/;"	m	class:MainRoutine	file:
 pInstance	Android/jni/Classes/Routine/MainRoutine.h	/^	static MainRoutine* pInstance;$/;"	m	class:MainRoutine
 pViewController	Android/jni/Engine.h	/^    ViewController* pViewController;$/;"	m	struct:engine
-pad	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
 palette	Android/jni/include/pnginfo.h	/^   png_colorp palette;      \/* array of color values (valid & PNG_INFO_PLTE) *\/$/;"	m	struct:png_info_def
 pcal_X0	Android/jni/include/pnginfo.h	/^   png_int_32 pcal_X0;      \/* minimum value *\/$/;"	m	struct:png_info_def
 pcal_X1	Android/jni/include/pnginfo.h	/^   png_int_32 pcal_X1;      \/* maximum value *\/$/;"	m	struct:png_info_def
@@ -835,9 +896,14 @@ second	Android/jni/include/png.h	/^   png_byte second;  \/* second of minute, 0 
 sensorEventQueue	Android/jni/Engine.h	/^    ASensorEventQueue* sensorEventQueue;$/;"	m	struct:engine
 sensorManager	Android/jni/Engine.h	/^    ASensorManager* sensorManager;$/;"	m	struct:engine
 set	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::set( float aX, float aY ){$/;"	f	class:Math::Vector2
+set	Android/jni/Classes/Math/Vector3.h	/^    void set( float aX, float aY, float aZ ){$/;"	f	class:Math::Vector3
 setAdd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setAdd( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
 setAdd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setAdd( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
 setAssetManager	Android/jni/Classes/Asset/Asset.cpp	/^\/*static*\/ void	Asset::setAssetManager(AAssetManager* pAssetManager)$/;"	f	class:Asset
+setColor	Android/jni/Classes/Graphics/2D/Draw.cpp	/^void Draw::setColor(GLubyte r, GLubyte g, GLubyte b, GLubyte a)$/;"	f	class:Draw
+setColor	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^void Sprite::setColor(GLubyte r, GLubyte g, GLubyte b, GLubyte a)$/;"	f	class:Sprite
+setColorWithSide	Android/jni/Classes/Graphics/2D/Draw.cpp	/^void Draw::setColorWithSide(int s, GLubyte r, GLubyte g, GLubyte b, GLubyte a)$/;"	f	class:Draw
+setCross	Android/jni/Classes/Math/Vector3.cpp	/^void Vector3::setCross( const Vector3& a, const Vector3& b){$/;"	f	class:Math::Vector3
 setFrameBuffer	Android/jni/Classes/ViewController.cpp	/^void ViewController::setFrameBuffer()$/;"	f	class:ViewController
 setMadd	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMadd( const Vector2& a, const Vector2& b, float c ){$/;"	f	class:Math::Vector2
 setMax	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMax( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
@@ -846,11 +912,15 @@ setMsub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMsub( const Vect
 setMul	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMul( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
 setMul	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setMul( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
 setNeg	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setNeg( const Vector2& a ){$/;"	f	class:Math::Vector2
+setOrientaion	Android/jni/Classes/Routine/UI/UI_GameMain.h	/^		void setOrientaion(int o)	{ _orientation = 0; }$/;"	f	class:UserInterface::UI_GameMain::BackGround
 setSub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setSub( const Vector2& a, const Vector2& b ){$/;"	f	class:Math::Vector2
 setSub	Android/jni/Classes/Math/Vector2.cpp	/^void Vector2::setSub( const Vector2& a, float b ){$/;"	f	class:Math::Vector2
+setSub	Android/jni/Classes/Math/Vector3.cpp	/^void Vector3::setSub( const Vector3& a, const Vector3& b ){$/;"	f	class:Math::Vector3
+setZero	Android/jni/Classes/Math/Vector3.h	/^    void setZero(){$/;"	f	class:Math::Vector3
 sig_bit	Android/jni/include/pnginfo.h	/^   png_color_8 sig_bit; \/* significant bits in color channels *\/$/;"	m	struct:png_info_def
 signature	Android/jni/include/pnginfo.h	/^   png_byte signature[8];   \/* magic bytes read by libpng from start of file *\/$/;"	m	struct:png_info_def
 sin	Android/jni/Classes/Math/Functions.cpp	/^float sin( float a ){$/;"	f	namespace:Math
+singleton	Android/jni/Classes/Graphics/2D/Draw.cpp	/^\/*static*\/ Draw*	Draw::singleton()$/;"	f	class:Draw
 singleton	Android/jni/Classes/Routine/MainRoutine.cpp	/^\/*static*\/ MainRoutine* MainRoutine::singleton()$/;"	f	class:MainRoutine
 size	Android/jni/Classes/Graphics/GRDefinition.h	/^	CGSize size;$/;"	m	struct:CGRect
 size	Android/jni/include/png.h	/^    png_size_t size;$/;"	m	struct:png_unknown_chunk_t
@@ -860,6 +930,7 @@ splt_palettes_num	Android/jni/include/pnginfo.h	/^   png_uint_32 splt_palettes_n
 sprVtx	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^static GLshort sprVtx[] = { 0, 0, 1, 0, 0, 1, 1, 1 };$/;"	v	file:
 sqrt	Android/jni/Classes/Math/Functions.cpp	/^float sqrt( float a ){$/;"	f	namespace:Math
 squareLength	Android/jni/Classes/Math/Vector2.cpp	/^float Vector2::squareLength() const {$/;"	f	class:Math::Vector2
+squareLength	Android/jni/Classes/Math/Vector3.h	/^    float squareLength() const{$/;"	f	class:Math::Vector3
 srgb_intent	Android/jni/include/pnginfo.h	/^   png_byte srgb_intent; \/* sRGB rendering intent [0, 1, 2, or 3] *\/$/;"	m	struct:png_info_def
 state	Android/jni/Engine.h	/^    struct saved_state state;$/;"	m	struct:engine	typeref:struct:engine::saved_state
 string	Android/gen/com/example/koitsumo/R.java	/^    public static final class string {$/;"	c	class:R
@@ -872,13 +943,13 @@ text_length	Android/jni/include/png.h	/^   png_size_t text_length; \/* length of
 touched	Android/jni/Engine.h	/^    bool touched;$/;"	m	struct:engine
 touchedBegin	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::touchedBegin(CGPoint tp)$/;"	f	class:MainRoutine
 touchedBegin	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::touchedBegin(CGPoint tp)$/;"	f	class:TitleUnit
-touchedBegin	Android/jni/Classes/Routine/Unit.h	/^	void touchedBegin(CGPoint tp) {}$/;"	f	class:Unit
+touchedBegin	Android/jni/Classes/Routine/Unit.h	/^	virtual void touchedBegin(CGPoint tp) {}$/;"	f	class:Unit
 touchedEnded	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::touchedEnded(CGPoint tp)$/;"	f	class:MainRoutine
 touchedEnded	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::touchedEnded(CGPoint tp)$/;"	f	class:TitleUnit
-touchedEnded	Android/jni/Classes/Routine/Unit.h	/^	void touchedEnded(CGPoint tp) {}$/;"	f	class:Unit
+touchedEnded	Android/jni/Classes/Routine/Unit.h	/^	virtual void touchedEnded(CGPoint tp) {}$/;"	f	class:Unit
 touchedMoved	Android/jni/Classes/Routine/MainRoutine.cpp	/^void MainRoutine::touchedMoved(CGPoint tp)$/;"	f	class:MainRoutine
 touchedMoved	Android/jni/Classes/Routine/Title/TitleUnit.cpp	/^void TitleUnit::touchedMoved(CGPoint tp)$/;"	f	class:TitleUnit
-touchedMoved	Android/jni/Classes/Routine/Unit.h	/^	void touchedMoved(CGPoint tp) {}$/;"	f	class:Unit
+touchedMoved	Android/jni/Classes/Routine/Unit.h	/^	virtual void touchedMoved(CGPoint tp) {}$/;"	f	class:Unit
 touchesBegan	Android/jni/Classes/ViewController.cpp	/^void ViewController::touchesBegan(CGPoint tp)$/;"	f	class:ViewController
 touchesEnded	Android/jni/Classes/ViewController.cpp	/^void ViewController::touchesEnded(CGPoint tp)$/;"	f	class:ViewController
 touchesMoved	Android/jni/Classes/ViewController.cpp	/^void ViewController::touchesMoved(CGPoint tp)$/;"	f	class:ViewController
@@ -896,7 +967,7 @@ width	Android/jni/include/pnginfo.h	/^   png_uint_32 width;  \/* width of image 
 x	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	x,y,z;$/;"	m	struct:Graphics::Model::__anon1
 x	Android/jni/Classes/Graphics/GRDefinition.h	/^	float x;$/;"	m	struct:CGPoint
 x	Android/jni/Classes/Math/Vector2.h	/^	float x, y;$/;"	m	class:Math::Vector2
-x	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+x	Android/jni/Classes/Math/Vector3.h	/^    float x, y, z;$/;"	m	class:Math::Vector3
 x	Android/jni/Engine.h	/^    int32_t x;$/;"	m	struct:saved_state
 x_blue	Android/jni/include/pnginfo.h	/^   png_fixed_point x_blue;$/;"	m	struct:png_info_def
 x_green	Android/jni/include/pnginfo.h	/^   png_fixed_point x_green;$/;"	m	struct:png_info_def
@@ -907,7 +978,7 @@ x_white	Android/jni/include/pnginfo.h	/^   png_fixed_point x_white;$/;"	m	struct
 y	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	x,y,z;$/;"	m	struct:Graphics::Model::__anon1
 y	Android/jni/Classes/Graphics/GRDefinition.h	/^	float y;$/;"	m	struct:CGPoint
 y	Android/jni/Classes/Math/Vector2.h	/^	float x, y;$/;"	m	class:Math::Vector2
-y	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+y	Android/jni/Classes/Math/Vector3.h	/^    float x, y, z;$/;"	m	class:Math::Vector3
 y	Android/jni/Engine.h	/^    int32_t y;$/;"	m	struct:saved_state
 y_blue	Android/jni/include/pnginfo.h	/^   png_fixed_point y_blue;$/;"	m	struct:png_info_def
 y_green	Android/jni/include/pnginfo.h	/^   png_fixed_point y_green;$/;"	m	struct:png_info_def
@@ -917,7 +988,9 @@ y_red	Android/jni/include/pnginfo.h	/^   png_fixed_point y_red;$/;"	m	struct:png
 y_white	Android/jni/include/pnginfo.h	/^   png_fixed_point y_white;$/;"	m	struct:png_info_def
 year	Android/jni/include/png.h	/^   png_uint_16 year; \/* full year, as in, 1995 *\/$/;"	m	struct:png_time_struct
 z	Android/jni/Classes/Graphics/3D/model.h	/^		GLfloat 	x,y,z;$/;"	m	struct:Graphics::Model::__anon1
-z	Android/jni/Classes/Math/Vector3.h	/^	float x, y, z, pad;					\/\/ [16]$/;"	m	class:Math::Vector3
+z	Android/jni/Classes/Math/Vector3.h	/^    float x, y, z;$/;"	m	class:Math::Vector3
+~BackGround	Android/jni/Classes/Routine/UI/UI_GameMain.cpp	/^\/*virtual*\/ UI_GameMain::BackGround::~BackGround()$/;"	f	class:UI_GameMain::BackGround
+~Draw	Android/jni/Classes/Graphics/2D/Draw.h	/^	~Draw(){}$/;"	f	class:Draw
 ~MainRoutine	Android/jni/Classes/Routine/MainRoutine.cpp	/^MainRoutine::~MainRoutine()$/;"	f	class:MainRoutine
 ~Model	Android/jni/Classes/Graphics/3D/model.cpp	/^Model::~Model()$/;"	f	class:Graphics::Model
 ~Sprite	Android/jni/Classes/Graphics/2D/Sprite.cpp	/^Sprite::~Sprite()$/;"	f	class:Sprite
