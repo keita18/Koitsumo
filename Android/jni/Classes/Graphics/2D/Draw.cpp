@@ -54,3 +54,32 @@ void Draw::drawBox(int x, int y, int w, int h)
 
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }
+//=============================================================================
+void Draw::drawLine(int x1, int y1, int x2, int y2)
+{
+	GLshort lineVtx[4];
+	lineVtx[0] = x1;
+	lineVtx[1] = y1;
+	lineVtx[2] = x2;
+	lineVtx[3] = y2;
+	
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+	
+	glDisable(GL_LIGHTING);
+	glDisable( GL_TEXTURE_2D );
+	glEnable( GL_BLEND );
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glEnableClientState(GL_COLOR_ARRAY);
+	
+	// Render
+//	glVertex2f( lineVtx[0], lineVtx[1] );
+//	glVertex2f( lineVtx[2], lineVtx[3] );
+    glVertexPointer(2, GL_SHORT, 0, lineVtx);
+    glColorPointer(4, GL_UNSIGNED_BYTE, 0, drawCol);
+	
+    glDrawArrays(GL_LINE_STRIP, 0, 2);
+}

@@ -11,10 +11,12 @@ ViewController::ViewController(engine* engine)
 , count_(0)
 {}
 
-void ViewController::init()
+void ViewController::init( int screenRatio )
 {
 	count_ = 0;
 	MainRoutine::singleton()->init();
+
+	MainRoutine::onDecideScreenRatio(screenRatio);
 }
 
 void ViewController::setFrameBuffer()

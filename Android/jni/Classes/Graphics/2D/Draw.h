@@ -20,6 +20,7 @@ public:
 	void setColorWithSide(int s, GLubyte r, GLubyte g, GLubyte b, GLubyte a);
 	void setColor(GLubyte r, GLubyte g, GLubyte b, GLubyte a);
 	void drawBox(int x, int y, int w, int h);
+	void drawLine(int x1, int y1, int x2, int y2);
 
 private:
 	Draw(){}

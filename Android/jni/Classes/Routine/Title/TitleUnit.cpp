@@ -57,8 +57,8 @@ void TitleUnit::calc()
 {
 	_bg.calc();
 
-	static const float COIN_POS_X_TH_MAX = 360 * Screen::RATIO;
-	static const float COIN_POS_X_TH_MIN = -40 * Screen::RATIO;
+	static const float COIN_POS_X_TH_MAX = 200 * Screen::RATIO;
+	static const float COIN_POS_X_TH_MIN = -10 * Screen::RATIO;
 	static const float COIN_FALL_SPEED = 4 * Screen::RATIO;
 	static const float COIN_FALL_MAX_Y = 282 * Screen::RATIO;
 	static const float COIN_AUTO_MOVE_X_SPEED = 160.0f * Screen::RATIO;
@@ -77,6 +77,7 @@ void TitleUnit::calc()
 	_coinModel->SetPosition(coinpos);
 	_coinModel->SetRotation(Math::Vector3(0, 0, (coinpos.x - COIN_AUTO_MOVE_X_SPEED) * 2.0f));
 
+	LOGI("titleUnit, x=%3.3f", coinpos.x);
 	if (coinpos.x > COIN_POS_X_TH_MAX) {
 		SetEnd(true);
 		SetNextID(UNIT_PUZZLE_NO_TIMELIMIT);

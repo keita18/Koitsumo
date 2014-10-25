@@ -96,9 +96,6 @@ static int engine_init_display(struct engine* engine) {
     //デバッガ接続状態によってはここが二度くるので明示的に初期化
     if(engine->pViewController)
     {
-        engine->pViewController->init();
-        engine->animating = true;
-
         //旧バージョンからの拡大率
         int wr = w / BASE_SCREEN_WIDTH;
         int hr = h / BASE_SCREEN_HEIGHT;
@@ -107,6 +104,9 @@ static int engine_init_display(struct engine* engine) {
         Screen::HEIGHT = BASE_SCREEN_HEIGHT * Screen::RATIO;
 
         LOGI("SR=%d", Screen::RATIO);
+
+        engine->pViewController->init( Screen::RATIO );
+        engine->animating = true;
     }
 
     //initDraw(engine);

@@ -11,7 +11,7 @@ class ViewController
 {
 public:
 	ViewController(engine* engine);
-	void init();
+	void init( int screenRatio );
 	
 	void setFrameBuffer();
 	void drawFrame();

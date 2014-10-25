@@ -4,8 +4,216 @@
 		"selected_items":
 		[
 			[
+				"bloc",
+				"BlockContainer	class"
+			],
+			[
+				"SCORE",
+				"SCORE_H	const int"
+			],
+			[
+				"POR",
+				"PORTRAIT_SCORE_WIDTH	const int"
+			],
+			[
+				"SCO",
+				"SCORE_W	const int"
+			],
+			[
+				"_score",
+				"_score_spr	Sprite *"
+			],
+			[
+				"DIALOG",
+				"DIALOG_SCORE_HEIGHT	const int"
+			],
+			[
+				"DIALOG_SCORE",
+				"DIALOG_SCORE_WIDTH	const int"
+			],
+			[
+				"DIALOG_SCORE_PO",
+				"DIALOG_SCORE_POS_X	macro"
+			],
+			[
+				"DIALOG_SCO",
+				"DIALOG_SCORE_HEIGHT	const int"
+			],
+			[
+				"DIALOG_SCRE",
+				"DIALOG_SCORE_POS_X_OFFSET	const int"
+			],
+			[
+				"BUTT",
+				"BUTTON_HEIGHT	const int"
+			],
+			[
+				"Bu",
+				"BUTTON_WIDTH	const int"
+			],
+			[
+				"DIALOG_FA",
+				"DIALOG_FALLSPEED_NORMAL	int"
+			],
+			[
+				"ra",
+				"ratio	int"
+			],
+			[
+				"DIALOG_DOWN",
+				"DIALOG_Y_DOWN_LIMIT_SHORT	int"
+			],
+			[
+				"_bes",
+				"_best_spr	Sprite *"
+			],
+			[
+				"Ui",
+				"UI_GameMain"
+			],
+			[
+				"off",
+				"offsetY_	int"
+			],
+			[
+				"setColo",
+				"setColor(GLubyte r, GLubyte g, GLubyte b, GLubyte a)	void"
+			],
+			[
+				"LIN",
+				"LINE_WIDTH	enum <anonymous>"
+			],
+			[
+				"offset",
+				"offsetY_	int"
+			],
+			[
 				"pri",
-				"printf	printf …"
+				"pri	pri"
+			],
+			[
+				"UNIT_",
+				"UNIT_PUZZLE_NO_TIMELIMIT	UnitId"
+			],
+			[
+				"UNI",
+				"UNIT_PUZZLE	UnitId"
+			],
+			[
+				"GEt",
+				"GetNextID() const	int"
+			],
+			[
+				"COIN_POS_",
+				"COIN_POS_X_TH_MIN	const float"
+			],
+			[
+				"COIN_FA",
+				"COIN_FALL_MAX_Y	const float"
+			],
+			[
+				"DOT_SI",
+				"DOT_SIZE_Y	const int"
+			],
+			[
+				"DOT_WIDH",
+				"DOT_WIDTH_INTERVAL	const int"
+			],
+			[
+				"DOT_HEI",
+				"DOT_HEIGHT_INTERVAL	const int"
+			],
+			[
+				"_coinTou",
+				"_coinTouched	bool"
+			],
+			[
+				"_coinTouch",
+				"_coinTouchTimer	int"
+			],
+			[
+				"_coinMOve",
+				"_coinMoveStart	Math::Vector3"
+			],
+			[
+				"_coinMove",
+				"_coinMoveEnd	Math::Vector3"
+			],
+			[
+				"_coinMO",
+				"_coinModel	Graphics::Model *"
+			],
+			[
+				"_coinTOu",
+				"_coinTouched	bool"
+			],
+			[
+				"_coin",
+				"_coinModel	Graphics::Model *"
+			],
+			[
+				"Vec",
+				"Vector3	class"
+			],
+			[
+				"dot",
+				"dotWidthMax	int"
+			],
+			[
+				"BA",
+				"BASE_SCREEN_WIDTH	macro"
+			],
+			[
+				"BASE_",
+				"BASE_SCREEN_WIDTH	macro"
+			],
+			[
+				"SCREE",
+				"SCREEN_WIDTH	int"
+			],
+			[
+				"BASE",
+				"BASE_SCREEN_HEIGHT	macro"
+			],
+			[
+				"draw",
+				"drawWithFrame(int f, int x, int y, int w, int h)	void"
+			],
+			[
+				"set",
+				"setColorWithSide(int s, GLubyte r, GLubyte g, GLubyte b, GLubyte a)	void"
+			],
+			[
+				"GL_TI",
+				"GL_TRIANGLE_STRIP	macro"
+			],
+			[
+				"GL_TRI",
+				"GL_TRIANGLE_STRIP	macro"
+			],
+			[
+				"dra",
+				"drawCol	GLubyte [16]"
+			],
+			[
+				"glEnab",
+				"glEnableClientState(GLenum array)	void"
+			],
+			[
+				"LOG",
+				"LOGI	macro"
+			],
+			[
+				"Dr",
+				"Draw"
+			],
+			[
+				"Dra",
+				"DrawCube()	void"
+			],
+			[
+				"_",
+				"_frameSize	CGSize"
 			],
 			[
 				"ma",
@@ -84,10 +292,6 @@
 				"_spr_bestscore"
 			],
 			[
-				"draw",
-				"drawWithFrame"
-			],
-			[
 				"wi",
 				"width"
 			],
@@ -146,10 +350,6 @@
 			[
 				"pAss",
 				"pAssetManager"
-			],
-			[
-				"_",
-				"_frameSize"
 			],
 			[
 				"he",
@@ -236,21 +436,246 @@
 	"buffers":
 	[
 		{
-			"contents": "startup time: 0.323935\nlaunching: /Applications/Sublime Text.app/Contents/MacOS/plugin_host\nreloading plugin Default.block\nreloading plugin Default.comment\nreloading plugin Default.copy_path\nreloading plugin Default.delete_word\nreloading plugin Default.detect_indentation\nreloading plugin Default.duplicate_line\nreloading plugin Default.echo\nreloading plugin Default.exec\nreloading plugin Default.fold\nreloading plugin Default.font\nreloading plugin Default.goto_line\nreloading plugin Default.history_list\nreloading plugin Default.indentation\nreloading plugin Default.kill_ring\nreloading plugin Default.mark\nreloading plugin Default.new_templates\nreloading plugin Default.open_file_settings\nreloading plugin Default.open_in_browser\nreloading plugin Default.pane\nreloading plugin Default.paragraph\nreloading plugin Default.paste_from_history\nreloading plugin Default.save_on_focus_lost\nreloading plugin Default.scroll\nreloading plugin Default.set_unsaved_view_name\nreloading plugin Default.side_bar\nreloading plugin Default.sort\nreloading plugin Default.swap_line\nreloading plugin Default.switch_file\nreloading plugin Default.symbol\nreloading plugin Default.transform\nreloading plugin Default.transpose\nreloading plugin Default.trim_trailing_white_space\nreloading plugin CSS.css_completions\nreloading plugin Diff.diff\nreloading plugin HTML.encode_html_entities\nreloading plugin HTML.html_completions\nreloading plugin CTags.ctags\nreloading plugin CTags.ctagsplugin\nreloading plugin CTags.test_ctags\nreloading plugin CTags.test_ctagsplugin\nreloading plugin EasyMotion.easy_motion\nreloading plugin Evernote.sublime_evernote\nloaded 887 snippets\nreloading plugin File Navigator.File Navigator\nreloading plugin FindKeyConflicts.find_key_conflicts\nreloading plugin Origami.origami\nreloading plugin Package Control.Package Control\nreloading plugin SideBarEnhancements.Edit\nreloading plugin SideBarEnhancements.SideBar\nreloading plugin SideBarEnhancements.SideBarDefaultDisable\nreloading plugin SideBarEnhancements.StatusBarFileSize\nreloading plugin SideBarEnhancements.StatusBarModifiedTime\nreloading plugin SimpleClone.simple_clone\nreloading plugin SublimeGDB.resultparser\nreloading plugin SublimeGDB.sublimegdb\nreloading plugin Sublimerge Pro.Sublimerge\nreloading plugin Codecs33.Codecs33\nreloading plugin completion.jsonrpc\nreloading plugin completion.plugin\nreloading plugin ConvertToUTF8.ConvertToUTF8\nreloading plugin IMESupport.imesupportplugin\nTraceback (most recent call last):\n  File \"/Applications/Sublime Text.app/Contents/MacOS/sublime_plugin.py\", line 73, in reload_plugin\n    m = importlib.import_module(modulename)\n  File \"X/importlib/__init__.py\", line 88, in import_module\n  File \"<frozen importlib._bootstrap>\", line 1577, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1558, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1525, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 586, in _check_name_wrapper\n  File \"<frozen importlib._bootstrap>\", line 1023, in load_module\n  File \"<frozen importlib._bootstrap>\", line 1004, in load_module\n  File \"<frozen importlib._bootstrap>\", line 562, in module_for_loader_wrapper\n  File \"<frozen importlib._bootstrap>\", line 869, in _load_module\n  File \"<frozen importlib._bootstrap>\", line 313, in _call_with_frames_removed\n  File \"/Users/keita/Library/Application Support/Sublime Text 3/Packages/IMESupport/imesupportplugin.py\", line 12, in <module>\n    from ctypes import windll, byref\nImportError: cannot import name windll\nreloading plugin Perforce.Perforce\nreloading plugin plugin.example\nreloading plugin Prefixr.Prefixr\nreloading plugin Prefixr.Test\nreloading plugin SublimeClang.errormarkers\nreloading plugin SublimeClang.staticanalyzer\nreloading plugin SublimeClang.sublimeclang\nTraceback (most recent call last):\n  File \"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/sublimeclang.py\", line 24, in <module>\n    import sublimes\nImportError: No module named 'sublimes'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Applications/Sublime Text.app/Contents/MacOS/sublime_plugin.py\", line 73, in reload_plugin\n    m = importlib.import_module(modulename)\n  File \"X/importlib/__init__.py\", line 88, in import_module\n  File \"<frozen importlib._bootstrap>\", line 1577, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1558, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1525, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 586, in _check_name_wrapper\n  File \"<frozen importlib._bootstrap>\", line 1023, in load_module\n  File \"<frozen importlib._bootstrap>\", line 1004, in load_module\n  File \"<frozen importlib._bootstrap>\", line 562, in module_for_loader_wrapper\n  File \"<frozen importlib._bootstrap>\", line 869, in _load_module\n  File \"<frozen importlib._bootstrap>\", line 313, in _call_with_frames_removed\n  File \"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/sublimeclang.py\", line 27, in <module>\n    sublime.error_message(\"\"\"\\\nNameError: name 'sublime' is not defined\nreloading plugin SublimeLinter.commands\nreloading plugin SublimeLinter.sublimelinter\nreloading plugin SublimeLinter-contrib-clang.linter\nSublimeLinter: clang linter loaded \nreloading plugin Terminal.Terminal\nreloading plugin User.clang-format-sublime\nplugins loaded\nSublimeLinter: debug mode: off \nPackage Control: Skipping automatic upgrade, last run at 2014-08-09 20:15:14, next run at 2014-08-09 21:15:14 or after\n",
+			"file": "Android/jni/Classes/Routine/UI/UI_GameMain.cpp",
 			"settings":
 			{
-				"buffer_size": 5572,
+				"buffer_size": 44212,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/Block.h",
+			"settings":
+			{
+				"buffer_size": 2560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/Block.cpp",
+			"settings":
+			{
+				"buffer_size": 5657,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/Parameter.h",
+			"settings":
+			{
+				"buffer_size": 1963,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/BlockContainer.cpp",
+			"settings":
+			{
+				"buffer_size": 8419,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/NextBlockContainer.h",
+			"settings":
+			{
+				"buffer_size": 760,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/NextBlockContainer.cpp",
+			"settings":
+			{
+				"buffer_size": 3649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Android.mk",
+			"settings":
+			{
+				"buffer_size": 1661,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/MainRoutine.cpp",
+			"settings":
+			{
+				"buffer_size": 2835,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 826 files for \"UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp:\n    8: #include \"UI/UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.h:\n    7: #include \"Classes/Routine/UI/UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockContainer.cpp:\n   11: #include \"Classes/UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h:\n   12: #include \"Classes/Routine/UI/UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp:\n    7: #include \"Classes/Routine/UI/UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h:\n    7: #include \"Classes/Routine/UI/UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp:\n    4: #include \"UI_GameMain.h\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h:\n    1: //! @file 		UI_GameMain.h\n\n8 matches across 8 files\n\n\nSearching 826 files for \"assert\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Functions.cpp:\n    7: #include <cassert>\n   29: 	assert( a >= -1.f );\n   30: 	assert( a <= 1.f );\n   35: 	assert( a >= -1.f );\n   36: 	assert( a <= 1.f );\n   78: 	assert( a >= 0.f );\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Matrix22.cpp:\n    8: #include <cassert>\n  107: 	assert( r >= 0 && r < 2 );\n  108: 	assert( c >= 0 && c < 2 );\n  113: 	assert( r >= 0 && r < 2 );\n  114: 	assert( c >= 0 && c < 2 );\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Matrix23.cpp:\n    9: #include <cassert>\n  160: 	assert( r >= 0 && r < 2 );\n  161: 	assert( c >= 0 && c < 3 );\n  166: 	assert( r >= 0 && r < 2 );\n  167: 	assert( c >= 0 && c < 3 );\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.cpp:\n    7: #include <cassert>\n   95: 	assert( i >= 0 && i < 2 );\n  100: 	assert( i >= 0 && i < 2 );\n  161: 	assert( t > 0.f );\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.cpp:\n   63: 			assert( !\"illegal value used\" );\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockContainer.cpp:\n  190: 				assert( leftValue >= 0 );\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h:\n  311: 			assert(progress>=0);\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/assert.h:\n    1: /*	$OpenBSD: assert.h,v 1.12 2006/01/31 10:53:51 hshoexer Exp $	*/\n    2: /*	$NetBSD: assert.h,v 1.6 1994/10/26 00:55:44 cgd Exp $	*/\n   37:  *	@(#)assert.h	8.2 (Berkeley) 1/21/94\n   41:  * Unlike other ANSI header files, <assert.h> may usefully be included\n   47: #undef assert\n   48: #undef _assert\n   51: # define	assert(e)	((void)0)\n   52: # define	_assert(e)	((void)0)\n   54: # define	_assert(e)	assert(e)\n   56: #  define	assert(e)	((e) ? (void)0 : __assert2(__FILE__, __LINE__, __func__, #e))\n   58: #  define	assert(e)	((e) ? (void)0 : __assert(__FILE__, __LINE__, #e))\n   63: __dead void __assert(const char *, int, const char *);\n   64: __dead void __assert2(const char *, int, const char *, const char *);\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/regex.h:\n   85: #define	REG_ASSERT	15\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/stdio.h:\n  140: 	/* RD and WR are never simultaneously asserted */\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/log.h:\n  113:  * Log an assertion failure and SIGTRAP the process to have a chance\n  116: void __android_log_assert(const char *cond, const char *tag,\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/spinlock_api_smp.h:\n   19: #define assert_spin_locked(x) BUG_ON(!spin_is_locked(x))\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/spinlock_api_up.h:\n   21: #define assert_spin_locked(lock) do { (void)(lock); } while (0)\n\n45 matches across 13 files\n\n\nSearching 826 files for \"setOrientaion\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h:\n  189: 		void setOrientaion(int o)	{ _orientation = 0; }\n\n1 match in 1 file\n\n\nSearching 826 files for \"setOrientation\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h:\n  189: 		void setOrientation(int o)	{ _orientation = 0; }\n  368: 	void setOrientation(ORIENTATION o)				{ _orientation = o; _bg.setOrientation(o); }\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/configuration.h:\n  176: void AConfiguration_setOrientation(AConfiguration* config, int32_t orientation);\n\n/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/SLES/OpenSLES.h:\n 1737: 	SLresult (*SetOrientationVectors) (\n 1742: 	SLresult (*SetOrientationAngles) (\n 1896: 	SLresult (*SetOrientationAngles) (\n 1902: 	SLresult (*SetOrientationVectors) (\n\n8 matches across 3 files\n\n\nSearching 826 files for \"UIDeviceOrientation\"\n\n/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h:\n  105: 	UIDeviceOrientation getDeviceOrientationByAngle( int angle );\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 5251,
 				"line_ending": "Unix",
-				"name": "startup time: 0.323935"
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h",
+			"settings":
+			{
+				"buffer_size": 4387,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/BlockSet.h",
+			"settings":
+			{
+				"buffer_size": 1095,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/BlockSet.cpp",
+			"settings":
+			{
+				"buffer_size": 7389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/include/pch.h",
+			"settings":
+			{
+				"buffer_size": 530,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/PuzzleUnit.cpp",
+			"settings":
+			{
+				"buffer_size": 1992,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/Puzzle/Stage.h",
+			"settings":
+			{
+				"buffer_size": 667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Routine/UI/UI_GameMain.h",
+			"settings":
+			{
+				"buffer_size": 9716,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Graphics/2D/Draw.h",
+			"settings":
+			{
+				"buffer_size": 572,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Graphics/2D/Draw.cpp",
+			"settings":
+			{
+				"buffer_size": 2575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Graphics/GRDefinition.h",
+			"settings":
+			{
+				"buffer_size": 738,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Graphics/2D/Sprite.h",
+			"settings":
+			{
+				"buffer_size": 662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Android/jni/Classes/Graphics/2D/Sprite.cpp",
+			"settings":
+			{
+				"buffer_size": 7724,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 379.0,
+		"height": 347.0,
 		"selected_items":
 		[
+			[
+				"setting ",
+				"Preferences: Settings - Default"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"origami move",
+				"Origami: Move File to Pane on the Right"
+			],
+			[
+				"origami",
+				"Origami: Move File to Pane on the Right"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"sublimeclang",
+				"Preferences: SublimeClang Settings – Default"
+			],
+			[
+				"origamimove",
+				"Origami: Move File to Pane on the Right"
+			],
+			[
+				"orgami",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"origami clone",
+				"Origami: Clone File to Pane on the Right"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"sublimegdb",
+				"SublimeGDB: Start Debugging"
+			],
+			[
+				"sublime clan",
+				"Set Syntax: SublimeClangErrorPanel"
+			],
+			[
+				"clan",
+				"SublimeClang: Clear cache"
+			],
 			[
 				"package",
 				"Package Control: Disable Package"
@@ -262,10 +687,6 @@
 			[
 				"package con",
 				"Package Control: Enable Package"
-			],
-			[
-				"sublimeclang",
-				"Preferences: SublimeClang Settings – Default"
 			],
 			[
 				"sublimeclan",
@@ -288,10 +709,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"ctags",
-				"CTags: Rebuild Tags"
-			],
-			[
 				"ctag",
 				"CTags: Rebuild Tags"
 			],
@@ -302,10 +719,6 @@
 			[
 				"origami right",
 				"Origami: Create Pane on the Right"
-			],
-			[
-				"origami",
-				"Origami: Clone File to Pane on the Right"
 			],
 			[
 				"findkey",
@@ -322,10 +735,6 @@
 			[
 				"snippet hea",
 				"Snippet: header"
-			],
-			[
-				"setting",
-				"Preferences: Settings - User"
 			],
 			[
 				"project",
@@ -403,6 +812,11 @@
 		"height": 505.0,
 		"history":
 		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"$PATH",
+			"echo $PATH",
+			"echo",
 			"sublime.log_commands(True)",
 			"view.run_command('example')",
 			"ls",
@@ -427,110 +841,147 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/keita/proj/gitroot/Koitsumo",
+		"/Users/keita/proj/gitroot/Koitsumo/Android",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include"
+	],
 	"file_history":
 	[
-		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/SublimeClang.sublime-settings",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/ViewController.cpp",
-		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/CTags.sublime-settings",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Engine.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/input.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/ViewController.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp",
 		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/main.cpp",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/sched.h",
-		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/SublimeClang.sublime-settings",
-		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/sys/system_properties.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/grp.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/getopt.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/msm_adsp.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/malloc.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/pathconf.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/ppdev.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/platform_device.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/videodev.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/vga.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/netfilter_ipv4/ip_nat.h",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/inttypes.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/3D/model.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector3.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector3.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/3D/model.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Android.mk",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Application.mk",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Functions.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Functions.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/pch.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/glu.cpp",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/AndroidManifest.xml",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs-debug/android_native_app_glue/android_native_app_glue.o.d",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/app_process",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.cpp",
-		"/usr/local/Cellar/android-ndk/r9d/platforms/android-19/arch-arm/usr/include/GLES/gl.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/glu.h",
-		"/Users/keita/proj/gitroot/Koitsumo/Koitsumo.sublime-project",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/project.properties",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs-debug/koitsumo/Classes/Routine/Title/TitleUnit.o.d",
-		"/Users/keita/proj/gitroot/Koitsumo/Android__/AndroidManifest.xml",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/bin/AndroidManifest.xml",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/res/values/strings.xml",
-		"/Users/keita/proj/gitroot/Koitsumo/Android/res/menu/main.xml",
-		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/gl.h",
-		"/Users/keita/proj/gitroot/NativeActivity/.classpath",
-		"/Users/keita/proj/gitroot/NativeActivity/jni/main.c",
-		"/Users/keita/proj/gitroot/NativeActivity/jni/Android.mk",
-		"/Users/keita/proj/gitroot/NativeActivity/AndroidManifest.xml",
-		"/Users/keita/proj/gitroot/NativeActivity/jni/Draw.cpp",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/pathconf.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/GRDefinition.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockSet.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/textsearch.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/termio.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h",
+		"/Users/keita/proj/gitroot/Koitsumo/.gitignore",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/NextBlockContainer.cpp",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/mtd/nand_ecc.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/netdb.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockContainer.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockContainer.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/pch.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Matrix22.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Matrix22.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Matrix23.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Matrix23.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Functions.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/param.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/posix_acl.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/ppp_defs.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/delay.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm-generic/futex.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/fcntl.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/res/values/strings.xml",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/math.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/mtd/partitions.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/hdsmart.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector3.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/sched.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Draw.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/GraphicsBase.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/3D/model.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/GraphicsBase.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/3D/model.cpp",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm-generic/emergency-restart.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Text.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Text.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Android.mk",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs/koitsumo/Classes/Routine/Title/TitleUnit.o.d",
+		"/usr/include/c++/4.2.1/cstring",
 		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/keita/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Android.mk",
-		"/Users/keita/proj/gitroot/NativeActivity/jni/main.cpp",
-		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/Users/keita/proj/gitroot/NativeActivity/jni/Draw.h",
-		"/Users/keita/proj/gitroot/NativeActivity/NativeActivity.sublime-project",
-		"/Users/keita/proj/gitroot/NativeActivity/jni/Application.mk",
-		"/Users/tanjike/Dropbox/preference/Sublime Text 3/Packages/User/plugin/example.py",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/physics_linejoint.nut",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/physics_gearjoint.nut",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/Engine.h",
-		"/Users/tanjike/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/tanjike/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/JavaGlue.cpp",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-iOS/libs/libpng/png.h",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-iOS/libs/libpng/png.c",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-iOS/libs/emo/EmoImage.m",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/libpng/png.h",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/libpng/png.c",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Application.mk",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/main.cpp",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/native_app_glue.c",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Box2D/Android.mk",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/Image.cpp",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/buildjar.xml",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/assets/runtime.nut",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/runtime.nut",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/assets/physics_add_example.nut",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/sqlite/sqlite3.h",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/emo/Image.h",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/src/com/emo_framework/examples/Launcher.java",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Android-Examples/bin/AndroidManifest.xml",
-		"/Users/tanjike/Dropbox/proj/emo-framework-0.2.0/Emo-Android/jni/Android.mk",
-		"/Users/tanjike/Dropbox/proj/emo-framework.sublime-project",
-		"/Users/tanjike/Dropbox/proj/adt_eclipse_work/android_work.sublime-project"
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/ViewController.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/ViewController.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/MainRoutine.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/Stage.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/Stage.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.h",
+		"/Users/keita/Dropbox/proj/Mgame/work1/Application/Mgame/Classes/Routine/UI/UI_GameMain.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Graphics/2D/Draw.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/serial_core.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/blockgroup_lock.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/byteswap.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/stat.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/spinlock_types.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Puzzle/NextBlockContainer.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/tty.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Application.mk",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Unit.cpp",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/SublimeClang.sublime-settings",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/png.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Engine.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector3.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Math/Vector2.cpp",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/version.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/mod_devicetable.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/module.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/unistd.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/byteorder/generic.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs/koitsumo/Classes/Draw.o.d",
+		"/Users/keita/proj/gitroot/Koitsumo/Koitsumo.sublime-project",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs/koitsumo/Classes/Routine/UI/UI_GameMain.o.d",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/if_bridge.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/backing-dev.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/bin/AndroidManifest.xml",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm-generic/bitops/atomic.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/endian.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/elf.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/sunrpc/gss_api.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/dirent.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/ufs_fs_i.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Draw.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Draw.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/preempt.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/pci_regs.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.cpp",
+		"/Users/keita/proj/gitroot/Koitsumo/README.md",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/random.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Asset/Asset.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/asset_manager_jni.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/asset_manager.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/assert.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/spinlock_api_smp.h",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/SublimeClang/Default.sublime-keymap",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/EGL/eglplatform.h",
+		"/private/etc/launchd.conf",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/SublimeClang.sublime-settings",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/spinlock.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/jni/include/glu.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/sys/system_properties.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/log.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/locale.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/lastlog.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/linux/percpu_counter.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/asm/thread_info.h",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/GLES/gl.h",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/AndroidManifest.xml",
+		"/Users/keita/proj/gitroot/Koitsumo/Android/obj/local/armeabi/objs/android_native_app_glue/android_native_app_glue.o.d",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/alloca.h",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/CTags.sublime-settings",
+		"/usr/local/Cellar/android-ndk/r9d/platforms/android-9/arch-arm/usr/include/android/input.h",
+		"/Users/keita/Library/Application Support/Sublime Text 3/Packages/CTags/CTags.sublime-settings"
 	],
 	"find":
 	{
@@ -541,6 +992,10 @@
 		"height": 91.0,
 		"where_history":
 		[
+			"<project files>, *.cpp, *.h",
+			"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp",
+			"/Users/keita/proj/gitroot/Koitsumo/Android/jni/Classes/Routine/Kei",
+			"<project files>, *.cpp, *.h",
 			""
 		]
 	},
@@ -549,134 +1004,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"completion",
-			"sublimeclang",
-			"丹治慶太",
-			"丹治",
-			"sublimeclang",
-			"else",
-			"loadImage",
-			"touchesEnded",
-			"animating",
-			"AInputEvent_getType",
-			"main",
+			"		",
 			"CGPoint",
-			"pViewController",
-			"viewCon",
-			"PI",
-			"view",
-			"_tag",
+			"State",
+			"		",
+			"float",
+			"UIDeviceOrientation",
+			"getState",
+			"setOrientation",
+			"setOrientaion",
+			"assert",
+			"next",
+			"CPuzzleUnit",
+			"UI_GameMain.h",
+			"onDecideScreenRatio",
+			"STAGE_VERTICAL_OFFSET_X",
+			"]",
+			"height:",
+			"height",
+			"height:",
+			"NEWRECORD_OFFSET_Y",
+			"]",
+			"y2:",
+			"x2:",
+			"y1:",
+			"beginTran",
+			"Alpha",
+			"Blue",
+			"[[Sprite alloc] initWithSprite:",
+			"frameWidth:",
+			"[[Sprite alloc] initWithImageName:@",
+			"HEIGHT",
+			"_spr_bg",
+			"GRDef",
+			"CGSize",
+			"CGSizes",
+			"GLuint",
+			"glu",
+			"]",
+			"frameHeight:",
+			"frameWidth:",
+			"[[Sprite alloc] initWithImageName:@",
+			"_dialog",
+			"@",
+			"]",
+			"70",
+			"frameHeight:",
+			" frameWidth:",
+			"[[Sprite alloc] initWithImageName",
+			"_GLIBCXX_BEGIN_NAMESPACE",
+			"_GLIBCXX_BEGIN",
+			"Effect",
+			"17.5f",
+			"_popScale",
+			"17.5f",
+			"RATIO",
+			"Screen::RATIO",
+			"UI_GameMain.h",
+			"offsetX",
+			"drawBox",
 			"pch.h",
-			"gl.h>",
+			"Vector2.h",
+			"Draw.h",
 			"pch.h",
-			"逆",
-			"glScale",
-			"500",
-			"1",
-			"_sprCol",
-			"prepareF",
-			"initDraw",
-			"sleep",
-			"pViewController",
-			"drawFrame",
-			"engine",
-			"engine.state",
-			"engine",
-			"assetMana",
-			"engine",
-			"engine_init",
-			"initDraw",
-			"preparefra",
-			"gluPers",
-			"glLookAt",
-			"MainROu",
-			"w",
-			"CG",
-			"texCoord",
-			"TexCoord",
-			"texCoord",
-			"TexCoord",
-			"texCoord",
-			"accelerometer:",
-			"static",
-			"	::",
-			"Sprite",
-			"DrawBox",
-			"loadImage",
-			"initDrow",
-			"prepareFrame",
-			"void",
-			"prepareFrame",
-			"------------------------",
-			"LOG",
-			"animating",
-			"logo",
-			"Draw.",
-			"Draw.cpp",
-			"NativeActivity",
-			"texCoord",
-			"AssetManager",
-			"initDraw",
-			"glBindFrame",
-			"engine->display",
-			"assetManager",
-			"TexCoord",
-			"texcoord",
-			"TexCoord",
-			"texcoord",
-			"TexCoord",
-			"drawWith",
-			"mgr",
-			"pragma",
-			"show",
-			"encode",
-			"code",
-			"GLint",
-			"gluPerspective",
-			"android_native_a",
-			"colorBu",
-			"LENGTH",
-			"DrawBox",
-			"drawBox",
-			"DrawBox",
-			"drawBox",
-			"triangleBuffer",
-			"initCube",
-			"drawCube",
-			"colorBuffer",
-			"\n#",
-			"asset",
-			"DrawBox(",
-			"alt+shift+1",
-			"drawBox",
-			"LENGTH",
-			"drawBox",
-			"DrawBox",
-			"drawBox",
-			"colorBuff",
-			"triangleBuffer",
-			"triangleBufferA",
-			"triangleBuffer",
-			"angle",
-			"ANGLE",
-			"angle",
+			"GRDefinition.h",
+			"nextUnit",
+			"dotWidthMax",
+			"dotHeightMax",
+			"drawWithFrame(",
+			"Screen::RATIO",
+			"touchBegan,",
+			"setFrameBuffer,",
+			"BackGround::pos",
+			"engine_handle_cmd",
 			"engine_draw_frame",
-			"drawBox",
-			"ndk",
-			"animating",
-			"colorspace",
-			"png_colorspace",
-			"assetManager",
-			"gear@2x",
-			"A.png",
-			"SQInteger",
-			"emacs",
-			"ctrl+f",
-			"png",
-			"loadPngFromBytes",
-			"PNG_LIBPNG_VER_STRING",
-			"png_set_read_fn",
-			"asset_read"
+			"engine_draw_frame\"",
+			"coinpos",
+			"_coinSpeed",
+			"_coinMoveStart",
+			"_coinModel",
+			"super+f1",
+			"/Users/keita/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+			"show_scope",
+			"Vector3",
+			"ret",
+			"Vector3",
+			"drawWithFram",
+			"TitleUnit",
+			"SetVertexBuffer",
+			"_uv",
+			"_scale",
+			"SetScale(",
+			"_scale",
+			"SetVertexBuffer",
+			"RATIO",
+			"glMatrixMode",
+			"\"drawWith",
+			"PIN3",
+			"PIN2",
+			"_scl",
+			"UNIT_",
+			"xcount",
+			"ycount",
+			"SCREEN_WIDTH",
+			"P",
+			"SR",
+			"BASE_SCREEN_HEIGHT",
+			"BASE_SCREEN_WIDTH",
+			"drawWithFrame",
+			"PIN3",
+			"PIN2",
+			"SR",
+			"engine",
+			"\n#",
+			"* 3",
+			"SCREEN_WIDTH",
+			"_bg",
+			"GLshort",
+			"gl.h\"",
+			"UI_GAMEMAIN_BACKGROUND_CALC_SCALEPLUS",
+			"UI_GAMEMAIN_BACKGROUND_CALC_FRAMEPLUS",
+			"drawWithFrame",
+			"ORIENTATION_PORTRAIT_UP",
+			"BackGround",
+			"BackGroung",
+			"drawIns",
+			"ViewController",
+			"engine_handle_cmd",
+			"engine_init"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -684,6 +1139,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"~Sprite",
+			"drawWithFrame",
+			""
 		],
 		"reverse": false,
 		"show_context": false,
@@ -694,37 +1152,923 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "Android/jni/Classes/Routine/UI/UI_GameMain.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5572,
+						"buffer_size": 44212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4430,
-								4430
+								91,
+								91
 							]
 						],
 						"settings":
 						{
-							"auto_name": "startup time: 0.323935",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1208.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Android/jni/Classes/Routine/Puzzle/Block.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Android/jni/Classes/Routine/Puzzle/Block.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Android/jni/Classes/Routine/Puzzle/Parameter.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1612,
+								1612
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 173.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Android/jni/Classes/Routine/Puzzle/BlockContainer.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5447,
+								5451
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2481.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Android/jni/Classes/Routine/Puzzle/NextBlockContainer.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 139.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Android/jni/Classes/Routine/Puzzle/NextBlockContainer.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								834,
+								834
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 19.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Android/jni/Android.mk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1661,
+								1661
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 128.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Android/jni/Classes/Routine/MainRoutine.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								605,
+								605
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5251,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										141,
+										154
+									],
+									[
+										272,
+										285
+									],
+									[
+										403,
+										416
+									],
+									[
+										539,
+										552
+									],
+									[
+										675,
+										688
+									],
+									[
+										809,
+										822
+									],
+									[
+										925,
+										938
+									],
+									[
+										1041,
+										1054
+									],
+									[
+										1210,
+										1216
+									],
+									[
+										1226,
+										1232
+									],
+									[
+										1255,
+										1261
+									],
+									[
+										1283,
+										1289
+									],
+									[
+										1312,
+										1318
+									],
+									[
+										1340,
+										1346
+									],
+									[
+										1453,
+										1459
+									],
+									[
+										1469,
+										1475
+									],
+									[
+										1504,
+										1510
+									],
+									[
+										1539,
+										1545
+									],
+									[
+										1574,
+										1580
+									],
+									[
+										1694,
+										1700
+									],
+									[
+										1710,
+										1716
+									],
+									[
+										1745,
+										1751
+									],
+									[
+										1780,
+										1786
+									],
+									[
+										1815,
+										1821
+									],
+									[
+										1934,
+										1940
+									],
+									[
+										1950,
+										1956
+									],
+									[
+										1985,
+										1991
+									],
+									[
+										2020,
+										2026
+									],
+									[
+										2131,
+										2137
+									],
+									[
+										2266,
+										2272
+									],
+									[
+										2384,
+										2390
+									],
+									[
+										2511,
+										2517
+									],
+									[
+										2584,
+										2590
+									],
+									[
+										2646,
+										2652
+									],
+									[
+										2721,
+										2727
+									],
+									[
+										2770,
+										2776
+									],
+									[
+										2792,
+										2798
+									],
+									[
+										2815,
+										2821
+									],
+									[
+										2852,
+										2858
+									],
+									[
+										2889,
+										2895
+									],
+									[
+										2899,
+										2905
+									],
+									[
+										2926,
+										2932
+									],
+									[
+										2955,
+										2961
+									],
+									[
+										3015,
+										3021
+									],
+									[
+										3044,
+										3050
+									],
+									[
+										3097,
+										3103
+									],
+									[
+										3159,
+										3165
+									],
+									[
+										3319,
+										3325
+									],
+									[
+										3460,
+										3466
+									],
+									[
+										3580,
+										3586
+									],
+									[
+										3665,
+										3671
+									],
+									[
+										3824,
+										3830
+									],
+									[
+										3989,
+										3995
+									],
+									[
+										4211,
+										4224
+									],
+									[
+										4412,
+										4426
+									],
+									[
+										4469,
+										4483
+									],
+									[
+										4526,
+										4540
+									],
+									[
+										4675,
+										4689
+									],
+									[
+										4848,
+										4862
+									],
+									[
+										4892,
+										4906
+									],
+									[
+										4935,
+										4949
+									],
+									[
+										4978,
+										4992
+									],
+									[
+										5170,
+										5189
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								5031,
+								5031
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 5,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2112.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								479
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Android/jni/Classes/Routine/Puzzle/BlockSet.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								930,
+								930
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 308.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Android/jni/Classes/Routine/Puzzle/BlockSet.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								783,
+								783
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Android/jni/include/pch.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Android/jni/Classes/Routine/Puzzle/PuzzleUnit.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1116,
+								1116
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 393.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Android/jni/Classes/Routine/Puzzle/Stage.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Android/jni/Classes/Routine/UI/UI_GameMain.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3939,
+								3925
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2563.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "Android/jni/Classes/Graphics/2D/Draw.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								504
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "Android/jni/Classes/Graphics/2D/Draw.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2074,
+								2075
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 658.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "Android/jni/Classes/Graphics/GRDefinition.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "Android/jni/Classes/Graphics/2D/Sprite.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "Android/jni/Classes/Graphics/2D/Sprite.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2217,
+								2217
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 902.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
 					"type": "text"
 				}
 			]
@@ -732,7 +2076,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -761,6 +2105,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 116.0
+	},
 	"output.exec":
 	{
 		"height": 86.0
@@ -772,7 +2120,7 @@
 	"project": "Koitsumo.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -781,28 +2129,260 @@
 		"selected_items":
 		[
 			[
-				"sprit",
-				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
+				"mainrout",
+				"Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"puzzle",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.cpp"
+			],
+			[
+				"grde",
+				"Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h"
+			],
+			[
+				"pch",
+				"Koitsumo/Android/jni/include/pch.h"
+			],
+			[
+				"puzzleuni",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h"
+			],
+			[
+				"puzz",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/PuzzleUnit.h"
+			],
+			[
+				"blockset",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockSet.h"
+			],
+			[
+				"uigame",
+				"Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
+			],
+			[
+				"ui_game",
+				"Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h"
+			],
+			[
+				".mk",
+				"Koitsumo/Android/jni/Android.mk"
+			],
+			[
+				"block",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.cpp"
+			],
+			[
+				"nextblock",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/NextBlockContainer.h"
+			],
+			[
+				"game",
+				"Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h"
+			],
+			[
+				"blockconta",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockContainer.cpp"
+			],
+			[
+				"parameter",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/Parameter.h"
+			],
+			[
+				"block.cpp",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.cpp"
+			],
+			[
+				"blockcon",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/BlockContainer.h"
+			],
+			[
+				"matrix",
+				"Koitsumo/Android/jni/Classes/Math/Matrix23.h"
+			],
+			[
+				"func",
+				"Koitsumo/Android/jni/Classes/Math/Functions.h"
+			],
+			[
+				"stage",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/Stage.h"
+			],
+			[
+				"draw",
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Draw.h"
 			],
 			[
 				"sprite",
-				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.h"
 			],
 			[
-				"main",
-				"Koitsumo/Android/jni/main.cpp"
+				"model",
+				"Koitsumo/Android/jni/Classes/Graphics/3D/model.h"
+			],
+			[
+				"graphi",
+				"Koitsumo/Android/jni/Classes/Graphics/GraphicsBase.h"
+			],
+			[
+				"title",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"titleu",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"titleunit",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"ui",
+				"Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.h"
+			],
+			[
+				"uigam",
+				"Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
 			],
 			[
 				"view",
 				"Koitsumo/Android/jni/Classes/ViewController.cpp"
 			],
 			[
-				"grd",
-				"Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h"
+				"block.h",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/Block.h"
+			],
+			[
+				"draw.h",
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Draw.h"
+			],
+			[
+				"stage.h",
+				"Koitsumo/Android/jni/Classes/Routine/Puzzle/Stage.h"
+			],
+			[
+				"main",
+				"Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"titleuni",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h"
+			],
+			[
+				"mainrou",
+				"Koitsumo/Android/jni/Classes/Routine/MainRoutine.cpp"
+			],
+			[
+				"titileuni",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h"
+			],
+			[
+				"tit",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h"
+			],
+			[
+				"titi",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"titile",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"vec",
+				"Koitsumo/Android/jni/Classes/Math/Vector3.h"
+			],
+			[
+				"mode",
+				"Koitsumo/Android/jni/Classes/Graphics/3D/model.cpp"
+			],
+			[
+				"unit",
+				"Koitsumo/Android/jni/Classes/Routine/Unit.h"
+			],
+			[
+				"spri",
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
 			],
 			[
 				"main.cpp",
 				"Koitsumo/Android/jni/main.cpp"
+			],
+			[
+				"gr",
+				"Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h"
+			],
+			[
+				"",
+				"Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h"
+			],
+			[
+				"spc",
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
+			],
+			[
+				"engine",
+				"Koitsumo/Android/jni/Engine.h"
+			],
+			[
+				"grd",
+				"Koitsumo/Android/jni/Classes/Graphics/GRDefinition.h"
+			],
+			[
+				"gamemain",
+				"Koitsumo/Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
+			],
+			[
+				"titleui",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"titiel",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"viewcon",
+				"Koitsumo/Android/jni/Classes/ViewController.h"
+			],
+			[
+				"draw.cpp",
+				"Koitsumo/Android/jni/Classes/Draw.cpp"
+			],
+			[
+				"mainc",
+				"Koitsumo/Android/jni/main.cpp"
+			],
+			[
+				"mai",
+				"Koitsumo/Android/jni/main.cpp"
+			],
+			[
+				"mainc.pp",
+				"Koitsumo/Android/jni/main.cpp"
+			],
+			[
+				"asset",
+				"Koitsumo/Android/jni/Classes/Asset/Asset.cpp"
+			],
+			[
+				"pch.h",
+				"Koitsumo/Android/jni/include/pch.h"
+			],
+			[
+				"title.h",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.h"
+			],
+			[
+				"titileunit",
+				"Koitsumo/Android/jni/Classes/Routine/Title/TitleUnit.cpp"
+			],
+			[
+				"android",
+				"Koitsumo/Android/jni/Android.mk"
+			],
+			[
+				"sprit",
+				"Koitsumo/Android/jni/Classes/Graphics/2D/Sprite.cpp"
 			],
 			[
 				"input",
@@ -813,52 +2393,12 @@
 				"Android/jni/main.cpp"
 			],
 			[
-				"tit",
-				"Android/jni/Classes/Routine/Title/TitleUnit.h"
-			],
-			[
-				"unit",
-				"Android/jni/Classes/Routine/Unit.h"
-			],
-			[
 				"ma",
 				"Android/jni/Classes/Routine/MainRoutine.cpp"
 			],
 			[
-				"gr",
-				"Android/jni/Classes/Graphics/GRDefinition.h"
-			],
-			[
-				"",
-				"Android/jni/main.cpp"
-			],
-			[
-				"titi",
-				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
-			],
-			[
-				"spri",
-				"Android/jni/Classes/Graphics/2D/Sprite.cpp"
-			],
-			[
-				"model",
-				"Android/jni/Classes/Graphics/3D/model.cpp"
-			],
-			[
-				"title",
-				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
-			],
-			[
-				"ui",
-				"Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
-			],
-			[
 				"pc",
 				"Android/jni/include/pch.h"
-			],
-			[
-				"ui_game",
-				"Android/jni/Classes/Routine/UI/UI_GameMain.cpp"
 			],
 			[
 				"and",
@@ -873,24 +2413,12 @@
 				"Android/jni/Classes/Math/Vector2.cpp"
 			],
 			[
-				"mode",
-				"Android/jni/Classes/Graphics/3D/model.h"
-			],
-			[
 				"androi",
 				"Android/jni/Android.mk"
 			],
 			[
 				"mo",
 				"Android/jni/Classes/Graphics/3D/model.h"
-			],
-			[
-				"pch",
-				"Android/jni/include/pch.h"
-			],
-			[
-				"titile",
-				"Android/jni/Classes/Routine/Title/TitleUnit.h"
 			],
 			[
 				"s",
@@ -901,39 +2429,11 @@
 				"Android/jni/Classes/ViewController.cpp"
 			],
 			[
-				"mainrout",
-				"Android/jni/Classes/Routine/MainRoutine.cpp"
-			],
-			[
-				"titleu",
-				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
-			],
-			[
-				"mainc",
-				"Android/jni/main.cpp"
-			],
-			[
 				"vie",
 				"Android/jni/Classes/ViewController.cpp"
 			],
 			[
 				"main.c",
-				"Android/jni/main.cpp"
-			],
-			[
-				"viewcon",
-				"Android/jni/Classes/ViewController.cpp"
-			],
-			[
-				"engine",
-				"Android/jni/Engine.h"
-			],
-			[
-				"asset",
-				"Android/jni/Classes/Asset/Asset.h"
-			],
-			[
-				"mai",
 				"Android/jni/main.cpp"
 			],
 			[
@@ -943,14 +2443,6 @@
 			[
 				"t",
 				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
-			],
-			[
-				"titleuni",
-				"Android/jni/Classes/Routine/Title/TitleUnit.cpp"
-			],
-			[
-				"mainrou",
-				"Android/jni/Classes/Routine/MainRoutine.cpp"
 			],
 			[
 				"spr",
@@ -973,24 +2465,8 @@
 				"Android/jni/Android.mk"
 			],
 			[
-				"draw",
-				"jni/Draw.h"
-			],
-			[
 				"libp",
 				"~/proj/gitroot/NDKBook_2nd/ch12/CubeDroidTex/jni/libpng_android.h"
-			],
-			[
-				".mk",
-				"jni/Android.mk"
-			],
-			[
-				"draw.cpp",
-				"jni/Draw.cpp"
-			],
-			[
-				"android",
-				"jni/Android.mk"
 			],
 			[
 				"android.mk",
@@ -1023,6 +2499,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},

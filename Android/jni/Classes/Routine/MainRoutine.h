@@ -11,6 +11,8 @@ class Unit;
 class MainRoutine
 {
 public:
+	static void onDecideScreenRatio(int ratio);
+public:
 	static MainRoutine* singleton();
 	void init();
 
@@ -23,6 +25,7 @@ public:
 
 	Unit* getCurrentUnit();
 
+	void setNextUnit(Unit* unit);
 private:
 	MainRoutine();
 	~MainRoutine();
@@ -33,4 +36,5 @@ private:
 private:
 	Unit* _currentUnit;
 	
+	bool	_touched;
 };

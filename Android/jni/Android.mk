@@ -20,12 +20,32 @@ LOCAL_SRC_FILES := main.cpp \
 	Classes/Graphics/GRDefinition.cpp \
 	Classes/Graphics/2D/Sprite.cpp \
 	Classes/Graphics/2D/Draw.cpp \
+	Classes/Graphics/2D/Text.cpp \
 	Classes/Graphics/3D/model.cpp \
 	Classes/Math/Functions.cpp \
+	Classes/Math/Matrix22.cpp \
+	Classes/Math/Matrix23.cpp \
 	Classes/Math/Vector2.cpp \
 	Classes/Math/Vector3.cpp \
 	Classes/Routine/MainRoutine.cpp \
 	Classes/Routine/Unit.cpp \
+	Classes/Routine/Base/FrameTime.cpp \
+	Classes/Routine/Puzzle/AdditionalTimeDrawer.cpp \
+	Classes/Routine/Puzzle/Block.cpp \
+	Classes/Routine/Puzzle/BlockContainer.cpp \
+	Classes/Routine/Puzzle/BlockSet.cpp \
+	Classes/Routine/Puzzle/FiftyYenBlock.cpp \
+	Classes/Routine/Puzzle/FiveYenBlock.cpp \
+	Classes/Routine/Puzzle/FiveHundredYenBlock.cpp \
+	Classes/Routine/Puzzle/HundredYenBlock.cpp \
+	Classes/Routine/Puzzle/NextBlockContainer.cpp \
+	Classes/Routine/Puzzle/OneYenBlock.cpp \
+	Classes/Routine/Puzzle/Parameter.cpp \
+	Classes/Routine/Puzzle/PuzzleUnit.cpp \
+	Classes/Routine/Puzzle/Result.cpp \
+	Classes/Routine/Puzzle/Stage.cpp \
+	Classes/Routine/Puzzle/TenYenBlock.cpp \
+	Classes/Routine/SaveData/SaveData.cpp \
 	Classes/Routine/Title/TitleUnit.cpp \
 	Classes/Routine/UI/UI_GameMain.cpp
 LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lz

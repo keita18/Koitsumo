@@ -4,8 +4,17 @@
 
 #include "MainRoutine.h"
 #include "Title/TitleUnit.h"
+#include "Puzzle/PuzzleUnit.h"
+#include "UI/UI_GameMain.h"
 
 /*static*/ MainRoutine* MainRoutine::pInstance = NULL;
+
+//=============================================================================
+/*static*/ void MainRoutine::onDecideScreenRatio(int ratio)
+{
+	UserInterface::UI_GameMain::onDecideScreenRatio(ratio);
+	Puzzle::PuzzleUnit::onDecideScreenRatio(ratio);
+}
 
 //=============================================================================
 /*static*/ MainRoutine* MainRoutine::singleton()
@@ -19,6 +28,7 @@
 //-----------------------------------------------------------------------------
 MainRoutine::MainRoutine()
 : _currentUnit(NULL)
+, _touched(false)
 {
 }
 
@@ -43,6 +53,28 @@ void MainRoutine::calc()
 
 	if(_currentUnit) {
 		_currentUnit->calc();
+		if(_currentUnit->GetEnd()) {
+			Unit* nextUnit = NULL;
+			switch( _currentUnit->GetNextID() ) {
+				case UNIT_TITLE:{
+					nextUnit = new TitleUnit();
+					break;
+				}
+				case UNIT_PUZZLE:{
+					nextUnit = new Puzzle::PuzzleUnit(false);
+					break;
+				}
+				case UNIT_PUZZLE_NO_TIMELIMIT:{
+					nextUnit = new Puzzle::PuzzleUnit(true);
+					break;
+				}
+				case UNIT_GAME_OVER:{
+					//nextUnit
+					break;
+				}
+			}
+			setNextUnit(nextUnit);
+		}
 	}
 }
 
@@ -73,4 +105,11 @@ void MainRoutine::touchedEnded(CGPoint tp)
 Unit* MainRoutine::getCurrentUnit()
 {
 	return _currentUnit;
+}
+//=============================================================================
+void MainRoutine::setNextUnit(Unit* unit)
+{
+	if(_currentUnit) SAFE_DELETE(_currentUnit);
+	_currentUnit = unit;
+	_touched = false;
 }

@@ -41,4 +41,13 @@ struct CGRect
 	CGPoint origin;
 };
 
+enum UIDeviceOrientation
+{
+	UIDeviceOrientationPortrait,
+	UIDeviceOrientationLandscapeLeft,
+	UIDeviceOrientationPortraitUpsideDown,
+	UIDeviceOrientationLandscapeRight,
+	UIDeviceOrientationUnknown,
+};
+
 #endif

@@ -8,12 +8,14 @@
 static GLshort sprVtx[] = { 0, 0, 1, 0, 0, 1, 1, 1 };
 //static GLshort sprVtx[] = { 0, 1, 1, 1, 0, 0, 1, 0 };
 
+//=============================================================================
 Sprite::Sprite(const char* imgName, int fw, int fh)
 : _tag(0)
 , _frameSize()
 , _texSize()
 , _pitch(0)
 , _count(0)
+, _shared(false)
 {
 	memset(_sprCol, 255, sizeof(GLubyte) * 16);
 
@@ -22,10 +24,28 @@ Sprite::Sprite(const char* imgName, int fw, int fh)
 
 	loadImage(imgName);
 }
+//=============================================================================
+Sprite::Sprite(Sprite* spr)
+: _tag(0)
+, _frameSize()
+, _texSize()
+, _pitch(0)
+, _count(0)
+, _shared(true)
+{
+	_tag = spr->_tag;
 
+	memset(_sprCol, 255, sizeof(GLubyte) * 16);
+	_frameSize.width = spr->_frameSize.width;
+	_frameSize.height = spr->_frameSize.height;
+	_texSize.width = spr->_texSize.width;
+	_texSize.height = spr->_texSize.height;
+	_pitch = spr->_pitch;
+}
+//=============================================================================
 Sprite::~Sprite()
 {}
-
+//=============================================================================
 void Sprite::loadImage(const char* imgName)
 {
 	//texture生成
@@ -55,7 +75,48 @@ void Sprite::loadImage(const char* imgName)
 	LOGI("#################################¥n");
     LOGI("loadImage, type=%d, w=%d, h=%d, _tag=%d", type, width, height, _tag);
 }
-
+//=============================================================================
+void Sprite::drawImage(int x, int y, int w, int h, CGPoint lt, CGPoint rd)
+{
+	// Make TexCoord
+	GLfloat texcoord[8];
+	//@TODO 多分反転
+	texcoord[0] = texcoord[4] = lt.x;
+	texcoord[1] = texcoord[3] = lt.y;
+	texcoord[2] = texcoord[6] = rd.x;
+	texcoord[5] = texcoord[7] = rd.y;
+	
+	// Set Position/Rotation/Scale
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glTranslatef(x, y, 0.0f);
+	if (w<0) w = _frameSize.width;
+	if (h<0) h = _frameSize.height;
+	glScalef(w, h, 1);
+	
+	if (_tag > 0)
+		glBindTexture(GL_TEXTURE_2D, _tag);
+	
+	glDisable(GL_LIGHTING);
+	glEnable( GL_TEXTURE_2D );
+	glEnable( GL_BLEND );
+	glEnable( GL_ALPHA_TEST );
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+    glEnableClientState(GL_COLOR_ARRAY);
+	
+	// Render
+    glVertexPointer(2, GL_SHORT, 0, sprVtx);
+    glColorPointer(4, GL_UNSIGNED_BYTE, 0, _sprCol);
+	glTexCoordPointer(2, GL_FLOAT, 0, texcoord);
+	
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);	
+}
+//=============================================================================
 void Sprite::drawWithFrame(int f, int x, int y, int w, int h)
 {
 	//baseからのスケール適用
