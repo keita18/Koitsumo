@@ -20,6 +20,7 @@ LOCAL_SRC_FILES := main.cpp \
 	Classes/Graphics/GRDefinition.cpp \
 	Classes/Graphics/2D/Sprite.cpp \
 	Classes/Graphics/2D/Draw.cpp \
+	Classes/Graphics/2D/Filter.cpp \
 	Classes/Graphics/2D/Text.cpp \
 	Classes/Graphics/3D/model.cpp \
 	Classes/Math/Functions.cpp \

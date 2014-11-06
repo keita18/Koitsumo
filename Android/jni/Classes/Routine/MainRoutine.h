@@ -7,6 +7,7 @@
 #include "pch.h"
 
 class Unit;
+class Filter;
 
 class MainRoutine
 {
@@ -18,7 +19,7 @@ public:
 
 	void calc();
 	void draw();
-
+	void waitForFrame();
 	void touchedBegin(CGPoint tp);
 	void touchedMoved(CGPoint tp);
 	void touchedEnded(CGPoint tp);
@@ -26,6 +27,10 @@ public:
 	Unit* getCurrentUnit();
 
 	void setNextUnit(Unit* unit);
+
+	//@TODO
+	void notifyRotateDevice() {}
+	void reactivate() {}
 private:
 	MainRoutine();
 	~MainRoutine();
@@ -34,7 +39,12 @@ private:
 	static MainRoutine* pInstance;
 
 private:
+	//@TODO
+	//UIView  _textLayer
 	Unit* _currentUnit;
+	Filter*	_filter;
+	int 	_status;
 	
+	int 	*_aplPtr;
 	bool	_touched;
 };

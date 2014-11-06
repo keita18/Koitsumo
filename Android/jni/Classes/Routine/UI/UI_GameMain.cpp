@@ -23,6 +23,7 @@ using namespace UserInterface;
 	STAGE_HORIZON_OFFSET_Y = 40 * ratio;
 
 	Coin::onDecideScreenRatio(ratio);
+	Dialog::onDecideScreenRatio(ratio);
 }
 
 /*static*/ int UI_GameMain::Coin::Width = 0;
@@ -34,9 +35,15 @@ using namespace UserInterface;
 
 //=============================================================================
 UI_GameMain::UI_GameMain()
-: _time(0), _score(0)
+: _time(0)
+, _limitTime(0)
+, _score(0)
+, _bestScore(0)
 , _bg()
-, _pipe_portrait(0), _pipe_landscape(0)
+, _pipe_portrait(NULL)
+, _pipe_portrait_back(NULL) 
+, _pipe_landscape(NULL)
+, _pipe_landscape_back(NULL)
 , _orientation(ORIENTATION_PORTRAIT_UP)
 , _path_horizon()
 , _path_vertical()
@@ -66,14 +73,14 @@ void UI_GameMain::init()
 	_time = 0;
     _bestScore = 0;
 
-	_pipe_portrait = new Sprite("PIPE_Portrait", 70, 70);
-	_pipe_landscape = new Sprite("PIPE_LandScape", 70, 70);
-	_pipe_portrait_back = new Sprite("PIPE_Portrait_Back", 70, 70);
-	_pipe_landscape_back = new Sprite("PIPE_LandScape_Back", 70, 70);
-	_score_spr = new Sprite("Score", 64, 85);
-    _best_spr = new Sprite("best", 128, 32);
+	_pipe_portrait = new Sprite("PIPE_Portrait.png", 70, 70);
+	_pipe_landscape = new Sprite("PIPE_LandScape.png", 70, 70);
+	_pipe_portrait_back = new Sprite("PIPE_Portrait_Back.png", 70, 70);
+	_pipe_landscape_back = new Sprite("PIPE_LandScape_Back.png", 70, 70);
+	_score_spr = new Sprite("Score.png", 64, 85);
+    _best_spr = new Sprite("best.png", 128, 32);
 	_newRecord_spr = new Sprite(_best_spr);
-    _spr_timebar = new Sprite("timebar", 32, 256);
+    _spr_timebar = new Sprite("timebar.png", 32, 256);
 	
 	_coinModels[Coin::Type_1yen] = makeCoinModel("1.png");
 	_coinModels[Coin::Type_5yen] = makeCoinModel("5.png");
@@ -533,8 +540,8 @@ UI_GameMain::MiniNumber::MiniNumber()
 , _sprite_time(0)
 , _sprite_money(0)
 {
-    _sprite_time = new Sprite("Number32x40" ,32 ,40);
-    _sprite_money = new Sprite("Number32x40_" ,32 ,40);
+    _sprite_time = new Sprite("Number32x40.png" ,32 ,40);
+    _sprite_money = new Sprite("Number32x40_.png" ,32 ,40);
     memset(_items, 0, sizeof(ITEM) * ITEM_MAX);
     for(size_t i=0;i<ITEM_MAX;i++) {
         _spr_items_t[i] = new Sprite(_sprite_time);
@@ -625,7 +632,7 @@ void UI_GameMain::MiniNumber::draw()
 //=============================================================================
 UI_GameMain::MiniPaper::MiniPaper()
 {
-    _sprite = new Sprite("1000", 64, 64);
+    _sprite = new Sprite("1000.png", 64, 64);
     for(size_t i=0;i<ITEM_MAX;i++)
     {
         _items[i].enabled = false;
@@ -901,13 +908,17 @@ UI_GameMain::Dialog::Dialog()
 , _prizeSprite(0)
 , _hintText_x(0)
 , _fallSpeed(DIALOG_FALLSPEED_NORMAL)
+, _type(DialogTypeNone)
+, _score(0)
+, _newRecord(0)
+, _hintText(NULL)
 {
-	_spr_bg = new Sprite("PauseDialog" ,512 ,256);
-	_spr_button = new Sprite("DialogButton" ,80 ,80);
-	_spr_title = new Sprite("DialogTitle" ,256 ,64);
-	_spr_gameover = new Sprite("gameover" ,512 ,512);
-	_spr_score = new Sprite("Score" ,64 ,85);
-	_newRecord_spr = new Sprite("best" ,128 ,32);
+	_spr_bg = new Sprite("PauseDialog.png" ,512 ,256);
+	_spr_button = new Sprite("DialogButton.png" ,80 ,80);
+	_spr_title = new Sprite("DialogTitle.png" ,256 ,64);
+	_spr_gameover = new Sprite("gameover.png" ,512 ,512);
+	_spr_score = new Sprite("Score.png" ,64 ,85);
+	_newRecord_spr = new Sprite("best.png" ,128 ,32);
 	
 	//_hintText = [[Text alloc] initWithString:@"テストなんだけど、流れるようにしてみた" Size:10 Alignment:UITextAlignmentLeft];
 }

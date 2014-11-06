@@ -32,10 +32,13 @@ namespace Puzzle {
 //=============================================================================
 /*static*/ void Block::onDecideScreenRatio(int ratio)
 {
-	WIDTH = Stage::WIDTH/8 * ratio;
-	HEIGHT = Stage::HEIGHT/8 * ratio;
+	//Stage側にratioがかかっているのでここでは必要ない
+	WIDTH = Stage::WIDTH/8;
+	HEIGHT = Stage::HEIGHT/8;
 	MAX_X = Stage::WIDTH - WIDTH;
 	MAX_Y = Stage::HEIGHT - HEIGHT;
+
+	LOGI("Block::onDecideScreenRatio, W=%d, H=%d, MX=%d, MY=%d", WIDTH, HEIGHT, MAX_X, MAX_Y);
 }
 
 //=============================================================================
@@ -46,6 +49,8 @@ namespace Puzzle {
 	float y = row * HEIGHT;
 	Math::Vector2 pos( x, y );
 	
+	LOGI("Block::create, pos=(%3.3f, %3.3f), row=%d, col=%d, val=%d", pos.x, pos.y, row, col, value);
+
 	switch( value ){
 		case 1:
 			block = new OneYenBlock( pos ); break;

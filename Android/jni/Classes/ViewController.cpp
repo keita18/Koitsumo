@@ -68,7 +68,7 @@ void ViewController::drawFrame()
 	glMatrixMode((unsigned int)GL_PROJECTION);
 	glPopMatrix();
 
-	//@TODO sleep処理(waitForFrame)
+	MainRoutine::singleton()->waitForFrame();
 }
 
 //=============================================================================
