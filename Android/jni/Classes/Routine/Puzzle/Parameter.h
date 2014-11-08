@@ -8,12 +8,13 @@
 
 namespace Puzzle {
 
-/*const*/ static int TOUCHX_PER_MOVE = 30;  ///< ブロックを1マス動かすタッチ幅
-/*const*/ static int TOUCHY_PER_MOVE = 40;  ///< ブロック落下を早めるためのy方向タッチ量
-/*const*/ static float BLOCK_DEFAULT_SPEED = 40.0f;		 ///< ブロック落下スピード
-/*const*/ static float BLOCK_ACCELATED_SPEED = 400.0f;   ///< 下入力加速落下スピード 
-/*const*/ static float BLOCK_FIXED_FALL_SPEED = 200.0f;  ///< 固定後に落下するときのスピード
-/*const*/ static float ADD_SPEED = 50.0f;   ///<時間無制限でスピードアップする量
+// 可変なのでexternでグローバル変数にする。C++ならクラス変数にするのが一番マシな気がするけど、書き換えコスト安くexternで。
+/*const*/ /*static*/ extern int TOUCHX_PER_MOVE/* = 30*/;  ///< ブロックを1マス動かすタッチ幅
+/*const*/ /*static*/ extern int TOUCHY_PER_MOVE/* = 40*/;  ///< ブロック落下を早めるためのy方向タッチ量
+/*const*/ /*static*/ extern float BLOCK_DEFAULT_SPEED/* = 40.0f*/;		 ///< ブロック落下スピード
+/*const*/ /*static*/ extern float BLOCK_ACCELATED_SPEED/* = 400.0f*/;   ///< 下入力加速落下スピード 
+/*const*/ /*static*/ extern float BLOCK_FIXED_FALL_SPEED/* = 200.0f*/;  ///< 固定後に落下するときのスピード
+/*const*/ /*static*/ extern float ADD_SPEED/* = 50.0f*/;   ///<時間無制限でスピードアップする量
 const static float WAIT_NEXT_POP_TIME = 1.0f;        ///< 次のブロックがでてくるまでのアイドル時間
 const static float WAIT_GAME_OVER_TIME =     2.0f;	 ///< ゲームオーバーアイドル時間
 const static int TIME_LIMIT = 60;		   ///<制限時間[sec]

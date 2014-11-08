@@ -148,8 +148,14 @@ public:
 			STATE_OVER_FALL,
 			STATE_END,
 		};
+
+	public:
+		//デバッグ用
+		int 			_type;
+
+	public:
 		
-		Coin(Graphics::Model *m);
+		Coin(Graphics::Model *m, TYPE type);
 		~Coin()			{}
 		
 		void calc();

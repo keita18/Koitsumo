@@ -26,8 +26,8 @@ namespace Puzzle {
 /*static*/ int Block::MAX_Y = 0;
 
 /*static*/UserInterface::UI_GameMain* Block::uiGameMain = 0;
-/*static*/float Block::FALL_SPEED = BLOCK_DEFAULT_SPEED;
-/*static*/float Block::FIXED_FALL_SPEED = BLOCK_FIXED_FALL_SPEED;
+/*static*/float Block::FALL_SPEED = 0.0f/*BLOCK_DEFAULT_SPEED*/;	//あとで初期化
+/*static*/float Block::FIXED_FALL_SPEED = 0.0f/*BLOCK_FIXED_FALL_SPEED*/;
 
 //=============================================================================
 /*static*/ void Block::onDecideScreenRatio(int ratio)
@@ -37,6 +37,9 @@ namespace Puzzle {
 	HEIGHT = Stage::HEIGHT/8;
 	MAX_X = Stage::WIDTH - WIDTH;
 	MAX_Y = Stage::HEIGHT - HEIGHT;
+
+	FALL_SPEED = BLOCK_DEFAULT_SPEED;
+	FIXED_FALL_SPEED = BLOCK_FIXED_FALL_SPEED;
 
 	LOGI("Block::onDecideScreenRatio, W=%d, H=%d, MX=%d, MY=%d", WIDTH, HEIGHT, MAX_X, MAX_Y);
 }

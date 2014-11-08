@@ -18,7 +18,7 @@ public:
 
 public:
     //! @brief コンストラクタ 
-    Vector3(){
+    Vector3() : x(0.0f), y(0.0f), z(0.0f) {
     }
 
     //! @brief 引数つきコンストラクタ 

@@ -22,7 +22,7 @@ namespace Puzzle
 {
 	Parameter::onDecideScreenRatio(ratio);
 	Stage::onDecideScreenRatio(ratio);
-	Block::onDecideScreenRatio(ratio);	//Stageより後にする
+	Block::onDecideScreenRatio(ratio);	//Parameter, Stageより後にする
 }
 
 //=============================================================================

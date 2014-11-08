@@ -87,7 +87,7 @@ void UI_GameMain::init()
 	_coinModels[Coin::Type_10yen] = makeCoinModel("10.png");
 	_coinModels[Coin::Type_50yen] = makeCoinModel("50.png");
 	_coinModels[Coin::Type_100yen] = makeCoinModel("100.png");
-	_coinModels[Coin::Type_500yen] = makeCoinModel("500.png");	
+	_coinModels[Coin::Type_500yen] = makeCoinModel("500.png");
     
     _dialog.setNewRecord(false);
 }
@@ -277,6 +277,7 @@ void UI_GameMain::draw(bool noTime)
 			} 
 
 			// draw Coins
+			LOGI("UI_GameMain, drawcoins size=%d", _coins.size());
 			for (int i=0;i<_coins.size();i++) { 
 				switch (_coins[i]->getState()) {
 					case Coin::STATE_READY: {
@@ -438,7 +439,7 @@ void UI_GameMain::term()
 //=============================================================================
 UI_GameMain::Coin* UI_GameMain::addCoin(Coin::TYPE t)
 {
-	UI_GameMain::Coin *c = new UI_GameMain::Coin(_coinModels[t]);
+	UI_GameMain::Coin *c = new UI_GameMain::Coin(_coinModels[t], t);
 	_coins.push_back(c);
 	return c;
 }
@@ -699,11 +700,12 @@ void UI_GameMain::MiniPaper::draw()
 // ---------------------------------
 // UI_GameMain::Coin
 // ---------------------------------
-UI_GameMain::Coin::Coin(Graphics::Model *m)
+UI_GameMain::Coin::Coin(Graphics::Model *m, TYPE type)
 : _model(m), _pos(0), _rot(), _dir()
 , _state(STATE_READY), _progress(0), _shake(false)
 , _shakeFlag(0), _popScale(0)
 , _shineEffect(0), _posorg(0, 0), _waitFrame(0)
+, _type(type)
 {
 }
 
@@ -819,6 +821,8 @@ void UI_GameMain::Coin::drawWithPosition(const Math::Vector2 &position, int orie
 		// }
 	}									
 	
+	LOGI("Coin::drawWithPosition, coin=%d, pos=(%3.1f, %3.1f, %3.1f)", _type, pos.x, pos.y, pos.z);
+
 	_model->SetRotation(rot);
 	_model->SetScale(scl);
 	_model->SetPosition(pos);
@@ -860,7 +864,10 @@ void UI_GameMain::Coin::drawWithOffset(const Math::Vector2 &offset, int orientat
 		// 	Graphics::EffectManager::getInstance()->setEffectParameter(_shineEffect, Graphics::Effect_ShineModel::PARAM_POSITION, &pos);
 		// 	Graphics::EffectManager::getInstance()->setEffectParameter(_shineEffect, Graphics::Effect_ShineModel::PARAM_SCALE, &scl);
 		// }
-	}									
+	}
+
+	LOGI("Coin::drawWithOffset, coin=%d, pos=(%3.1f, %3.1f, %3.1f)", _type, pos.x, pos.y, pos.z);
+
 	Math::Vector3 rot(_rot.x, _rot.y, _rot.z + rot_z);
 	_model->SetRotation(rot);
 	_model->SetScale(scl);

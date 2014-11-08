@@ -14,7 +14,7 @@ Model::Model()
 , _vtx_num(0)
 , _textag(0)
 , _position()
-, _shift()
+, _shift(0, 0, 0)
 , _rotation()
 , _scale(1, 1, 1)
 {
@@ -69,6 +69,7 @@ void Model::SetTexture(const char* imageName)
 //=============================================================================
 void Model::Draw()
 {
+	assert(_vtx);
 	if (!_vtx) return;
 
 	Math::Vector3 pos = _position;
